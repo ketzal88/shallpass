@@ -1,23 +1,20 @@
-import './App.css';
+import { Container } from 'react-bootstrap';
+import './App.scss';
+import { logoPassFullColor } from './assets';
+import { Header } from './components/Header/Header';
+import { HeroText } from './components/HeroText/HeroText';
+import { Rubros } from './components/Rubros/Rubros';
+import { Tips } from './components/Tips/Tips';
+import { rubros, textHero, texts } from './data/data';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container  className="App">
+      <Header logo={ logoPassFullColor } />
+      <Rubros data={ rubros } />
+      <HeroText data={ textHero }/>
+      <Tips texts={texts}/>
+    </Container>
   );
 }
 

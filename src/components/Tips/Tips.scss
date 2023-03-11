@@ -1,0 +1,56 @@
+@import '../../scss/layout.scss';
+@import '../../scss/colors.scss';
+
+#Tips{
+    padding: 0px !important;
+    .cont{
+        margin-left: $marginBoxDescktop;
+        margin-right: $marginBoxDescktop;
+        z-index: 10;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    h3{
+        color: $primaryColor;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: left;
+        margin-bottom: 20px;
+        margin-top: 44px;
+        span{
+            color: white;
+        }
+    }
+    p{
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        text-align: left;
+
+        
+    }
+    .gradientCont{
+        position: absolute;
+        left: 0px;
+        padding: 0px;
+        :first-child{
+            
+            margin-top: -400px;
+            overflow: hidden;
+        }
+        .imageGradient{
+            width: 1914px;
+            height: 1914px;
+            margin-top: -200px;
+            margin-left: 600px;
+            overflow: hidden;
+        }
+
+    }
+}

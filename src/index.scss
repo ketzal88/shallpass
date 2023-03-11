@@ -1,0 +1,17 @@
+// @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lora:wght@400;700&display=swap');
+/*
+font-family: 'DM Sans', sans-serif;
+font-family: 'Lora', serif;
+*/
+
+@import './scss/colors.scss';
+
+body {
+  font-family: 'DM Sans';
+  color: white;
+  margin: 0;
+  padding: 0px;
+  background-color: $backgroundApp;
+  
+}
+
