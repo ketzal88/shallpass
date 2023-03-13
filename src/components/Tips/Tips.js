@@ -9,8 +9,6 @@ import './Tips.scss'
 
 
 export const Tips = ({ texts }) => {
-
-    console.log(texts)
     return (
         <Row id='Tips'>
             <Col className='cont'>
