@@ -1,6 +1,8 @@
 import { Container } from 'react-bootstrap';
 import './App.scss';
 import { logoPassFullColor } from './assets';
+import { Footer } from './components/Footer/Footer';
+import { LandingForm } from './components/Form/LandingForm';
 import { Header } from './components/Header/Header';
 import { HeroText } from './components/HeroText/HeroText';
 import { PorqueElegirnos } from './components/PorqueElegirnos/PorqueElegirnos';
@@ -18,6 +20,8 @@ function App() {
       <Tips texts={texts}/>
       <PorqueElegirnos />
       <Quote data={ quote }/>
+      <LandingForm />
+      <Footer />
     </Container>
   );
 }

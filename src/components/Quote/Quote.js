@@ -1,6 +1,6 @@
 import React from 'react'
-import { Card, Col, Image, Row } from 'react-bootstrap'
-import { quoteIcon } from '../../assets'
+import { Card, Col, Container, Image, Row } from 'react-bootstrap'
+import { circleGrad, quoteIcon } from '../../assets'
 
 
 import './Quote.scss'
@@ -32,6 +32,9 @@ export const Quote = ({data}) => {
                 )}
             </Row>
         </Col>
+        <Row className='circleGrad' >
+            <Image src={circleGrad}  />
+        </Row>
     </Row>
   )
 }

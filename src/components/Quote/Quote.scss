@@ -2,6 +2,7 @@
 @import '../../scss/colors.scss';
 
 #Quote{
+    
     .cont{
         // background-color: aquamarine;
         margin-left: $marginBoxDescktop;
@@ -34,5 +35,16 @@
             }
         }
     }
-    
+    .circleGrad{
+        position: relative;
+        // overflow-y: hidden;
+        width: 100%;
+        img{
+            width: 1414px;
+            height: 1414px;
+            top: -1100px;
+            position: absolute;
+            left: -600px;
+        }
+    }
 }
