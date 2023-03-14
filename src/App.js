@@ -4,9 +4,10 @@ import { logoPassFullColor } from './assets';
 import { Header } from './components/Header/Header';
 import { HeroText } from './components/HeroText/HeroText';
 import { PorqueElegirnos } from './components/PorqueElegirnos/PorqueElegirnos';
+import { Quote } from './components/Quote/Quote';
 import { Rubros } from './components/Rubros/Rubros';
 import { Tips } from './components/Tips/Tips';
-import { rubros, textHero, texts } from './data/data';
+import { quote, rubros, textHero, texts } from './data/data';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <HeroText data={ textHero }/>
       <Tips texts={texts}/>
       <PorqueElegirnos />
+      <Quote data={ quote }/>
     </Container>
   );
 }

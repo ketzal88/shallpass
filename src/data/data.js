@@ -1,4 +1,4 @@
-import { comercialIcon, financieraIcon, impositivaIcon, juridicaIcon } from "../assets";
+import { alcasaLogo, beatflowLogo, comercialIcon, financieraIcon, impositivaIcon, juridicaIcon, patagoniaLogo, workerLogo } from "../assets";
 
 const rubros=[
     { 
@@ -53,8 +53,28 @@ const texts = [
 
 ]
 
+const quote =[
+    {
+        text: `Delegamos todos nuestros procesos administrativos en Shall Pass y fue la mejor decisión que hemos tomado, resolutivos y prácticos.`,
+        logo: beatflowLogo,
+    },
+    {
+        text: `“Con Shall Pass lo que hemos conseguido fue deshacernos de toda la burocracia en la que nos veíamos involucrados en la parte impositiva y administrativa, hacen de nuestro trabajo mas fácil y dinámico.”`,
+        logo: alcasaLogo,
+    },
+    {
+        text: `“Veniamos de una muy mala experiencia con el estudio que nos llevaba la contabilidad, a su vez no nos dimos cuenta la necesidad de acompañamiento comercial que teniamos, con la consultora pudimos ordenar todo.”`,
+        logo: patagoniaLogo,
+    },
+    {
+        text: `“Incorporamos a Shall Pass como nuestra área administrativa de la empresa. Delegamos todos los procesos administrativos que nos daban dolor de cabeza”`,
+        logo: workerLogo,
+    },
+]
+
 export {
     rubros,
     textHero,
     texts,
+    quote,
 }

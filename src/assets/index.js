@@ -6,7 +6,13 @@ export { default as logoPassFullColor } from './svg/logoPass.svg';
         export { default as impositivaIcon } from './svg/impsitivaIcon.svg';
         export { default as juridicaIcon } from './svg/juridicaIcon.svg';
         export { default as financieraIcon } from './svg/financieraIcon.svg';
-
+        export { default as quoteIcon } from './svg/quote.svg';
+        
+    // logos sponsors
+        export { default as beatflowLogo } from './svg/beatflowLogo.svg';
+        export { default as alcasaLogo } from './svg/alcasaLogo.svg';
+        export { default as patagoniaLogo } from './svg/pataginioBiotechLogo.svg';
+        export { default as workerLogo } from './svg/workerLogo.svg';
 // Img
 export { default as reunion } from './img/reunion.webp';
 export { default as reunionAlternate } from './img/reunion.png';

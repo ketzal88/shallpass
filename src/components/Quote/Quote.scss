@@ -1,0 +1,38 @@
+@import '../../scss/layout.scss';
+@import '../../scss/colors.scss';
+
+#Quote{
+    .cont{
+        // background-color: aquamarine;
+        margin-left: $marginBoxDescktop;
+        margin-right: $marginBoxDescktop;
+        z-index: 10;
+        .card{
+            margin-top: 140px;
+            height: 250px;
+            text-align: left;
+            background-color: #EEE9E0;
+            color: black;
+            border-radius: 0 80px 0 80px;
+            padding-left: 36px;
+            padding-right: 25px;
+            #quoteIcon{
+                text-align: left;
+                img{
+                    height: 55px;
+                    margin-top: -22px;
+                }
+            }
+            .card-body{
+                margin-top: 30px;
+            }
+            .logoSponsor{
+
+                position: absolute;
+                top: 230px;
+                z-index: 11;
+            }
+        }
+    }
+    
+}

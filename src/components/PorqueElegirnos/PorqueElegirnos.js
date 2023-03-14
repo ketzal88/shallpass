@@ -17,14 +17,14 @@ export const PorqueElegirnos = () => {
                             <Col md={6}
                                 id='imagem'
                             >
-                                <ImageSelector imgWebP={porque} noWebpImg={porqueAlternate} imageAlt={'Joven sonriente fontdo amarillo'}  />
+                                <ImageSelector imgWebP={porque} noWebpImg={porqueAlternate} imageAlt={'Joven sonriente fontdo amarillo'} />
                             </Col>
                             <Col
                                 // style={{backgroundColor:'aqua'}}
                                 className='d-flex flex-column '
                             >
                                 <Col
-                                    style={{position: 'relative'}}
+                                    style={{ position: 'relative' }}
                                     className='d-flex' >
                                     <Gota setId={'gota1'} />
                                     <Col className='gotaData'>
@@ -39,8 +39,7 @@ export const PorqueElegirnos = () => {
                                     <Gota setId={'gota2'} bgColor={'white'} />
                                     <Col className='gotaData'>
                                         <h4>43</h4>
-                                        <p>Clientes
-                                            satisfechos</p>
+                                        <p>Clientes satisfechos</p>
                                     </Col>
                                 </Col>
                             </Col>
