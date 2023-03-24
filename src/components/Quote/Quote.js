@@ -22,7 +22,7 @@ export const Quote = ({data}) => {
                                     <Image src={quoteIcon} fluid/>
                                 </Col>
                                 <Card.Body
-                                    className='h-100'
+                                    // className='h-100'
                                 >
                                     {text}
                                 </Card.Body>
