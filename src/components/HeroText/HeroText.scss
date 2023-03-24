@@ -24,6 +24,7 @@
         letter-spacing: 0px;
         text-align: center;
         margin-top: 0.1em;
+        color: black;
         span{
             background-color: $primaryColor;
             padding: 0 0.7em 0 0.7em;
@@ -42,3 +43,32 @@
 
     }
 }
+
+@media (max-width: 420px) { 
+    #HeroText{
+        // display: none;
+        .cont{
+            margin-right: 0px !important;
+            margin-left: 0px !important;
+            padding-top: 0px;
+        }
+        #text01, #text02, #text03{
+            margin: 0px;
+            font-size: 42px;
+            margin: 0px !important;
+            padding: 0px !important;
+        }
+
+        #text02{
+            text-align: center;
+            span{
+                margin: 0px;
+                padding: 0 0.4em 0 0.4em;
+                
+            }
+        }
+        #text03{
+            text-align: right;
+        }
+    }
+ }

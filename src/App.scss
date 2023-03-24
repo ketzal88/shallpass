@@ -1,8 +1,17 @@
 @import './scss/colors.scss';
 
+
+
 .App {
   text-align: center;
 
 }
 
 
+
+@media (max-width: 420px) { 
+  .App{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

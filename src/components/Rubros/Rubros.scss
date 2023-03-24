@@ -36,3 +36,15 @@
         }
     }
 }
+
+@media (max-width: 420px) { 
+    #rubros{
+        // display: none;
+        .card{
+            padding-right: 30px;
+            .card-body{
+
+            }
+        }
+    }
+}

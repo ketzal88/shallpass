@@ -1,8 +1,10 @@
 @import '../../scss/colors.scss';
+@import '../../scss/layout.scss';
 
 #header{
     margin-top: 144px;
     margin-bottom: 168px;
+    
     #logo{
         text-align: left;
         img{
@@ -43,4 +45,38 @@
         background-color: white;
         border-radius: 24px;
     }
+    
 }
+
+@media (max-width: 420px) { 
+
+    #header{
+        // display: none;
+        margin-top: 130px;
+        .imageGradient{
+            display: none;
+        }
+        #logo{
+            text-align: center;
+            img{
+                width: 100%;
+                margin-top: 0px;
+            }
+        }
+        h1{
+            font-weight: 400;
+            font-size: 24px !important;
+            line-height: 32px !important;
+        }
+        form{
+            width: unset !important;
+            min-height: 678px;
+            margin-top: 4em;
+            textarea{
+                min-height: 150px;
+            }
+        }
+
+        
+    }
+ }

@@ -18,4 +18,5 @@ export { default as reunion } from './img/reunion.webp';
 export { default as reunionAlternate } from './img/reunion.png';
 export { default as porque } from './img/porque.webp';
 export { default as porqueAlternate } from './img/porque.png';
+export { default as porqueCompleto } from './img/porqueCompleto.png';
 

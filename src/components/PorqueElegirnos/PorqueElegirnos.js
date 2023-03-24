@@ -1,6 +1,6 @@
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import { porque, porqueAlternate } from '../../assets'
+import { Col, Container, Image, Row } from 'react-bootstrap'
+import { porque, porqueAlternate, porqueCompleto } from '../../assets'
 import { Gota } from '../../assets/Gota'
 import { ImageSelector } from '../ImageSelector/ImageSelector'
 
@@ -14,16 +14,18 @@ export const PorqueElegirnos = () => {
                 <Row>
                     <Col md={6}>
                         <Row>
-                            <Col md={6}
+                            {/* <>
+                            <Col xs={6}
                                 id='imagem'
                             >
                                 <ImageSelector imgWebP={porque} noWebpImg={porqueAlternate} imageAlt={'Joven sonriente fontdo amarillo'} />
                             </Col>
-                            <Col
+                            <Col xs={6}
                                 // style={{backgroundColor:'aqua'}}
                                 className='d-flex flex-column '
                             >
-                                <Col
+                                <Col 
+                                    id='gotaNaraja'
                                     style={{ position: 'relative' }}
                                     className='d-flex' >
                                     <Gota setId={'gota1'} />
@@ -33,8 +35,9 @@ export const PorqueElegirnos = () => {
                                     </Col>
                                 </Col>
                                 <Col
+                                    id='gotaBlanca'
                                     style={{ position: 'relative' }}
-                                    className='d-flex flex-column justify-content-end'
+                                    className='d-flex flex-column justify-content-end '
                                 >
                                     <Gota setId={'gota2'} bgColor={'white'} />
                                     <Col className='gotaData'>
@@ -43,7 +46,9 @@ export const PorqueElegirnos = () => {
                                     </Col>
                                 </Col>
                             </Col>
+                            </> */}
                         </Row>
+                        <Image src={porqueCompleto} fluid/>
                     </Col>
                     <Col md={6}>
                         <h2>Por qué<br /> elegirnos?</h2>

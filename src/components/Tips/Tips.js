@@ -23,7 +23,7 @@ export const Tips = ({ texts }) => {
                     </Col>
                     <Col
                         md={6}
-                        className={'align-self-center'}
+                        className={'align-self-center d-none d-sm-block'}
                     >
                         <ImageSelector imgWebP={reunion} noWebpImg={reunionAlternate} imageAlt='Reunión de trabajo, dos personas y un laptop' />
                     </Col>

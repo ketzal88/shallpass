@@ -2,7 +2,7 @@
 @import '../../scss/colors.scss';
 
 #Quote{
-    
+    margin-bottom: 150px;
     .cont{
         // background-color: aquamarine;
         margin-left: $marginBoxDescktop;
@@ -28,7 +28,8 @@
                 margin-top: 30px;
             }
             .logoSponsor{
-
+                right: 20px;
+                width: 150px;
                 position: absolute;
                 top: 230px;
                 z-index: 11;
@@ -45,6 +46,46 @@
             top: -1100px;
             position: absolute;
             left: -600px;
+        }
+    }
+}
+
+@media (max-width: 420px) { 
+    #Quote{
+        // display: none;
+        .cont{
+            margin-left: 0px;
+            margin-right: 0px;
+            
+            .card{
+                padding-left: 16px;
+                padding-right: 12px;
+                margin-top: 94px;
+                height: 240px;
+                border-radius: 0 60px 0 60px;
+                
+                .card-body{
+                    margin-top: 0px;
+                    color: #66676A !important;
+                    font-size: 17px;
+                    line-height: 20px;
+                }
+                #quoteIcon{
+
+                    img{
+                        height: 30px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .logoSponsor{
+
+                position: absolute;
+                top: 200px !important;
+                z-index: 11;
+                right: -2px;
+                width: 85px !important;
+            }
         }
     }
 }

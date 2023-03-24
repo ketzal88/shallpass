@@ -11,3 +11,10 @@ footer{
         line-height: 20px;
     }
 }
+
+@media (max-width: 420px) { 
+    footer{
+        // display: none;
+        margin-top: 96px;
+    }
+}
