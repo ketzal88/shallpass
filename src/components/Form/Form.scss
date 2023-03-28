@@ -5,6 +5,11 @@
     // --bs-gutter-x: 1.5rem !important;
 
     // background-color: aqua !important;
+    ::placeholder{
+        color: #212121;
+        opacity: 20%;
+    }
+
     #sendEmail{
         padding: 0px;
         margin: 0px;
