@@ -1,13 +1,5 @@
 @import './scss/colors.scss';
 
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-);
 
 .App {
   text-align: center;
@@ -16,7 +8,7 @@ $grid-breakpoints: (
 
 
 
-@media (max-width: 420px) { 
+@media (max-width: 1023px) { 
   .App{
     padding-left: 40px;
     padding-right: 40px;

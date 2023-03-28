@@ -1,26 +1,18 @@
 import { Container } from 'react-bootstrap';
+import { Route, Routes } from 'react-router-dom';
 import './App.scss';
-import { logoPassFullColor } from './assets';
 import { Footer } from './components/Footer/Footer';
-import { LandingForm } from './components/Form/LandingForm';
-import { Header } from './components/Header/Header';
-import { HeroText } from './components/HeroText/HeroText';
-import { PorqueElegirnos } from './components/PorqueElegirnos/PorqueElegirnos';
-import { Quote } from './components/Quote/Quote';
-import { Rubros } from './components/Rubros/Rubros';
-import { Tips } from './components/Tips/Tips';
-import { quote, rubros, textHero, texts } from './data/data';
+
+import { Home } from './pages/Home';
+import { Thanks } from './pages/Thanks';
 
 function App() {
   return (
     <Container  className="App">
-      <Header logo={ logoPassFullColor } />
-      <Rubros data={ rubros } />
-      <HeroText data={ textHero }/>
-      <Tips texts={texts}/>
-      <PorqueElegirnos />
-      <Quote data={ quote }/>
-      <LandingForm />
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='thanks' element={<Thanks />} />
+      </Routes>
       <Footer />
     </Container>
   );
