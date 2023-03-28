@@ -48,3 +48,14 @@
         }
     }
 }
+
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+     #rubros{
+        // display: none;
+        margin-top: 0px !important;
+        .card{
+            // padding-left: 0px;
+
+        }
+     }
+}

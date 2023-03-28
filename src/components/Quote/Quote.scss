@@ -94,3 +94,30 @@
         }
     }
 }
+
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+	// hacer algo en ese rango de ancho.
+    #Quote{
+        .cont{
+            margin-left: 0px;
+            margin-right: 0px;
+        
+
+            .card{
+                width: 395px;
+                margin: auto;
+                margin-top: 104px;
+
+                .card-body{
+                    margin-top: 0px !important;
+                }
+            }
+            .logoSponsor{
+                top: unset !important;
+                bottom: -110px !important;
+                right: -33px !important;
+            }
+
+        }
+    }
+}

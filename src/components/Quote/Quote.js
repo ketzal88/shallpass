@@ -13,7 +13,7 @@ export const Quote = ({data}) => {
   return (
     <Row id={'Quote'}>
         <Col className='cont'>
-            <Row xs={1} md={2} className="g-4">
+            <Row xs={1} xxl={2} className="g-4">
                 {
                     quote.map(({text, logo}, id) =>
                         <Col key={id}>

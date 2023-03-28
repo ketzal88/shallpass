@@ -13,24 +13,29 @@ export const Header = ({ logo }) => {
       <Row id='header'>
         <Col
           id='logo'
-          md={6}
           xs={12}
+          md={12}
+          xxl={6}
           >
           <Image src={logo}  />
           <Col>
-          <h1 className='d-none d-sm-block'>
-              Nos especializamos en la atención de<br/> <span>Comercios, Emprendedores y PyMES.</span>
-          </h1>
+          {/* Visible only on sm	.d-none .d-sm-block .d-md-none */}
           <h1 className='d-block d-sm-none'>
               Nos especializamos en la atención de <span>Comercios, Emprendedores y PyMES.</span>
           </h1>
+          <h1 className='d-none d-sm-block'>
+            Nos especializamos en<br/> la atención de<br /> <span>Comercios,<br/> Emprendedores y<br/> PyMES.</span>
+          </h1>
           </Col>
         </Col>
-      <Col md={6} xs={12}>
+      <Col 
+        xs={12} 
+        md={12} 
+        xxl={6}>
           <Row
             className='justify-content-end'
             >
-          <Col className=''>
+          <Col className='fromCont'>
               <Form  
                 SERVICE_ID={REACT_APP_SERVICE_ID}
                 TEMPLATE_ID={REACT_APP_TEMPLATE_ID}
