@@ -6,7 +6,7 @@ import { Button, Col, Container, Row } from 'react-bootstrap';
 
 export const Form = ({ SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY, id }) => {
 
-    console.log(`Srvice ID:${SERVICE_ID}, Templete ID: ${TEMPLATE_ID}, Public Key: ${PUBLIC_KEY}`)
+    // console.log(`Srvice ID:${SERVICE_ID}, Templete ID: ${TEMPLATE_ID}, Public Key: ${PUBLIC_KEY}`)
 
     const form = useRef();
 
