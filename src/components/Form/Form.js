@@ -8,7 +8,10 @@ export const Form = ({ SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY, id }) => {
 
     // console.log(`Srvice ID:${SERVICE_ID}, Templete ID: ${TEMPLATE_ID}, Public Key: ${PUBLIC_KEY}`)
 
+
+
     const form = useRef();
+
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -31,7 +34,7 @@ export const Form = ({ SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY, id }) => {
                         </Col>
                         <Col md={6} className='fomItem'>
                             <label>Teléfono</label><br />
-                            <input type="tel" name="user_name" placeholder='Ingresa tu teléfono' />
+                            <input type="tel" name="user_phone" placeholder='Ingresa tu teléfono' />
                         </Col>
                     <Col md={12} className='fomItem '>
                         <label>Email</label><br />

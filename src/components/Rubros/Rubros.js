@@ -8,7 +8,7 @@ export const Rubros = ({data}) => {
 
     const rubros = data
     return (
-        <Row id='rubros' xs={1} sm={2} md={2} className="g-5">
+        <Row id='rubros' xs={1} sm={2} md={2} lg={4} className="g-5">
             {rubros.map(({icon, title, sTitle, body}, i) =>
                 <Card
                     key={i}
