@@ -49,13 +49,17 @@
     }
 }
 
-@media only screen and (min-width: 421px) and (max-width: 768px) {
-     #rubros{
-        // display: none;
-        margin-top: 0px !important;
-        .card{
-            // padding-left: 0px;
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
 
+    #rubros{
+        .card{
+            .card-title{
+                font-size: 26px !important;
+            }
+            .card-subtitle{
+                font-size: 26px !important;
+            }
         }
-     }
+    }
+
 }

@@ -15,6 +15,7 @@ export const Header = ({ logo }) => {
         id='logo'
         xs={12}
         md={12}
+        lg={6}
         xl={6}
       >
         <Image src={logo} />
@@ -31,6 +32,7 @@ export const Header = ({ logo }) => {
       <Col
         xs={12}
         md={12}
+        lg={6}
         xl={6}>
         <Row
           className='justify-content-end'
