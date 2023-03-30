@@ -13,9 +13,9 @@ export const Thanks = () => {
                   Gracias por contactanos.<br/> <span>Nos comunicaremos a la brevedad</span>
               </h1>
           </Col>
-            <Col xs={12}>
+            <Col xs={12} className='mt-5' >
             <Link to={'/'}>
-                <div>Volver al home</div>
+                <p>Volver al home</p>
             </Link>
             </Col>
       </Row>
