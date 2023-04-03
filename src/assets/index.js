@@ -1,6 +1,7 @@
 // SVG
 export { default as circleGrad } from './svg/gradientCircle.svg';
 export { default as logoPassFullColor } from './svg/logoPass.svg';
+export { default as whatsAppCTA } from './svg/boton-whatsapp.svg';
     // iconos
         export { default as comercialIcon } from './svg/administarcionIcon.svg';
         export { default as impositivaIcon } from './svg/impsitivaIcon.svg';
