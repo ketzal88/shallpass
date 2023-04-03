@@ -14,6 +14,12 @@ export const WhatsAppButton = () => {
         className="whatsapp"
         target="_blank"
         rel="noreferrer"
+        onClick={
+          window.dataLayer.push({
+            event: "WhatsApp",
+            sent: true,
+          })
+        }
       >
         {" "}
         <img
