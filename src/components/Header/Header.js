@@ -16,13 +16,13 @@ export const Header = ({ logo }) => {
         <Col>
           {/* Visible only on sm	.d-none .d-sm-block .d-md-none */}
           <h1 className="d-block d-lg-none">
-            Nos especializamos en la atención de{" "}
+            Nos especializamos en la atención de
             <span>Comercios, Emprendedores y PyMES.</span>
           </h1>
           <h1 className="d-none d-lg-block">
             Nos especializamos en
             <br /> la atención de
-            <br />{" "}
+            <br />
             <span>
               Comercios,
               <br /> Emprendedores y<br /> PyMES.

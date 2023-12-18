@@ -13,13 +13,13 @@ const rubros = [
     icon: comercialIcon,
     title: "Administración",
     sTitle: "Comercial",
-    body: "Obtención del EIN, Asistencia en apertura de cuenta bancaria en USA + Tarjeta de débito virtual y física, Liquidación de impuestos, pagos de tasas estatales y renovaciones anuales.",
+    body: "Administración integral de todas las aristas del área administrativa de un emprendimiento. Así como: habilitaciones, metodologías de trabajo, selección de proveedores, servicios, productos, etc.",
   },
   {
     icon: comercialIcon,
     title: "Armado y Gestión",
     sTitle: "de LLC en USA",
-    body: "Administración integral de todas las aristas del área administrativa de un emprendimiento. Así como: habilitaciones, metodologías de trabajo, selección de proveedores, servicios, productos, etc.",
+    body: "Obtención del EIN, Asistencia en apertura de cuenta bancaria en USA + Tarjeta de débito virtual y física, Liquidación de impuestos, pagos de tasas estatales y renovaciones anuales.",
   },
   {
     icon: impositivaIcon,
