@@ -20,8 +20,7 @@ export const HeaderLanding = ({ logo }) => {
             <span>en USA</span>
           </h1>
           <h1 className="d-none d-lg-block">
-            1 a 3 días
-            <br /> hábiles
+            1 a 3 días hábiles
             <br />
             <span>
               Armado de LLC
