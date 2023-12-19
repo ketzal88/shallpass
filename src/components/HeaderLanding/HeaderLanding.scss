@@ -51,7 +51,6 @@
 @media (max-width: 1024px) { 
 
     #header{
-        // display: none;
         margin-top: 130px;
         .imageGradient{
             display: none;
@@ -65,8 +64,9 @@
         }
         h1{
             font-weight: 400;
-            font-size: 24px !important;
-            line-height: 32px !important;
+            text-align: center;
+            font-size: 38px !important;
+            line-height: 38px !important;
         }
         form{
             width: unset !important;

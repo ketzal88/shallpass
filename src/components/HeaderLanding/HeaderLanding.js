@@ -16,11 +16,20 @@ export const HeaderLanding = ({ logo }) => {
         <Col>
           {/* Visible only on sm	.d-none .d-sm-block .d-md-none */}
           <h1 className="d-block d-lg-none">
-            Armado de LLC
-            <span>en USA</span>
+            <br />
+            <span>
+              Armado de LLC
+              <br /> Obtención de EIN
+              <br /> y cuenta bancaria
+            </span>
+            <br />1 a 3 días hábiles
+            <br />
+            desde u$s 699
           </h1>
           <h1 className="d-none d-lg-block">
             1 a 3 días hábiles
+            <br />
+            desde u$s 699
             <br />
             <span>
               Armado de LLC
