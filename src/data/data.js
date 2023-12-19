@@ -113,10 +113,10 @@ const textsLLC = [
     text: "Siguiendo unas pocas condiciones tributarias y un proceso simple se evitan los impuestos internacionales",
   },
   {
-    header: "Tarjeta de",
-    title: "crédito y débito",
+    header: "Tarjeta de débito",
+    title: "",
     titleSpan: " internacional",
-    text: "La cuenta bancaria internacional viene con una tarjeta de débito y/o crédito virtual y física que llegará a tu casa",
+    text: "La cuenta bancaria internacional viene con una tarjeta de débito virtual y física que llegará a tu casa",
   },
 ];
 
