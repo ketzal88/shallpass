@@ -1,22 +1,22 @@
 import React from "react";
 import { logoPassFullColor } from "../assets";
 import { LandingForm } from "../components/Form/LandingForm";
-import { Header } from "../components/Header/Header";
+import { HeaderLanding } from "../components/HeaderLanding/HeaderLanding";
 import { HeroText } from "../components/HeroText/HeroText";
 import { PorqueElegirnos } from "../components/PorqueElegirnos/PorqueElegirnos";
 import { Quote } from "../components/Quote/Quote";
 import { Rubros } from "../components/Rubros/Rubros";
 import { Tips } from "../components/Tips/Tips";
-import { quote, rubros, textHero, texts } from "../data/data";
+import { quote, rubrosLLC, textHeroLLC, textsLLC } from "../data/data";
 import { WhatsAppButton } from "../components/WhatsAppButton/WhatsAppButton";
 
-export const Home = () => {
+export const LLCLandings = () => {
   return (
     <>
-      <Header logo={logoPassFullColor} />
-      <Rubros data={rubros} />
-      <HeroText data={textHero} />
-      <Tips texts={texts} />
+      <HeaderLanding logo={logoPassFullColor} />
+      <Rubros data={rubrosLLC} />
+      <HeroText data={textHeroLLC} />
+      <Tips texts={textsLLC} />
       <PorqueElegirnos />
       <Quote data={quote} />
       <LandingForm />

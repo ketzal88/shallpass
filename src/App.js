@@ -4,6 +4,7 @@ import "./App.scss";
 import { Footer } from "./components/Footer/Footer";
 
 import { Home } from "./pages/Home";
+import { LLCLandings } from "./pages/LLCLanding";
 import { Thanks } from "./pages/Thanks";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <Container className="App">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/llc" element={<LLCLandings />} />
         <Route path="thanks" element={<Thanks />} />
       </Routes>
       <Footer />

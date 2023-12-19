@@ -11,10 +11,10 @@ export const Tips = ({ texts }) => {
       <Col className="cont">
         <Row>
           <Col md={6}>
-            {texts.map(({ title, titleSpan, text }, i) => (
+            {texts.map(({ title, titleSpan, text, header }, i) => (
               <Col key={i}>
                 <h3>
-                  Desarrollo <br />
+                  {header} <br />
                   {title}
                   <span>{titleSpan}</span>
                 </h3>
