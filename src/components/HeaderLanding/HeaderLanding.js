@@ -20,13 +20,13 @@ export const HeaderLanding = ({ logo }) => {
             <span>en USA</span>
           </h1>
           <h1 className="d-none d-lg-block">
-            Armado de LLC
-            <br /> en USA
+            1 a 3 días
+            <br /> hábiles
             <br />
             <span>
-              Liquidación de
-              <br /> impuestos, tasas
-              <br /> y renovaciones.
+              Armado de LLC
+              <br /> Obtención de EIN
+              <br /> y cuenta bancaria.
             </span>
           </h1>
         </Col>
