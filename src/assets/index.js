@@ -4,6 +4,10 @@ export { default as logoPassFullColor } from "./svg/logoPass.svg";
 export { default as whatsAppCTA } from "./svg/boton-whatsapp.svg";
 export { default as vector } from "./svg/vector.svg";
 export { default as vectorWhite } from "./svg/vectorWhite.svg";
+export { default as destacadoIcon01 } from "./svg/destacadoIcon01.svg";
+export { default as destacadoIcon02 } from "./svg/destacadoIcon02.svg";
+export { default as destacadoIcon03 } from "./svg/destacadoIcon03.svg";
+export { default as destacadoIcon04 } from "./svg/destacadoIcon04.svg";
 // iconos
 export { default as comercialIcon } from "./svg/administarcionIcon.svg";
 export { default as impositivaIcon } from "./svg/impsitivaIcon.svg";

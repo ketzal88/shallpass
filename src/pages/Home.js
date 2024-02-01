@@ -10,12 +10,15 @@ import { Tips } from "../components/Tips/Tips";
 import { quote, rubros, textHero, texts } from "../data/data";
 import { WhatsAppButton } from "../components/WhatsAppButton/WhatsAppButton";
 import { HerroVideoBanner } from "../components/HerroVideoBanner/HerroVideoBanner";
+import { Destacados } from "../components/Destacados/Destacados";
+import { Container } from "react-bootstrap";
 
 export const Home = () => {
   return (
     <>
       <Header logo={logoPassFullColor} />
       <HerroVideoBanner video={heroVideo} />
+      <Destacados />
       {/* <Rubros data={rubros} /> */}
       {/* <HeroText data={textHero} /> */}
       {/* <Tips texts={texts} /> */}
