@@ -14,24 +14,28 @@ const rubros = [
     title: "Administración",
     sTitle: "Comercial",
     body: "Administración integral de todas las aristas del área administrativa de un emprendimiento. Así como: habilitaciones, metodologías de trabajo, selección de proveedores, servicios, productos, etc.",
+    delay: "300",
   },
   {
     icon: comercialIcon,
     title: "Armado y Gestión",
     sTitle: "de LLC en USA",
     body: "Obtención del EIN, Asistencia en apertura de cuenta bancaria en USA + Tarjeta de débito virtual y física, Liquidación de impuestos, pagos de tasas estatales y renovaciones anuales.",
+    delay: "600",
   },
   {
     icon: impositivaIcon,
     title: "Gestión",
     sTitle: "Impositiva",
     body: "Gestión de toda el área impositiva de la empresa, contacto con contadores o uso de los propios, día a día de la facturación, balance y cobranzas de la empresa.",
+    delay: "900",
   },
   {
     icon: juridicaIcon,
     title: "Asesoría",
     sTitle: "Jurídica",
     body: "Consultoría jurídica, contratos, registros de marca, empleados, resolución de conflictos, negociaciones y mediaciones.",
+    delay: "1200",
   },
   //   {
   //     icon: financieraIcon,
