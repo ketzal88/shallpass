@@ -36,7 +36,7 @@ export const Destacados = () => {
     ]
   return (
     <Container className={`${styles.destacados}`}>
-        <Row md={4} className={`align-items-center h-100 g-4`}>
+        <Row md={4} className={`${styles.destacadosRow} align-items-center h-100 g-4`}>
             {
                 data.map( data => (
                     <Col
