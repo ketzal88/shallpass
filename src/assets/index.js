@@ -2,6 +2,8 @@
 export { default as circleGrad } from "./svg/gradientCircle.svg";
 export { default as logoPassFullColor } from "./svg/logoPass.svg";
 export { default as whatsAppCTA } from "./svg/boton-whatsapp.svg";
+export { default as vector } from "./svg/vector.svg";
+export { default as vectorWhite } from "./svg/vectorWhite.svg";
 // iconos
 export { default as comercialIcon } from "./svg/administarcionIcon.svg";
 export { default as impositivaIcon } from "./svg/impsitivaIcon.svg";
@@ -20,3 +22,6 @@ export { default as reunionAlternate } from "./img/reunion.png";
 export { default as porque } from "./img/porque.webp";
 export { default as porqueAlternate } from "./img/porque.png";
 export { default as porqueCompleto } from "./img/porqueCompleto.png";
+
+// videos
+export { default as heroVideo } from "./videos/heroVideo.webm";

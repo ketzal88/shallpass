@@ -5,7 +5,15 @@ import "./Form.scss";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
-export const Form = ({ SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY, id }) => {
+export const Form = ({ SERVICE_ID = process.env.REACT_APP_SERVICE_ID, TEMPLATE_ID = process.REACT_APP_TEMPLATE_ID, PUBLIC_KEY = process.REACT_APP_PUBLIC_KEY, id = "fromHeader" }) => {
+
+ 
+    // SERVICE_ID=process.env.REACT_APP_SERVICE_ID
+    // TEMPLATE_ID=process.REACT_APP_TEMPLATE_ID
+    // PUBLIC_KEY=process.REACT_APP_PUBLIC_KEY
+    // id="fromHeader"
+
+
   const form = useRef();
   const [formResponse, setFormResponse] = useState(false);
 

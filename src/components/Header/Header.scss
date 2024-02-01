@@ -2,13 +2,10 @@
 @import '../../scss/layout.scss';
 
 #header{
-    margin-top: 144px;
-    margin-bottom: 168px;
-    
     #logo{
         text-align: left;
         img{
-            width: 411px ;
+            width: 147px !important ;
             height: auto;
             margin-top: 60px;
             margin-bottom: 72px;
@@ -24,6 +21,9 @@
             }
 
         }
+    }
+    .cta{
+        border: 1px sold green !important;
     }
     .imageGradient{
         position: absolute;
@@ -48,65 +48,3 @@
     
 }
 
-@media (max-width: 1024px) { 
-
-    #header{
-        // display: none;
-        margin-top: 130px;
-        .imageGradient{
-            display: none;
-        }
-        #logo{
-            text-align: left;
-            img{
-                width: 100%;
-                margin-top: 0px;
-            }
-        }
-        h1{
-            font-weight: 400;
-            font-size: 24px !important;
-            line-height: 32px !important;
-        }
-        form{
-            width: unset !important;
-            min-height: 678px;
-            margin-top: 4em;
-            textarea{
-                min-height: 150px;
-            }
-        }
-
-        
-    }
- }
-
- @media only screen and (min-width: 1024px) and (max-width: 1199px) {
-    #header{
-
-        .imageGradient{
-            display: block;
-        }
-
-        #logo{
-            padding: 70px;
-        }
-
-        h1{
-            font-size: 48px;
-            font-weight: 400;
-            line-height: 56px;
-            letter-spacing: 0px;
-        }
-        .fromCont{
-            // padding-left: 0px;
-            padding: 0px;
-        }
-
-        form{
-            width: unset !important;
-
-
-        }
-    }
- }

@@ -19,13 +19,13 @@ function App() {
   }, []);
 
   return (
-    <Container className="App">
+    <Container fluid className="App">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/llc" element={<LLCLandings />} />
         <Route path="thanks" element={<Thanks />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </Container>
   );
 }
