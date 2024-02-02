@@ -12,6 +12,7 @@ import { WhatsAppButton } from "../components/WhatsAppButton/WhatsAppButton";
 import { HerroVideoBanner } from "../components/HerroVideoBanner/HerroVideoBanner";
 import { Destacados } from "../components/Destacados/Destacados";
 import { Container } from "react-bootstrap";
+import { Confia } from "../components/Confia/Confia";
 
 export const Home = () => {
   return (
@@ -19,6 +20,7 @@ export const Home = () => {
       <Header logo={logoPassFullColor} />
       <HerroVideoBanner video={heroVideo} />
       <Destacados />
+      <Confia />
       {/* <Rubros data={rubros} /> */}
       {/* <HeroText data={textHero} /> */}
       {/* <Tips texts={texts} /> */}

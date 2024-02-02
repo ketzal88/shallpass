@@ -57,21 +57,6 @@ export const Destacados = () => {
             }
 
         </Row>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
     </Container>
   )
 }
