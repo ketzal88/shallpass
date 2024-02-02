@@ -14,6 +14,7 @@ import { Destacados } from "../components/Destacados/Destacados";
 import { Container } from "react-bootstrap";
 import { Confia } from "../components/Confia/Confia";
 import { Servicios } from "../components/Servicios/Servicios";
+import { Consultas } from "../components/Consultas/Consultas";
 
 export const Home = () => {
   return (
@@ -23,6 +24,7 @@ export const Home = () => {
       <Destacados />
       <Confia />
       <Servicios />
+      <Consultas />
       {/* <Rubros data={rubros} /> */}
       {/* <HeroText data={textHero} /> */}
       {/* <Tips texts={texts} /> */}
