@@ -1,9 +1,9 @@
 import React from 'react'
+import { Col, Container, Image, Row } from 'react-bootstrap'
+import DOMPurify from 'dompurify'
 
 import styles from './Destacados.module.scss'
-import { Button, Card, Col, Container, Image, Row } from 'react-bootstrap'
 import { destacadoIcon01, destacadoIcon02, destacadoIcon03, destacadoIcon04, logoPassFullColor, vector } from '../../assets'
-import DOMPurify from 'dompurify'
 
 export const Destacados = () => {
     const sanitizer = DOMPurify.sanitize;
@@ -40,8 +40,8 @@ export const Destacados = () => {
             {
                 data.map( data => (
                     <Col
-                        className='h-100'
                         key={data.id} 
+                        className='h-100'
                         data-aos="fade-up"
                         data-aos-delay={data.delay}
                     > 

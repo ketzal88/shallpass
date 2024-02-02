@@ -13,6 +13,7 @@ import { HerroVideoBanner } from "../components/HerroVideoBanner/HerroVideoBanne
 import { Destacados } from "../components/Destacados/Destacados";
 import { Container } from "react-bootstrap";
 import { Confia } from "../components/Confia/Confia";
+import { Servicios } from "../components/Servicios/Servicios";
 
 export const Home = () => {
   return (
@@ -21,6 +22,7 @@ export const Home = () => {
       <HerroVideoBanner video={heroVideo} />
       <Destacados />
       <Confia />
+      <Servicios />
       {/* <Rubros data={rubros} /> */}
       {/* <HeroText data={textHero} /> */}
       {/* <Tips texts={texts} /> */}

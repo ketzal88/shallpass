@@ -10,7 +10,7 @@ export const HerroVideoBanner = ({video}) => {
     <Container className={`${styles.HerroVideoBanner}`}>
           <Row className='h-100 align-items-center'>
             <Col className={`${styles.heroText}`} md={{ span: 10, offset: 1 }}>
-                <samll>Internacionalizá tus negocios</samll>
+                <small>Internacionalizá tus negocios</small>
                 <h1>ARMÁ TU LLC <br/>EN <span>3 DÍAS</span></h1>
                 <h4>Creá una cuenta bancaria en <span>USA y <br/>cobrá en dolares.</span></h4>
                 <Col className={`${styles.ctaContainer}  h-100 `}>
