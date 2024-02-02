@@ -5,6 +5,7 @@ export { default as whatsAppCTA } from "./svg/boton-whatsapp.svg";
 export { default as vector } from "./svg/vector.svg";
 export { default as vectorWhite } from "./svg/vectorWhite.svg";
 export { default as bulletDark } from "./svg/bulletDark.svg";
+export { default as procesIcon } from "./svg/procesIcon.svg";
 // iconos
 export { default as comercialIcon } from "./svg/administarcionIcon.svg";
 export { default as impositivaIcon } from "./svg/impsitivaIcon.svg";
@@ -32,6 +33,9 @@ export { default as porque } from "./img/porque.webp";
 export { default as porqueAlternate } from "./img/porque.png";
 export { default as porqueCompleto } from "./img/porqueCompleto.png";
 export { default as celphone } from "./img/Cel.png";
+export { default as proceso01 } from "./img/image70.webp";
+export { default as proceso02 } from "./img/image71.webp";
+export { default as proceso03 } from "./img/image72.webp";
 
 // videos
 export { default as heroVideo } from "./videos/heroVideo.webm";
