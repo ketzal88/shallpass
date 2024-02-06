@@ -1,8 +1,7 @@
 import React from "react";
 import { Button, Col, Container, Image, Row } from "react-bootstrap";
 
-
-import { circleGrad, vector } from "../../assets";
+import { vector } from "../../assets";
 
 import styles from './Header.module.scss'
 

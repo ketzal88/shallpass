@@ -1,9 +1,9 @@
 import React from 'react'
+import { Col, Container, Image, Row } from 'react-bootstrap'
 
+import { celphone, confia01, confia02, confia03, confia04 } from '../../assets'
 
 import styles from './Confia.module.scss'
-import { Col, Container, Image, Row } from 'react-bootstrap'
-import { celphone, confia01, confia02, confia03, confia04 } from '../../assets'
 
 export const Confia = () => {
     return (
@@ -82,7 +82,6 @@ export const Confia = () => {
                     </Col>
                 </Row>
             </Col>
-
         </Container>
     )
 }

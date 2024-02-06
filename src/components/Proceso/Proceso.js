@@ -1,9 +1,9 @@
 import React from 'react'
-
-import styles from './Proceso.module.scss'
 import { Button, Col, Container, Image, Row } from 'react-bootstrap'
+
 import { procesIcon, proceso01, proceso02, proceso03, vector } from '../../assets'
 
+import styles from './Proceso.module.scss'
 
 
 export const Proceso = () => {

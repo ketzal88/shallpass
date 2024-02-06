@@ -1,8 +1,9 @@
 import React from 'react'
+import { Button, Col, Container, Image, Row } from 'react-bootstrap'
+
+import { vector } from '../../assets'
 
 import styles from './Consultas.module.scss'
-import { Button, Col, Container, Image, Row } from 'react-bootstrap'
-import { vector } from '../../assets'
 
 export const Consultas = () => {
   return (

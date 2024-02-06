@@ -2,10 +2,11 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import "./Form.scss";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Image, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import { vector } from '../../assets'
 
-export const Form = ({ 
+export const FormLanding = ({ 
     SERVICE_ID = process.env.REACT_APP_SERVICE_ID, 
     TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID, 
     PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY, 
@@ -59,7 +60,7 @@ export const Form = ({
               <input
                 type="text"
                 name="user_name"
-                placeholder="Ingresa tu nombre"
+                // placeholder="Ingresa tu nombre"
               />
             </Col>
             <Col md={6} className="fomItem">
@@ -68,7 +69,7 @@ export const Form = ({
               <input
                 type="number"
                 name="user_phone"
-                placeholder="Ingresa tu teléfono"
+                // placeholder="Ingresa tu teléfono"
                 required
               />
             </Col>
@@ -78,7 +79,7 @@ export const Form = ({
               <input
                 type="email"
                 name="user_email"
-                placeholder="Ingresa tu email"
+                // placeholder="Ingresa tu email"
                 required
               />
             </Col>
@@ -87,14 +88,19 @@ export const Form = ({
               <br />
               <textarea
                 name="message"
-                placeholder="Dejanos un mensaje"
+                // placeholder="Dejanos un mensaje"
                 required
               />
             </Col>
             <Col md={6}></Col>
-            <Col md={6} id="sendEmail" className="col align-self-end ">
-              <Button variant="primary">
-                <input type="submit" value={submitText} />
+            <Col 
+              md={6} 
+              id="sendEmail" 
+              className="col align-self-end text-end"
+              style={{paddingRight: '8px'}}
+            >
+              <Button variant="primary" className="rounded-pill" type="submit">
+                {submitText} <Image src={vector} />
               </Button>
             </Col>
           </Row>

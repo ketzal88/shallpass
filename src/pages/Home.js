@@ -1,23 +1,19 @@
 import React from "react";
 import { heroVideo, logoPassFullColor } from "../assets";
-import { LandingForm } from "../components/Form/LandingForm";
 import { Header } from "../components/Header/Header";
-import { HeroText } from "../components/HeroText/HeroText";
-import { PorqueElegirnos } from "../components/PorqueElegirnos/PorqueElegirnos";
-import { Quote } from "../components/Quote/Quote";
-import { Rubros } from "../components/Rubros/Rubros";
-import { Tips } from "../components/Tips/Tips";
-import { quote, rubros, textHero, texts } from "../data/data";
-import { WhatsAppButton } from "../components/WhatsAppButton/WhatsAppButton";
 import { HerroVideoBanner } from "../components/HerroVideoBanner/HerroVideoBanner";
 import { Destacados } from "../components/Destacados/Destacados";
-import { Container } from "react-bootstrap";
 import { Confia } from "../components/Confia/Confia";
 import { Servicios } from "../components/Servicios/Servicios";
 import { Consultas } from "../components/Consultas/Consultas";
 import { Proceso } from "../components/Proceso/Proceso";
+import { FormSection } from "../components/FormSection/FormSection";
+import { FooterLanding } from "../components/FooterLanding/FooterLanding";
+
 
 export const Home = () => {
+  
+  console.log(process.env.REACT_APP_SERVICE_ID)
   return (
     <>
       <Header logo={logoPassFullColor} />
@@ -27,13 +23,8 @@ export const Home = () => {
       <Servicios />
       <Consultas />
       <Proceso />
-      {/* <Rubros data={rubros} /> */}
-      {/* <HeroText data={textHero} /> */}
-      {/* <Tips texts={texts} /> */}
-      {/* <PorqueElegirnos /> */}
-      {/* <Quote data={quote} /> */}
-      {/* <LandingForm /> */}
-      {/* <WhatsAppButton /> */}
+      <FormSection />
+      <FooterLanding />
     </>
   );
 };

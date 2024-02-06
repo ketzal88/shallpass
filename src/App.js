@@ -25,7 +25,6 @@ function App() {
         <Route path="/llc" element={<LLCLandings />} />
         <Route path="thanks" element={<Thanks />} />
       </Routes>
-      {/* <Footer /> */}
     </Container>
   );
 }

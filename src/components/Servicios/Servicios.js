@@ -1,9 +1,10 @@
 import React from 'react'
-import { Button, Card, Col, Container, Row } from 'react-bootstrap'
+import { Button, Col, Container, Row } from 'react-bootstrap'
 import DOMPurify from 'dompurify'
 
-import styles from './Servicios.module.scss'
 import { servicios } from '../../data/data'
+
+import styles from './Servicios.module.scss'
 
 export const Servicios = () => {
 
@@ -81,10 +82,8 @@ export const Servicios = () => {
                                                                 )
                                                             }`, 
                                                         }}
-
                                                     >
                                                         <>
-
                                                             {li.bulletText}
                                                         </>
                                                     </li>

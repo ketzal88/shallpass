@@ -1,9 +1,9 @@
 import React from 'react'
+import { Button, Col, Container, Image, Row } from 'react-bootstrap'
 
+import { vectorWhite } from '../../assets'
 
 import styles from './HerroVideoBanner.module.scss'
-import { Button, Col, Container, Image, Row } from 'react-bootstrap'
-import { heroVideo, vector, vectorWhite } from '../../assets'
 
 export const HerroVideoBanner = ({video}) => {
   return (

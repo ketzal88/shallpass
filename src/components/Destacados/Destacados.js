@@ -2,8 +2,9 @@ import React from 'react'
 import { Col, Container, Image, Row } from 'react-bootstrap'
 import DOMPurify from 'dompurify'
 
+import { destacadoIcon01, destacadoIcon02, destacadoIcon03, destacadoIcon04 } from '../../assets'
+
 import styles from './Destacados.module.scss'
-import { destacadoIcon01, destacadoIcon02, destacadoIcon03, destacadoIcon04, logoPassFullColor, vector } from '../../assets'
 
 export const Destacados = () => {
     const sanitizer = DOMPurify.sanitize;
@@ -46,16 +47,12 @@ export const Destacados = () => {
                         data-aos-delay={data.delay}
                     > 
                         <Col className={`${styles.itemDestacado} h-100`}>
-
-                                <Image src={data.ico} />
-
-                                <p dangerouslySetInnerHTML={{ __html: sanitizer(data.text) }} />
-
+                            <Image src={data.ico} />
+                            <p dangerouslySetInnerHTML={{ __html: sanitizer(data.text) }} />
                         </Col>
                     </Col>
                 ))
             }
-
         </Row>
     </Container>
   )
