@@ -1,4 +1,5 @@
 import React from "react";
+import { Col } from "react-bootstrap";
 import { heroVideo, logoPassFullColor } from "../assets";
 import { Header } from "../components/Header/Header";
 import { HerroVideoBanner } from "../components/HerroVideoBanner/HerroVideoBanner";
@@ -10,6 +11,8 @@ import { Proceso } from "../components/Proceso/Proceso";
 import { FormSection } from "../components/FormSection/FormSection";
 import { FooterLanding } from "../components/FooterLanding/FooterLanding";
 
+import styles from './Home.module.scss'
+
 
 export const Home = () => {
   
@@ -17,13 +20,17 @@ export const Home = () => {
   return (
     <>
       <Header logo={logoPassFullColor} />
-      <HerroVideoBanner video={heroVideo} />
-      <Destacados />
-      <Confia />
+      <Col className={`${styles.bgR}`}>
+        <HerroVideoBanner video={heroVideo} />
+        <Destacados />
+        <Confia />
+      </Col>
       <Servicios />
-      <Consultas />
-      <Proceso />
-      <FormSection />
+      <Col className={`${styles.bgL}`}>
+        <Consultas />
+        <Proceso />
+        <FormSection />
+      </Col>
       <FooterLanding />
     </>
   );
