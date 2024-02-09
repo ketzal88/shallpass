@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import DOMPurify from 'dompurify'
 
+import useScreenSize from '../../hooks/useScreenSize'
 import { servicios } from '../../data/data'
 
 import styles from './Servicios.module.scss'
@@ -9,6 +10,8 @@ import styles from './Servicios.module.scss'
 export const Servicios = () => {
 
     const sanitizer = DOMPurify.sanitize;
+
+    const isMobile = useScreenSize();
 
     const svgStringDark = ` <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="24" height="24" rx="12" fill="white"/>
@@ -38,8 +41,8 @@ export const Servicios = () => {
                 <Row md={4} className={`${styles.serviciosRow} g-4`}>
                     {
                         servicios.map((data, id)=>(
-                            <Col key={id}>
-                                <Col className={`${data.dark ? styles.dark : styles.light} ${styles.servicioContainer} h-100`}>
+                            <Col key={id} className={ isMobile && 'mb-5'}>
+                                <Col className={`${data.dark ? styles.dark : styles.light} ${styles.servicioContainer} ${ !isMobile && 'h-100'}`}>
                                     {
                                         data.highlight !== '' ?(
                                             <Col className={`${styles.highlight}`} >

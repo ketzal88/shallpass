@@ -16,7 +16,6 @@
         line-height: 16px; /* 114.286% */
     }
 
-    
 }
 
 .serviciosRow{
@@ -167,5 +166,28 @@
 }
 .light {
     background-color: white;
+
+}
+
+@media (max-width: 420px) {
+    .servicios{
+        margin-left: -24px;
+        margin-right: -24px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 0px;
+    }
+    
+    .main{
+        margin-top: 64px;
+
+        h2{
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 32px; /* 100% */
+            margin-bottom: 64px;
+        }
+
+    }
 
 }

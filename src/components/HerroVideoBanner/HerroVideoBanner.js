@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Col, Container, Image, Row } from 'react-bootstrap'
 
-import { vectorCircle, vectorWhite } from '../../assets'
+import { vectorCircle } from '../../assets'
 
 import styles from './HerroVideoBanner.module.scss'
 import useScreenSize from '../../hooks/useScreenSize'
@@ -9,8 +9,6 @@ import useScreenSize from '../../hooks/useScreenSize'
 export const HerroVideoBanner = ({video}) => {
 
     const isMobile = useScreenSize();
-
-    console.log(isMobile)
 
   return (
     <Container className={`${styles.HerroVideoBanner}`}>

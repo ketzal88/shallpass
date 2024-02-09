@@ -40,3 +40,10 @@ $sectionHeigth: 112px;
         }
     }
 }
+
+@media (max-width: 420px) {
+    .destacados{
+        height: unset;
+
+    }
+}

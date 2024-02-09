@@ -23,9 +23,9 @@ export const Home = () => {
       <Col className={`${styles.bgR}`}>
         <HerroVideoBanner video={heroVideo} />
         <Destacados />
-        {/* <Confia /> */}
+        <Confia />
       </Col>
-      {/* <Servicios /> */}
+      <Servicios />
       <Col className={`${styles.bgL}`}>
         {/* <Consultas /> */}
         {/* <Proceso /> */}

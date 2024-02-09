@@ -1,11 +1,16 @@
 import React from 'react'
 import { Col, Container, Image, Row } from 'react-bootstrap'
 
+import useScreenSize from '../../hooks/useScreenSize'
 import { celphone, confia01, confia02, confia03, confia04 } from '../../assets'
 
 import styles from './Confia.module.scss'
 
 export const Confia = () => {
+
+    const isMobile = useScreenSize()
+
+
     return (
         <Container className={`${styles.confia}`}>
             <Row className={`mb-5`} >
@@ -15,9 +20,9 @@ export const Confia = () => {
                     data-aos="zoom-out"
                     data-aos-delay='500'
                 >
-                    <h1>Confiá en SHALLPASS<br />
+                    <h1>Confiá en SHALLPASS { !isMobile && <br />}
                         <span>
-                            para comprender tus necesidades
+                            para {isMobile && <br/>}comprender tus necesidades
                         </span>
                     </h1>
                 </Col>
@@ -51,9 +56,14 @@ export const Confia = () => {
                             </Col>
                         </Col>
                     </Col>
-                    <Col md={6} className={`${styles.imagenPhone} h-100`}>
-                        <Image src={celphone} />
-                    </Col>
+                    {
+                        !isMobile && 
+                            <>
+                                <Col md={6} className={`${styles.imagenPhone} h-100`}>
+                                    <Image src={celphone} />
+                                </Col>
+                            </>
+                    }
                     <Col md={2}>
                         <Col className={`${styles.itemContainer}`}>
                             <Col 
