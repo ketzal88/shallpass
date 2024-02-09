@@ -26,3 +26,16 @@ $headerHeigth: 96px;
         }
     }
 }
+
+@media (max-width: 420px) {
+    .logo{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .cta{
+        margin: 0px;
+        padding: 0px;
+        text-align: left;
+    }
+}

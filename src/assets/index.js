@@ -6,6 +6,7 @@ export { default as vector } from "./svg/vector.svg";
 export { default as vectorWhite } from "./svg/vectorWhite.svg";
 export { default as bulletDark } from "./svg/bulletDark.svg";
 export { default as procesIcon } from "./svg/procesIcon.svg";
+export { default as vectorCircle } from "./svg/vectorCircle.svg";
 // iconos
 export { default as comercialIcon } from "./svg/administarcionIcon.svg";
 export { default as impositivaIcon } from "./svg/impsitivaIcon.svg";

@@ -16,3 +16,10 @@
     // padding-right: 40px;
   }
 }
+
+@media (max-width: 420px) {
+  .App{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
