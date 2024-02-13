@@ -10,17 +10,18 @@ export const FooterLanding = () => {
   return (
     <Container fluid className={`${styles.footerLanding}`}>
         <Row>
-            <Col>
+            <Col xs={12} lg={6}>
                 <Row className={` ${styles.logo}`}>
-                    <Col className={`${styles.imgFooter}`}>
+
+                    <Col xs={6} className={`${styles.imgFooter}`}>
                         <Image src={logoPassFullColor} height={22}/>
                     </Col>
-                    <Col className={`${styles.claimFooter}`}>
+                    <Col xs={6} className={`${styles.claimFooter}`}>
                         <p>Confía en shallpass</p>
                     </Col>
                 </Row>
             </Col>
-            <Col className={`text-end ${styles.date}`}> 
+              <Col xs={12} lg={6} className={`text-end ${styles.date}`}> 
                 © Copyright {date.getFullYear()}. All Rights Reserved.
             </Col>
         </Row>

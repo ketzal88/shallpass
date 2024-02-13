@@ -1,53 +1,87 @@
-.footerLanding{
-    // min-height: 50px;
-    padding: 37px 70px;
-    align-items: center;
-    gap: 873px;
-    flex-shrink: 0;
-    min-height: 21px;
+.footerLanding {
+  // min-height: 50px;
+  padding: 37px 70px;
+  align-items: center;
+  gap: 873px;
+  flex-shrink: 0;
+  min-height: 21px;
 
-    p{
-        color: white;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 19px; /* 135.714% */
-
-        margin: 0px;
-        // text-align: center;
-    }
-}
-
-.logo{
-
-    display: flex;
-    align-items: center;
-    align-content: center;
-    .imgFooter{
-        display: flex;
-        margin: 0px;
-        padding: 0px;
-
-        max-width: 78px !important
-    }
-    .claimFooter{
-        display: flex;
-        margin: 0px;
-        padding: 0px;
-
-    }
-
-
-
-
-
-}
-
-.date{
-    color: var(--Blanco, #FFF);
-    text-align: right;
+  p {
+    color: white;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 19px; /* 135.714% */
+
+    margin: 0px;
+    // text-align: center;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  .imgFooter {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+
+    max-width: 78px !important;
+  }
+  .claimFooter {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+.date {
+  color: var(--Blanco, #fff);
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px; /* 135.714% */
+}
+
+@media (max-width: 420px) {
+    .footerLanding{
+        margin: 0px;
+        padding: 24px;
+        .logo{
+            justify-content: center;
+            padding: 0px;
+            margin: 0px;
+            // border: 1px solid burlywood;
+            .imgFooter{
+                // display: flex;
+                // border: 1px solid red;
+                justify-content: flex-end;
+                margin-right: 10px;
+             
+            }
+            .claimFooter {
+                // display: flex;
+                // border: 1px solid greenyellow;
+
+
+              p {
+                margin-top: 1;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 19px; /* 135.714% */
+              }
+            }
+        }
+        .date{
+            margin-top: 16px;
+            margin-left: 0px;
+            padding: 0px;
+            
+            display: flex;
+            justify-content: center;
+        }
+    }
 }

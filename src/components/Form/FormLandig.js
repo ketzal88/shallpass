@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import "./Form.scss";
+
 import { Button, Col, Container, Image, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { vector } from '../../assets'
@@ -60,7 +61,7 @@ export const FormLanding = ({
               <input
                 type="text"
                 name="user_name"
-                // placeholder="Ingresa tu nombre"
+                placeholder="Ingresa tu nombre"
               />
             </Col>
             <Col md={6} className="fomItem">
@@ -69,7 +70,7 @@ export const FormLanding = ({
               <input
                 type="number"
                 name="user_phone"
-                // placeholder="Ingresa tu teléfono"
+                placeholder="Ingresa tu teléfono"
                 required
               />
             </Col>
@@ -79,7 +80,7 @@ export const FormLanding = ({
               <input
                 type="email"
                 name="user_email"
-                // placeholder="Ingresa tu email"
+                placeholder="Ingresa tu email"
                 required
               />
             </Col>
@@ -88,16 +89,16 @@ export const FormLanding = ({
               <br />
               <textarea
                 name="message"
-                // placeholder="Dejanos un mensaje"
+                placeholder="Escribinos tu mensaje o consulta"
                 required
               />
             </Col>
             <Col md={6}></Col>
             <Col 
-              md={6} 
+              md={6} xs={12}
               id="sendEmail" 
-              className="col align-self-end text-end"
-              style={{paddingRight: '8px'}}
+              className={`align-self-end text-end`}
+              style={{paddingRight: '12px', paddingLeft: '12px'}}
             >
               <Button variant="primary" className="rounded-pill" type="submit">
                 {submitText} <Image src={vector} />
