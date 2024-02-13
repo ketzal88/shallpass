@@ -33,9 +33,9 @@ export const HerroVideoBanner = ({ video, videoMp4, poster }) => {
                 </Col>
                 <Col className={`${styles.videoBack}`}>
                     <video className={`${styles.videoStyle}`} 
-                        playsinline 
+                        playsInline 
                         muted 
-                        autoplay 
+                        autoPlay 
                         loop 
                         poster={poster}>
                             {
