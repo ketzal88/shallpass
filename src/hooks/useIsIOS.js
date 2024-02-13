@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 const useIsIOS = () => {
-    const [isIOS, setIsIOS] = useState(false);
+    const [isIOS, setIsIOS] = useState(true);
 
     useEffect(() => {
         const detectIOS = () => {
@@ -18,7 +18,7 @@ const useIsIOS = () => {
         };
 
         setIsIOS(detectIOS());
-    }, []);
+    }, [isIOS]);
 
     return isIOS;
 };

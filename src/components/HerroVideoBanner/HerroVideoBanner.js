@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button, Col, Container, Image, Row } from 'react-bootstrap'
 
 import { vectorCircle } from '../../assets'
@@ -6,12 +6,14 @@ import { vectorCircle } from '../../assets'
 import styles from './HerroVideoBanner.module.scss'
 import useScreenSize from '../../hooks/useScreenSize'
 import useIsIOS from '../../hooks/useIsIOS'
+// import useIsIOS from '../../hooks/useIsIOS'
 
 export const HerroVideoBanner = ({ video, videoMp4, poster }) => {
 
     const isMobile = useScreenSize();
 
-    const isIOS = useIsIOS();
+
+    const isIOS = useIsIOS()
 
     console.log(isIOS)
 
@@ -32,19 +34,14 @@ export const HerroVideoBanner = ({ video, videoMp4, poster }) => {
                     </Col>
                 </Col>
                 <Col className={`${styles.videoBack}`}>
-                    <video className={`${styles.videoStyle}`} 
-                        playsInline 
-                        muted 
-                        autoPlay 
-                        loop 
-                        poster={poster}>
-                            {
-                                isIOS 
-                                ? <source src={videoMp4} type="video/mp4" />
-                                : <source src={video} type="video/webm" />
-                            }
-                        Tu navegador no soporta el elemento de video.
-                    </video>
+
+                    {
+                        isIOS === true
+
+                        ? <video className={`${styles.videoStyle}`} playsInline muted autoPlay loop poster={poster} src={videoMp4} type="video/mp4" />
+                        : <video className={`${styles.videoStyle}`} playsInline muted autoPlay loop poster={poster} src={video} type="video/webm" />
+                    }
+
                 </Col>
             </Row>
         </Container>
