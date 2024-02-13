@@ -64,8 +64,6 @@
       opacity: 0.4 !important;
     }
 
-
-
     button {
       height: unset !important;
       width: unset !important;
@@ -98,13 +96,10 @@
     textarea {
       padding: 12px !important;
     }
-    }
-    .btContainer{
-        border: 1px solid red;
-    }
-    button{
-        min-width: 100% !important;
+    button {
+      min-width: 100% !important;
 
-        // background-color: aqua !important;
+      // background-color: aqua !important;
     }
+  }
 }
