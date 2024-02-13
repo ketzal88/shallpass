@@ -40,3 +40,4 @@ export { default as proceso03 } from "./img/image72.webp";
 
 // videos
 export { default as heroVideo } from "./videos/heroVideo.webm";
+export { default as heroVideoMp4 } from "./videos/heroVideo.mp4";

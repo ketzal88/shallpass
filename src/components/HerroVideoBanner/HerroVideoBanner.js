@@ -6,7 +6,7 @@ import { vectorCircle } from '../../assets'
 import styles from './HerroVideoBanner.module.scss'
 import useScreenSize from '../../hooks/useScreenSize'
 
-export const HerroVideoBanner = ({video}) => {
+export const HerroVideoBanner = ({video, videoMp4}) => {
 
     const isMobile = useScreenSize();
 
@@ -27,7 +27,11 @@ export const HerroVideoBanner = ({video}) => {
                 </Col>
             </Col>
             <Col className={`${styles.videoBack}`}>
-                <video src={video} className={`${styles.videoStyle}`} muted autoPlay loop />
+                {/* <video src={video} className={`${styles.videoStyle}`} muted autoPlay loop /> */}
+                  <video className={`${styles.videoStyle}`} muted autoPlay loop>
+                      <source src={video} type="video/webm" />
+                      <source src={videoMp4} type="video/mp4" />
+                </video>
             </Col>
         </Row>
     </Container>
