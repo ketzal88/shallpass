@@ -39,7 +39,7 @@ export const HerroVideoBanner = ({ video, videoMp4, poster }) => {
                         loop 
                         poster={poster}>
                             {
-                                !isIOS 
+                                isIOS 
                                 ? <source src={videoMp4} type="video/mp4" />
                                 : <source src={video} type="video/webm" />
                             }
