@@ -27,9 +27,9 @@ export const Home = () => {
       </Col>
       <Servicios />
       <Col className={`${styles.bgL}`}>
-        {/* <Consultas /> */}
-        {/* <Proceso /> */}
-        {/* <FormSection /> */}
+        <Consultas />
+        <Proceso />
+        <FormSection />
       </Col>
       {/* <FooterLanding /> */}
     </>

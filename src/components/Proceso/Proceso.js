@@ -36,7 +36,7 @@ export const Proceso = () => {
                 <Col className={`${styles.procesoContainer} h-100`} md={10}>
                     <Row>
                         <Col 
-                            md={7}
+                            md={7} xs={12}
                             className='h-100'
                         >
                             <h1>Un proceso <br/><span>rápido y <br/>seguro</span></h1>
@@ -49,7 +49,7 @@ export const Proceso = () => {
                     <Row className='g-3' style={{ marginTop: '74px' }}>
                         {
                             data.map((proceso, id)=>(
-                                <Col 
+                                <Col xs={12} md={4}
                                     key={id}
                                     data-aos="fade-zoom-in"
                                     data-aos-easing="ease-in-back"
@@ -58,13 +58,13 @@ export const Proceso = () => {
                                 >
                                     <Col className={`${styles.procesoIntem}`}>
                                         <Row>
-                                            <Col >
+                                            <Col>
                                                 <Col>
                                                 <h4>{proceso.title}</h4>
                                                 <p>{proceso.subTitle}</p>
                                                 </Col>
                                             </Col>
-                                            <Col md={2} className='text-end' style={{padding: '0 24px 0 0'}}>
+                                            <Col xs={2} className='text-end' style={{padding: '0 24px 0 0'}}>
                                                 <Image src={procesIcon}/>
                                             </Col>
                                         </Row>

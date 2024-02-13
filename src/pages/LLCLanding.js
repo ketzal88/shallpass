@@ -1,26 +1,37 @@
 import React from "react";
-import { logoPassFullColor } from "../assets";
-import { LandingForm } from "../components/Form/LandingForm";
-import { HeaderLanding } from "../components/HeaderLanding/HeaderLanding";
-import { HeroText } from "../components/HeroText/HeroText";
-import { PorqueElegirnos } from "../components/PorqueElegirnos/PorqueElegirnos";
-import { Quote } from "../components/Quote/Quote";
-import { Rubros } from "../components/Rubros/Rubros";
-import { Tips } from "../components/Tips/Tips";
-import { quote, rubrosLLC, textHeroLLC, textsLLC } from "../data/data";
-import { WhatsAppButton } from "../components/WhatsAppButton/WhatsAppButton";
+import { Col } from "react-bootstrap";
+import { heroVideo, logoPassFullColor } from "../assets";
+import { Header } from "../components/Header/Header";
+import { HerroVideoBanner } from "../components/HerroVideoBanner/HerroVideoBanner";
+import { Destacados } from "../components/Destacados/Destacados";
+import { Confia } from "../components/Confia/Confia";
+import { Servicios } from "../components/Servicios/Servicios";
+import { Consultas } from "../components/Consultas/Consultas";
+import { Proceso } from "../components/Proceso/Proceso";
+import { FormSection } from "../components/FormSection/FormSection";
+import { FooterLanding } from "../components/FooterLanding/FooterLanding";
+
+import styles from './Home.module.scss'
+
 
 export const LLCLandings = () => {
+
+  console.log(process.env.REACT_APP_SERVICE_ID)
   return (
     <>
-      <HeaderLanding logo={logoPassFullColor} />
-      <Rubros data={rubrosLLC} />
-      <HeroText data={textHeroLLC} />
-      <Tips texts={textsLLC} />
-      <PorqueElegirnos />
-      <Quote data={quote} />
-      <LandingForm />
-      <WhatsAppButton />
+      <Header logo={logoPassFullColor} />
+      <Col className={`${styles.bgR}`}>
+        <HerroVideoBanner video={heroVideo} />
+        <Destacados />
+        <Confia />
+      </Col>
+      <Servicios />
+      <Col className={`${styles.bgL}`}>
+        <Consultas />
+        <Proceso />
+        <FormSection />
+      </Col>
+      {/* <FooterLanding /> */}
     </>
   );
 };

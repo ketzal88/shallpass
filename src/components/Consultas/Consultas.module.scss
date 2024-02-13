@@ -41,3 +41,30 @@
         }
     }
 }
+
+@media (max-width: 420px) {
+
+    .consultas{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 64px;
+        margin-bottom: 64px;
+
+        width: 100%;
+        h3{
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+
+            span{
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 40px;
+                margin-right: -10px;
+                margin-left: -10px;
+            }
+        }
+    }
+}
