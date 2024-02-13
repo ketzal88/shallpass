@@ -37,6 +37,7 @@ export { default as celphone } from "./img/Cel.png";
 export { default as proceso01 } from "./img/image70.webp";
 export { default as proceso02 } from "./img/image71.webp";
 export { default as proceso03 } from "./img/image72.webp";
+export { default as posterVideoHero } from "./img/posterVideoHero.jpg";
 
 // videos
 export { default as heroVideo } from "./videos/heroVideo.webm";

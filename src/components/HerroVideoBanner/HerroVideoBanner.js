@@ -6,7 +6,7 @@ import { vectorCircle } from '../../assets'
 import styles from './HerroVideoBanner.module.scss'
 import useScreenSize from '../../hooks/useScreenSize'
 
-export const HerroVideoBanner = ({video, videoMp4}) => {
+export const HerroVideoBanner = ({video, videoMp4, poster}) => {
 
     const isMobile = useScreenSize();
 
@@ -28,9 +28,10 @@ export const HerroVideoBanner = ({video, videoMp4}) => {
             </Col>
             <Col className={`${styles.videoBack}`}>
                 {/* <video src={video} className={`${styles.videoStyle}`} muted autoPlay loop /> */}
-                  <video className={`${styles.videoStyle}`} muted autoPlay loop>
+                  <video className={`${styles.videoStyle}`} muted autoPlay loop poster={poster}>
                       <source src={video} type="video/webm" />
                       <source src={videoMp4} type="video/mp4" />
+                      Tu navegador no soporta el elemento de video.
                 </video>
             </Col>
         </Row>

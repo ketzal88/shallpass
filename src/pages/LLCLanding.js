@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container } from "react-bootstrap";
-import { heroVideo, heroVideoMp4, logoPassFullColor } from "../assets";
+import { heroVideo, heroVideoMp4, logoPassFullColor, posterVideoHero } from "../assets";
 import { Header } from "../components/Header/Header";
 import { HerroVideoBanner } from "../components/HerroVideoBanner/HerroVideoBanner";
 import { Destacados } from "../components/Destacados/Destacados";
@@ -21,7 +21,7 @@ export const LLCLandings = () => {
     <>
       <Header logo={logoPassFullColor} />
       <Col className={`${styles.bgR}`}>
-        <HerroVideoBanner video={heroVideo} videoMp4={heroVideoMp4} />
+        <HerroVideoBanner video={heroVideo} videoMp4={heroVideoMp4} poster={posterVideoHero}/>
         <Destacados />
         <Confia />
       </Col>
