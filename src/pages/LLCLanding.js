@@ -1,5 +1,5 @@
 import React from "react";
-import { Col } from "react-bootstrap";
+import { Col, Container } from "react-bootstrap";
 import { heroVideo, logoPassFullColor } from "../assets";
 import { Header } from "../components/Header/Header";
 import { HerroVideoBanner } from "../components/HerroVideoBanner/HerroVideoBanner";
@@ -31,7 +31,9 @@ export const LLCLandings = () => {
         <Proceso />
         <FormSection />
       </Col>
-      {/* <FooterLanding /> */}
+      <Container>
+        <FooterLanding />
+      </Container>
     </>
   );
 };
