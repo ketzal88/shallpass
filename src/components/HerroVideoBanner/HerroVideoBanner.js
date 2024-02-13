@@ -5,10 +5,15 @@ import { vectorCircle } from '../../assets'
 
 import styles from './HerroVideoBanner.module.scss'
 import useScreenSize from '../../hooks/useScreenSize'
+import useIsIOS from '../../hooks/useIsIOS'
 
 export const HerroVideoBanner = ({ video, videoMp4, poster }) => {
 
     const isMobile = useScreenSize();
+
+    const isIOS = useIsIOS();
+
+    console.log(isIOS)
 
     return (
         <Container className={`${styles.HerroVideoBanner}`}>
@@ -34,8 +39,11 @@ export const HerroVideoBanner = ({ video, videoMp4, poster }) => {
                         autoPlay 
                         loop 
                         poster={poster}>
-                        <source src={video} type="video/webm" />
-                        <source src={videoMp4} type="video/mp4" />
+                            {
+                                isIOS 
+                                ? <source src={videoMp4} type="video/mp4" />
+                                : <source src={video} type="video/webm" />
+                            }
                         Tu navegador no soporta el elemento de video.
                     </video>
                 </Col>
