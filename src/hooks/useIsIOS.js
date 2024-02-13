@@ -4,10 +4,20 @@ const useIsIOS = () => {
     const [isIOS, setIsIOS] = useState(false);
 
     useEffect(() => {
-        // Las plataformas iOS incluyen 'iPhone', 'iPad' y 'iPod'
-        const platform = navigator.platform || navigator.userAgent;
-        const iosPlatforms = ['iPhone', 'iPad', 'iPod'];
-        setIsIOS(iosPlatforms.some(p => platform.includes(p)));
+        const detectIOS = () => {
+            return [
+                'iPad Simulator',
+                'iPhone Simulator',
+                'iPod Simulator',
+                'iPad',
+                'iPhone',
+                'iPod'
+            ].includes(navigator.platform) ||
+                // Detectar iPad en iOS 13
+                (navigator.userAgent.includes("Mac") && "ontouchend" in document);
+        };
+
+        setIsIOS(detectIOS());
     }, []);
 
     return isIOS;
