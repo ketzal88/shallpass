@@ -14,7 +14,7 @@ export const FormSection = () => {
               <h4>Ponete en contacto con nosotros, <span>te esperamos</span></h4>
             </Col>
             <Col md={{ offset: 1 }} >
-              <FormLanding submitText='Enviar consulta' />
+              <FormLanding submitText='Enviar consulta' TEMPLATE_ID={process.env.REACT_APP_LANDING_TEMPLATE_ID} />
             </Col>
           </Row>
         </Col>
