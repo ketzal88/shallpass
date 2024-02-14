@@ -3,14 +3,14 @@ import { Col, Image, Row } from "react-bootstrap";
 import { circleGrad } from "../../assets";
 import { Form } from "../Form/Form";
 
-import "./Header.scss";
+import "./HeaderHome.scss";
 
 export const HeaderHome = ({ logo }) => {
     const { REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_PUBLIC_KEY } =
         process.env;
 
     return (
-        <Row id="header" style={{ paddingTop: '144px'}}>
+        <Row id="header">
             <Col id="logo" xs={12} md={12} sm={12} lg={6} xl={6}>
                 <Image src={logo} />
                 <Col>
