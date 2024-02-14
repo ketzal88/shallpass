@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Button, Col, Container, Image, Row } from 'react-bootstrap'
 
 import { vectorCircle } from '../../assets'
@@ -34,14 +34,11 @@ export const HerroVideoBanner = ({ video, videoMp4, poster }) => {
                     </Col>
                 </Col>
                 <Col className={`${styles.videoBack}`}>
-
                     {
                         isIOS === true
-
                         ? <video className={`${styles.videoStyle}`} playsInline muted autoPlay loop poster={poster} src={videoMp4} type="video/mp4" />
                         : <video className={`${styles.videoStyle}`} playsInline muted autoPlay loop poster={poster} src={video} type="video/webm" />
                     }
-
                 </Col>
             </Row>
         </Container>
