@@ -10,7 +10,7 @@ export const HeaderHome = ({ logo }) => {
         process.env;
 
     return (
-        <Row id="header">
+        <Row id="header" style={{ paddingTop: '144px'}}>
             <Col id="logo" xs={12} md={12} sm={12} lg={6} xl={6}>
                 <Image src={logo} />
                 <Col>
