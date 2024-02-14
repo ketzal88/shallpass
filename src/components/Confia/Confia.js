@@ -1,15 +1,12 @@
 import React from 'react'
 import { Col, Container, Image, Row } from 'react-bootstrap'
-
 import useScreenSize from '../../hooks/useScreenSize'
 import { celphone, confia01, confia02, confia03, confia04 } from '../../assets'
-
 import styles from './Confia.module.scss'
 
 export const Confia = () => {
 
     const isMobile = useScreenSize()
-
 
     return (
         <Container className={`${styles.confia}`}>
@@ -20,31 +17,31 @@ export const Confia = () => {
                     data-aos="zoom-out"
                     data-aos-delay='500'
                 >
-                    <h1>Confiá en SHALLPASS { !isMobile && <br />}
+                    <h1>Confiá en SHALLPASS {!isMobile && <br />}
                         <span>
-                            para {isMobile && <br/>}comprender tus necesidades
+                            para {isMobile && <br />}comprender tus necesidades
                         </span>
                     </h1>
                 </Col>
                 <Col></Col>
             </Row>
-            <Col style={{position: 'relative', border: '1px solid transparent'}} className='h-100 w-100'>
+            <Col style={{ position: 'relative', border: '1px solid transparent' }} className='h-100 w-100'>
                 <Row className={`${styles.row2} mt-5 justify-content-md-center`}>
                     <Col md={2}>
                         <Col className={`${styles.itemContainer}`}>
-                            <Col 
+                            <Col
                                 className={`${styles.itemLeft}`}
                                 data-aos="fade-zoom-in"
                                 data-aos-easing="ease-in-back"
                                 data-aos-delay="100"
                                 data-aos-offset="0"
                             >
-                                <Image src={confia01}/>
-                                <p>Ideal para tu <br/><span>tienda de Amazon, agencia, venta de servicios o productos</span></p>
+                                <Image src={confia01} />
+                                <p>Ideal para tu <br /><span>tienda de Amazon, agencia, venta de servicios o productos</span></p>
                             </Col>
                         </Col>
                         <Col className={`${styles.itemContainer}`}>
-                            <Col 
+                            <Col
                                 className={`${styles.itemLeft}`}
                                 data-aos="fade-zoom-in"
                                 data-aos-easing="ease-in-back"
@@ -57,16 +54,16 @@ export const Confia = () => {
                         </Col>
                     </Col>
                     {
-                        !isMobile && 
-                            <>
-                                <Col md={6} className={`${styles.imagenPhone} h-100`}>
-                                    <Image src={celphone} />
-                                </Col>
-                            </>
+                        !isMobile &&
+                        <>
+                            <Col md={6} className={`${styles.imagenPhone} h-100`}>
+                                <Image src={celphone} />
+                            </Col>
+                        </>
                     }
                     <Col md={2}>
                         <Col className={`${styles.itemContainer}`}>
-                            <Col 
+                            <Col
                                 className={`${styles.itemRight}`}
                                 data-aos="fade-zoom-in"
                                 data-aos-easing="ease-in-back"
@@ -78,7 +75,7 @@ export const Confia = () => {
                             </Col>
                         </Col>
                         <Col className={`${styles.itemContainer}`}>
-                            <Col 
+                            <Col
                                 className={`${styles.itemRight}`}
                                 data-aos="fade-zoom-in"
                                 data-aos-easing="ease-in-back"
@@ -86,7 +83,7 @@ export const Confia = () => {
                                 data-aos-offset="3"
                             >
                                 <Image src={confia04} />
-                                <p>Utilizá tu<br/><span>tarjeta de débito internacional </span><br/>sin restricciones</p>
+                                <p>Utilizá tu<br /><span>tarjeta de débito internacional </span><br />sin restricciones</p>
                             </Col>
                         </Col>
                     </Col>

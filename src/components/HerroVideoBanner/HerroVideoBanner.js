@@ -1,21 +1,15 @@
 import React from 'react'
 import { Button, Col, Container, Image, Row } from 'react-bootstrap'
-
-import { vectorCircle } from '../../assets'
-
-import styles from './HerroVideoBanner.module.scss'
 import useScreenSize from '../../hooks/useScreenSize'
 import useIsIOS from '../../hooks/useIsIOS'
-// import useIsIOS from '../../hooks/useIsIOS'
+import { vectorCircle } from '../../assets'
+import styles from './HerroVideoBanner.module.scss'
 
 export const HerroVideoBanner = ({ video, videoMp4, poster }) => {
 
     const isMobile = useScreenSize();
 
-
     const isIOS = useIsIOS()
-
-    console.log(isIOS)
 
     return (
         <Container className={`${styles.HerroVideoBanner}`}>
@@ -36,8 +30,8 @@ export const HerroVideoBanner = ({ video, videoMp4, poster }) => {
                 <Col className={`${styles.videoBack}`}>
                     {
                         isIOS === true
-                        ? <video className={`${styles.videoStyle}`} playsInline muted autoPlay loop poster={poster} src={videoMp4} type="video/mp4" />
-                        : <video className={`${styles.videoStyle}`} playsInline muted autoPlay loop poster={poster} src={video} type="video/webm" />
+                            ? <video className={`${styles.videoStyle}`} playsInline muted autoPlay loop poster={poster} src={videoMp4} type="video/mp4" />
+                            : <video className={`${styles.videoStyle}`} playsInline muted autoPlay loop poster={poster} src={video} type="video/webm" />
                     }
                 </Col>
             </Row>

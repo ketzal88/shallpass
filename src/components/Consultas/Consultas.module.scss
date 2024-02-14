@@ -1,70 +1,73 @@
-@import '../../scss/colors.scss';
+@import "../../scss/colors.scss";
 
-.consultas{
-    min-height: 171px;
-    margin-top: 96px;
-    margin-bottom: 96px;
-    h3{
-        color: $secondaryColor;
-        text-align: center;
-        font-feature-settings: 'clig' off, 'liga' off;
-        font-family: "DM Sans";
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 48px; /* 120% */
+.consultas {
+  min-height: 171px;
+  margin-top: 96px;
+  margin-bottom: 96px;
+  h3 {
+    color: $secondaryColor;
+    text-align: center;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: "DM Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
 
-        span{
-            color: white;
-            font-feature-settings: 'clig' off, 'liga' off;
-            font-family: "DM Sans";
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 48px; 
-        }
+    span {
+      color: white;
+      font-feature-settings:
+        "clig" off,
+        "liga" off;
+      font-family: "DM Sans";
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 48px;
     }
-    button{
-        text-align: center;
-        color: black;
-        font-family: "DM Sans";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 16px; /* 100% */
-        
-        margin-top: 16px;
-        padding: 16px 24px;
+  }
+  button {
+    text-align: center;
+    color: black;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
 
-        img{
-            margin-left: 10px;
-        }
+    margin-top: 16px;
+    padding: 16px 24px;
+
+    img {
+      margin-left: 10px;
     }
+  }
 }
 
 @media (max-width: 420px) {
+  .consultas {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 64px;
+    margin-bottom: 64px;
 
-    .consultas{
-        padding-left: 0px;
-        padding-right: 0px;
-        margin-top: 64px;
-        margin-bottom: 64px;
+    width: 100%;
+    h3 {
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px;
 
-        width: 100%;
-        h3{
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 40px;
-
-            span{
-                font-size: 32px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 40px;
-                margin-right: -10px;
-                margin-left: -10px;
-            }
-        }
+      span {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        margin-right: -10px;
+        margin-left: -10px;
+      }
     }
+  }
 }

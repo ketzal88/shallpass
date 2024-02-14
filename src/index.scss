@@ -1,7 +1,4 @@
-
-@import './scss/colors.scss';
-
-
+@import "./scss/colors.scss";
 
 $grid-breakpoints: (
   xs: 0,
@@ -9,35 +6,34 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1400px
+  xxl: 1400px,
 );
 
-:root{
-      --bs-primary: #FFBF01 !important;
+:root {
+  --bs-primary: #ffbf01 !important;
 }
 
 .btn-primary {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #FFBF01 ;
-    --bs-btn-border-color: #FFBF01 ;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #c59400 ;
-    --bs-btn-hover-border-color: #c59400;
-    --bs-btn-focus-shadow-rgb: 49,132,253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #c59400;
-    --bs-btn-active-border-color: #c59400;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #FFBF01 ;
-    --bs-btn-disabled-border-color: #FFBF01 ;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #ffbf01;
+  --bs-btn-border-color: #ffbf01;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #c59400;
+  --bs-btn-hover-border-color: #c59400;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #c59400;
+  --bs-btn-active-border-color: #c59400;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #ffbf01;
+  --bs-btn-disabled-border-color: #ffbf01;
 }
 
 body {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   color: white;
   margin: 0;
   padding: 0px;
   background-color: $backgroundApp;
 }
-

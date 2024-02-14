@@ -1,6 +1,5 @@
 import React from "react";
 import { whatsAppCTA } from "../../assets";
-
 import "./WhatsAppButton.scss";
 
 export const WhatsAppButton = () => {
@@ -15,7 +14,7 @@ export const WhatsAppButton = () => {
   };
 
   return (
-    <div className="row justify-content-end">
+    <div>
       <a
         href={whatsAppData}
         className="whatsapp"

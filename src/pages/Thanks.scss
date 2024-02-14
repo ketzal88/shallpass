@@ -1,26 +1,23 @@
-@import '../scss/colors.scss';
+@import "../scss/colors.scss";
 
-#thanks{
-    // overflow-y: hidden !important;
-    // min-height: 100%;
-    // background-color: aqua;
-    h1{
-        margin-top: 3em;
-        font-size: 40px;
-        font-weight: 400;
-        line-height: 46px;
-        letter-spacing: 0px;
-        color: $primaryColor;
-        span{
-            color: white;
-        }
+#thanks {
+  h1 {
+    margin-top: 3em;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0px;
+    color: $primaryColor;
+    span {
+      color: white;
     }
-    a{  
-        color: white;
-        text-decoration: none;
-        font-size: 24px;
-        :hover{
-            color: $primaryColor;
-        }
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    :hover {
+      color: $primaryColor;
     }
+  }
 }

@@ -1,19 +1,14 @@
+import { useEffect } from "react";
+import { Route, Routes, Navigate } from "react-router-dom";
 import { Container } from "react-bootstrap";
-import { Route, Routes } from "react-router-dom";
-
-import Aos, { init } from 'aos'
+import Aos from 'aos'
 import 'aos/dist/aos.css'
-
-import "./App.scss";
-import { Footer } from "./components/Footer/Footer";
-
 import { Home } from "./pages/Home";
 import { LLCLandings } from "./pages/LLCLanding";
 import { Thanks } from "./pages/Thanks";
-import { useEffect } from "react";
+import "./App.scss";
 
 function App() {
-
   useEffect(() => {
     Aos.init();
   }, []);
@@ -24,6 +19,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/llc" element={<LLCLandings />} />
         <Route path="thanks" element={<Thanks />} />
+
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Container>
   );

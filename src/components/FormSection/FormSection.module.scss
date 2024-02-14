@@ -11,8 +11,7 @@
     font-size: 44px;
     font-style: normal;
     font-weight: 400;
-    line-height: 48px; /* 109.091% */
-
+    line-height: 48px;
     text-align: left;
 
     span {
@@ -26,19 +25,18 @@
     font-size: 19px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 126.316% */
-
+    line-height: 24px;
     text-align: left;
   }
 
   form {
     margin: 0px !important;
     padding: 0px !important;
-
     label {
       color: white !important;
       padding-bottom: 8px;
     }
+
     input,
     textarea {
       margin-bottom: 40px;
@@ -48,7 +46,6 @@
       gap: 10px;
       flex: 1 0 0;
       align-self: stretch;
-
       border-radius: 8px;
       background: white;
       box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.08) inset;
@@ -81,7 +78,6 @@
         height: 24px;
         width: 24px;
       }
-
       input {
         margin-bottom: 0px;
         width: unset !important;
@@ -98,8 +94,6 @@
     }
     button {
       min-width: 100% !important;
-
-      // background-color: aqua !important;
     }
   }
 }

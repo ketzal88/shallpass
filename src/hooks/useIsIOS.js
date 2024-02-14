@@ -13,7 +13,6 @@ const useIsIOS = () => {
                 'iPhone',
                 'iPod'
             ].includes(navigator.platform) ||
-                // Detectar iPad en iOS 13
                 (navigator.userAgent.includes("Mac") && "ontouchend" in document);
         };
 

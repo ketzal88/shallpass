@@ -1,173 +1,156 @@
-@import '../../scss/colors.scss';
-@import '../../scss/layout.scss';
+@import "../../scss/colors.scss";
+@import "../../scss/layout.scss";
 
 $seccionHeigth: 800px;
 
-.HerroVideoBanner{
-    height: $seccionHeigth;
-    // border: 1px solid red;
-    padding: 113px 0 113px 0;
-    position: relative;
-
-
+.HerroVideoBanner {
+  height: $seccionHeigth;
+  padding: 113px 0 113px 0;
+  position: relative;
 }
 
-.heroText{
-    text-align: left;
-    padding: 0px;
-    z-index: 10;
+.heroText {
+  text-align: left;
+  padding: 0px;
+  z-index: 10;
 
-    small{
-        color: white;
-        font-feature-settings: 'clig' off, 'liga' off;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-        font-family: "DM Sans";
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 22px; /* 110% */
+  small {
+    color: white;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  h1 {
+    margin-top: 40px;
+    color: white;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    font-family: "DM Sans";
+    font-size: 132px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 132px;
+
+    span {
+      color: $primaryColor;
     }
-    h1{
-        margin-top: 40px;
-        color: white;
-        font-feature-settings: 'clig' off, 'liga' off;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-        font-family: "DM Sans";
-        font-size: 132px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 132px;
+  }
+  h4 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: white;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    font-family: "DM Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
 
-        span{
-            color: $primaryColor;
-        }
+    span {
+      color: $secondaryColor;
+      font-feature-settings:
+        "clig" off,
+        "liga" off;
+      font-family: "DM Sans";
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
     }
-    h4{
-        margin-top: 40px;
-        margin-bottom: 40px;
-        color: white;
-        font-feature-settings: 'clig' off, 'liga' off;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-        font-family: "DM Sans";
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 32px;
+  }
 
-        span{
-            color: $secondaryColor;
-            font-feature-settings: 'clig' off, 'liga' off;
-            font-family: "DM Sans";
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 32px;
-        }
+  button {
+    color: black;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    padding: 24px;
+    &:hover {
+      color: black;
     }
-
-    button{
-   
-        color: black;
-        text-align: center;
-        font-family: "DM Sans";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 16px;
-        padding: 24px;
-        &:hover{
-            color: black;
-        }
-    }
-
+  }
 }
 
-.vectorColor{
-    fill: white !important;
-    // margin-left: 24px;
+.vectorColor {
+  fill: white !important;
 }
 
-.ctaContainer{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    justify-items: flex-start;
+.ctaContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  justify-items: flex-start;
 }
 
-.videoBack{
-    position: absolute;
-    z-index: 8;
-    min-height: 680px;
-    height: 680px;
-    // background-color: aqua;
-    left: 0px;
-    padding: 0px;
-    overflow: hidden;
-    border-radius: 30px;
-
+.videoBack {
+  position: absolute;
+  z-index: 8;
+  min-height: 680px;
+  height: 680px;
+  left: 0px;
+  padding: 0px;
+  overflow: hidden;
+  border-radius: 30px;
 }
 
-.videoStyle{
-    width: 100%;
+.videoStyle {
+  width: 100%;
 }
 
 @media (max-width: 420px) {
+  .HerroVideoBanner {
+    height: 752px;
+    padding: 0px;
+    width: 100vw;
+    margin-right: -24px;
+    margin-left: -24px;
 
-    .HerroVideoBanner{
-        height: 752px;
-        // border: 1px solid red;
-        padding: 0px;
-        width: 100vw;
-        margin-right: -24px;
-        margin-left: -24px;
+    .heroText {
+      padding-left: 46px;
+      h1 {
+        font-size: 64px;
+        line-height: 64px;
+      }
 
-    .heroText{
-        padding-left: 46px;
-        h1{
-            font-size: 64px;
-            line-height: 64px;
+      h4 {
+        padding-right: 46px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+
+        span {
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 24px;
         }
-
-        h4{
-            padding-right: 46px;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px; /* 100% */
-
-            span{
-                font-size: 24px;
-                font-weight: 700;
-                line-height: 24px;
-            }
-        }
+      }
     }
 
-    .videoBack{
-        border-radius: unset;
-        display: flex;
-        justify-content: center;
-
-
-
-       
-        
-
+    .videoBack {
+      border-radius: unset;
+      display: flex;
+      justify-content: center;
     }
 
-    .videoStyle{
-        height: 150%;
-        width: auto;
-        display: flex;
-
-        // height: 150% !important;
-
-
-
-        // object-fit: contain ;
-        // object-position: center ;
-       
-        
+    .videoStyle {
+      height: 150%;
+      width: auto;
+      display: flex;
     }
+  }
 }
- }

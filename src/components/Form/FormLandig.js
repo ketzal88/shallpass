@@ -7,20 +7,13 @@ import { Button, Col, Container, Image, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { vector } from '../../assets'
 
-export const FormLanding = ({ 
-    SERVICE_ID = process.env.REACT_APP_SERVICE_ID, 
-    TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID, 
-    PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY, 
-    id = "fromHeader" ,
-    submitText = 'ENVIAR CONSULTA',
-  }) => {
-
- 
-    // const SERVICE_ID=process.env.REACT_APP_SERVICE_ID,
-    //       TEMPLATE_ID=process.env.REACT_APP_TEMPLATE_ID,
-    //       PUBLIC_KEY=process.env.REACT_APP_PUBLIC_KEY,
-    //       id="fromHeader"
-
+export const FormLanding = ({
+  SERVICE_ID = process.env.REACT_APP_SERVICE_ID,
+  TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID,
+  PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY,
+  id = "fromHeader",
+  submitText = 'ENVIAR CONSULTA',
+}) => {
 
   const form = useRef();
   const [formResponse, setFormResponse] = useState(false);
@@ -94,11 +87,11 @@ export const FormLanding = ({
               />
             </Col>
             <Col md={6}></Col>
-            <Col 
+            <Col
               md={6} xs={12}
-              id="sendEmail" 
+              id="sendEmail"
               className={`align-self-end text-end`}
-              style={{paddingRight: '12px', paddingLeft: '12px'}}
+              style={{ paddingRight: '12px', paddingLeft: '12px' }}
             >
               <Button variant="primary" className="rounded-pill" type="submit">
                 {submitText} <Image src={vector} />

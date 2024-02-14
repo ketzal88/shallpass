@@ -1,24 +1,11 @@
-@import './scss/colors.scss';
-
-
+@import "./scss/colors.scss";
 
 .App {
   text-align: center;
-  // margin: 0px;
-  // padding: 0px;
-}
-
-
-
-@media (max-width: 1023px) { 
-  .App{
-    // padding-left: 40px;
-    // padding-right: 40px;
-  }
 }
 
 @media (max-width: 420px) {
-  .App{
+  .App {
     padding-left: 24px;
     padding-right: 24px;
   }

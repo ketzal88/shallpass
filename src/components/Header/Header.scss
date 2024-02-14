@@ -1,50 +1,47 @@
-@import '../../scss/colors.scss';
-@import '../../scss/layout.scss';
+@import "../../scss/colors.scss";
+@import "../../scss/layout.scss";
 
-#header{
-    #logo{
-        text-align: left;
-        img{
-            width: 147px !important ;
-            height: auto;
-            margin-top: 60px;
-            margin-bottom: 72px;
-        }
-        h1{
-            font-size: 48px;
-            font-weight: 400;
-            line-height: 56px;
-            letter-spacing: 0px;
-            span{
-                color: $primaryColor;
-                font-weight: 700;
-            }
-
-        }
+#header {
+  #logo {
+    text-align: left;
+    img {
+      width: 147px !important ;
+      height: auto;
+      margin-top: 60px;
+      margin-bottom: 72px;
     }
-    .cta{
-        border: 1px sold green !important;
+    h1 {
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 56px;
+      letter-spacing: 0px;
+      span {
+        color: $primaryColor;
+        font-weight: 700;
+      }
     }
-    .imageGradient{
-        position: absolute;
-        width: 100%;
-        // background-color: aqua;
-        top: -634px;
-        left: 0px;
-        z-index: -1;
-        img{
-            text-align: center;
-            position: relative;
-            width: 1577px;
-            height: 1577px;
-        }
+  }
+  .cta {
+    border: 1px sold green !important;
+  }
+  .imageGradient {
+    position: absolute;
+    width: 100%;
+    // background-color: aqua;
+    top: -634px;
+    left: 0px;
+    z-index: -1;
+    img {
+      text-align: center;
+      position: relative;
+      width: 1577px;
+      height: 1577px;
     }
-    form{
-        min-height: 617px;
-        width: 548px;
-        background-color: white;
-        border-radius: 24px;
-    }
-    
+  }
+  form {
+    min-height: 617px;
+    width: 548px;
+    background-color: white;
+    border-radius: 24px;
+  }
 }
-

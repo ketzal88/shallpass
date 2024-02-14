@@ -1,25 +1,21 @@
-
-.landingForm{
-    // margin-top: 214px;
-    width: 548px;
-    height: 617px;
-    padding: 0px;
-    // gap: 10px;
-    background: #FFFFFF;
-    border-radius: 24px;
-
+.landingForm {
+  width: 548px;
+  height: 617px;
+  padding: 0px;
+  background: #ffffff;
+  border-radius: 24px;
 }
 
-placeholder{
-    color: red !important;
+placeholder {
+  color: red !important;
 }
-    
-@media (max-width: 1023px) { 
-    .landingForm{
-        margin-top: 140px ;
-        min-height: 678px;
-        textarea{
-            height: 150px;
-        }
+
+@media (max-width: 1023px) {
+  .landingForm {
+    margin-top: 140px;
+    min-height: 678px;
+    textarea {
+      height: 150px;
     }
+  }
 }
