@@ -41,7 +41,7 @@ export const FormLanding = ({
 
   const navigate = useNavigate();
 
-  formResponse ? navigate("/thanks") : console.log("form sin completar");
+  formResponse && navigate("/thanks");
 
   return (
     <>

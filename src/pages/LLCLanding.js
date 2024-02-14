@@ -16,12 +16,11 @@ import styles from './Home.module.scss'
 
 export const LLCLandings = () => {
 
-  console.log(process.env.REACT_APP_SERVICE_ID)
   return (
     <>
       <Header logo={logoPassFullColor} />
       <Col className={`${styles.bgR}`}>
-        <HerroVideoBanner video={heroVideo} videoMp4={heroVideoMp4} poster={posterVideoHero}/>
+        <HerroVideoBanner video={heroVideo} videoMp4={heroVideoMp4} poster={posterVideoHero} />
         <Destacados />
         <Confia />
       </Col>
