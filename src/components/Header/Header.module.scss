@@ -27,7 +27,7 @@ $headerHeigth: 96px;
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: $mobileBreak) {
   .logo {
     margin: 0px;
     padding: 0px;

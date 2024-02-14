@@ -1,3 +1,5 @@
+@import "../../scss/layout.scss";
+
 .footerLanding {
   padding: 37px 70px;
   align-items: center;
@@ -41,7 +43,7 @@
   line-height: 19px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: $mobileBreak) {
   .footerLanding {
     margin: 0px;
     padding: 24px;

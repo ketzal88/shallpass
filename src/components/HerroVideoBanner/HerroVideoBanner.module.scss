@@ -111,14 +111,12 @@ $seccionHeigth: 800px;
   width: 100%;
 }
 
-@media (max-width: 420px) {
+@media (max-width: $mobileBreak) {
   .HerroVideoBanner {
     height: 752px;
     padding: 0px;
-    width: 100vw;
-    margin-right: -24px;
-    margin-left: -24px;
-
+    width: 100vw !important;
+    margin-left: -12px !important;
     .heroText {
       padding-left: 46px;
       h1 {
@@ -145,10 +143,12 @@ $seccionHeigth: 800px;
       border-radius: unset;
       display: flex;
       justify-content: center;
+      // border: 2px solid red;
+      width: 100vw !important;
     }
 
     .videoStyle {
-      height: 150%;
+      height: 180%;
       width: auto;
       display: flex;
     }

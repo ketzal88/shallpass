@@ -1,4 +1,5 @@
 @import "../../scss/colors.scss";
+@import "../../scss/layout.scss";
 
 .proceso {
   min-height: 613px;
@@ -95,9 +96,12 @@
 .imgContainer {
   border-radius: 16px;
   overflow: hidden;
+  img {
+    width: 100%;
+  }
 }
 
-@media (max-width: 420px) {
+@media (max-width: $mobileBreak) {
   .proceso {
     margin: 0px;
     padding: 0 24px 0 24px;
