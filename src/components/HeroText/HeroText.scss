@@ -1,78 +1,75 @@
-@import '../../scss/layout.scss';
-@import '../../scss/colors.scss';
+@import "../../scss/layout.scss";
+@import "../../scss/colors.scss";
 
-#HeroText{
-    .cont{
-        margin-right: $marginBoxDescktop;
-        margin-left: $marginBoxDescktop;
-        padding-top: 100px;
-
+#HeroText {
+  .cont {
+    margin-right: $marginBoxDescktop;
+    margin-left: $marginBoxDescktop;
+    padding-top: 100px;
+  }
+  #text01 {
+    font-family: Lora;
+    font-size: 73px;
+    line-height: 73px;
+    font-weight: 400;
+    margin: -0.3em 0 0 -3em;
+    text-align: center;
+  }
+  #text02 {
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top: 0.1em;
+    color: black;
+    span {
+      background-color: $primaryColor;
+      padding: 0 0.7em 0 0.7em;
     }
-    #text01{
-        font-family: Lora;
-        font-size: 73px;
-        line-height: 73px;
-        font-weight: 400;
-        margin: -0.3em 0 0 -3em;
-        text-align: center;
-
-    }
-    #text02{
-
-        font-size: 72px;
-        font-weight: 700;
-        letter-spacing: 0px;
-        text-align: center;
-        margin-top: 0.1em;
-        color: black;
-        span{
-            background-color: $primaryColor;
-            padding: 0 0.7em 0 0.7em;
-        }
-
-    }
-    #text03{
-
-        font-size: 72px;
-        font-weight: 700;
-        line-height: 72px;
-        letter-spacing: 0px;
-        text-align: center;
-        margin: 0 0 140px 3em;
-    }
+  }
+  #text03 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 0 0 140px 3em;
+  }
 }
 
-@media (max-width: 1023px) { 
-    #HeroText{
-        .cont{
-            margin-right: 0px !important;
-            margin-left: 0px !important;
-            padding-top: 0px;
-        }
-        #text01, #text02, #text03{
-            margin: 0px;
-            font-size: 42px;
-            margin: 0px !important;
-            padding: 0px !important;
-        }
-
-        #text02{
-            text-align: center;
-            span{
-                margin: 0px;
-                padding: 0 0.4em 0 0.4em;                
-            }
-        }
-        #text03{
-            text-align: right;
-        }
+@media (max-width: 1023px) {
+  #HeroText {
+    .cont {
+      margin-right: 0px !important;
+      margin-left: 0px !important;
+      padding-top: 0px;
     }
- }
-
- @media only screen and (min-width: 421px) and (max-width: 768px) {
-    #HeroText{
-        #text03{
-            text-align: center;
-        }
+    #text01,
+    #text02,
+    #text03 {
+      margin: 0px;
+      font-size: 42px;
+      margin: 0px !important;
+      padding: 0px !important;
     }
- }
+
+    #text02 {
+      text-align: center;
+      span {
+        margin: 0px;
+        padding: 0 0.4em 0 0.4em;
+      }
+    }
+    #text03 {
+      text-align: right;
+    }
+  }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+  #HeroText {
+    #text03 {
+      text-align: center;
+    }
+  }
+}

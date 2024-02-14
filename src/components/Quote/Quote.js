@@ -1,7 +1,6 @@
 import React from "react";
 import { Card, Col, Image, Row } from "react-bootstrap";
 import { circleGrad, quoteIcon } from "../../assets";
-
 import "./Quote.scss";
 
 export const Quote = ({ data }) => {

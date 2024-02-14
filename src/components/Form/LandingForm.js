@@ -1,6 +1,5 @@
 import { Row } from "react-bootstrap";
 import { Form } from "./Form";
-
 import "./LandingForm.scss";
 
 export const LandingForm = () => {

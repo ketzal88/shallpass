@@ -1,0 +1,141 @@
+@import "../../scss/colors.scss";
+
+.proceso {
+  min-height: 613px;
+  padding: 48px 40px;
+  margin-top: 96px !important;
+  padding-bottom: 96px !important;
+
+  .procesoContainer {
+    background-color: $grisOcuro;
+    border-radius: 64px;
+    padding: 48px 40px;
+
+    h1 {
+      color: white;
+      font-feature-settings:
+        "clig" off,
+        "liga" off;
+      font-family: "DM Sans";
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 64px; /* 100% */
+
+      text-align: left;
+
+      span {
+        color: $secondaryColor;
+      }
+    }
+    p {
+      color: var(--Blanco, #fff);
+      font-feature-settings:
+        "clig" off,
+        "liga" off;
+      font-family: "DM Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px; /* 125% */
+
+      text-align: left;
+    }
+
+    button {
+      margin-top: 24px;
+      padding: 16px 24px;
+      color: black;
+
+      text-align: center;
+      font-family: "DM Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 16px; /* 100% */
+
+      img {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .procesoIntem {
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 24px;
+    background-color: $grisOcuro;
+
+    h4 {
+      font-feature-settings:
+        "clig" off,
+        "liga" off;
+      font-family: "DM Sans";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 100% */
+
+      text-align: left;
+    }
+
+    p {
+      font-feature-settings:
+        "clig" off,
+        "liga" off;
+      font-family: "DM Sans";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 14px; /* 100% */
+    }
+  }
+}
+
+.imgContainer {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+@media (max-width: 420px) {
+  .proceso {
+    margin: 0px;
+    padding: 0 24px 0 24px;
+
+    h1 {
+      font-size: 46px !important;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 56px !important;
+
+      span {
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 56px !important;
+      }
+    }
+
+    p {
+      align-self: stretch;
+      font-family: "DM Sans";
+      margin-top: 40px;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px !important; /* 140% */
+    }
+
+    .procesoContainer {
+      background-color: transparent;
+      padding: 0px;
+      margin: 0px;
+    }
+  }
+
+  .procesoIntem {
+    p {
+      margin-top: 0px;
+    }
+  }
+}

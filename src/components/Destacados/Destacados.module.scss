@@ -1,0 +1,49 @@
+@import "../../scss/colors";
+$sectionHeigth: 112px;
+
+.destacados {
+  height: $sectionHeigth;
+  min-height: $sectionHeigth;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.destacadosRow {
+  margin-left: -24px !important;
+  margin-right: -24px !important;
+}
+
+.itemDestacado {
+  border-radius: 24px;
+  background: $grisOcuro;
+  display: flex;
+  padding: 24px;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  img {
+    margin-right: 16px;
+  }
+  p {
+    text-align: left;
+    color: white;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 0px;
+    span {
+      color: $primaryColor;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .destacados {
+    height: unset;
+  }
+}

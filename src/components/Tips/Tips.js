@@ -2,7 +2,6 @@ import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import { circleGrad, reunion, reunionAlternate } from "../../assets";
 import { ImageSelector } from "../ImageSelector/ImageSelector";
-
 import "./Tips.scss";
 
 export const Tips = ({ texts }) => {
