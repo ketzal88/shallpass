@@ -61,7 +61,7 @@ export const FormLanding = ({
               <label>Teléfono</label>
               <br />
               <input
-                type="number"
+                type="tel"
                 name="user_phone"
                 placeholder="Ingresa tu teléfono"
                 required
