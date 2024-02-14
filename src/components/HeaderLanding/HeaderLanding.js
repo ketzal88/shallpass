@@ -14,7 +14,6 @@ export const HeaderLanding = ({ logo }) => {
       <Col id="logo" xs={12} md={12} sm={12} lg={6} xl={6}>
         <Image src={logo} />
         <Col>
-          {/* Visible only on sm	.d-none .d-sm-block .d-md-none */}
           <h1 className="d-block d-lg-none">
             <br />
             <span>

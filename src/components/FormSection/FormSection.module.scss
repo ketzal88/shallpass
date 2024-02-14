@@ -1,0 +1,99 @@
+.formSection {
+  margin-top: 96px !important;
+  margin-bottom: 96px !important;
+
+  h4 {
+    color: white;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: "DM Sans";
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+
+    span {
+      color: var(--Naranja, #ffa000);
+      font-weight: 700;
+    }
+  }
+  h6 {
+    color: white;
+    font-family: "DM Sans";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  form {
+    margin: 0px !important;
+    padding: 0px !important;
+    label {
+      color: white !important;
+      padding-bottom: 8px;
+    }
+
+    input,
+    textarea {
+      margin-bottom: 40px;
+      display: flex;
+      padding: 24px;
+      align-items: flex-start;
+      gap: 10px;
+      flex: 1 0 0;
+      align-self: stretch;
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.08) inset;
+    }
+
+    input::placeholder {
+      color: black !important;
+      opacity: 0.4 !important;
+    }
+
+    textarea::placeholder {
+      color: black !important;
+      opacity: 0.4 !important;
+    }
+
+    button {
+      height: unset !important;
+      width: unset !important;
+      padding: 16px 24px;
+      text-align: right;
+      color: black;
+      text-align: center;
+      font-family: "DM Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 16px; /* 100% */
+      img {
+        padding-left: 10px;
+        height: 24px;
+        width: 24px;
+      }
+      input {
+        margin-bottom: 0px;
+        width: unset !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  form {
+    input,
+    textarea {
+      padding: 12px !important;
+    }
+    button {
+      min-width: 100% !important;
+    }
+  }
+}

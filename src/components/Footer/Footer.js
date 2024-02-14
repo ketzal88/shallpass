@@ -1,7 +1,6 @@
 import React from "react";
 import { Col, Container, Image } from "react-bootstrap";
 import { logoPassFullColor } from "../../assets";
-
 import "./Footer.scss";
 
 export const Footer = () => {

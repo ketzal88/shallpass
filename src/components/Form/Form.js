@@ -1,17 +1,22 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-
-import "./Form.scss";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import "./Form.scss";
 
-export const Form = ({ SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY, id }) => {
+export const Form = ({
+  SERVICE_ID = process.env.REACT_APP_SERVICE_ID,
+  TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID,
+  PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY,
+  id = "fromHeader",
+  submitText = 'ENVIAR CONSULTA',
+}) => {
+
   const form = useRef();
   const [formResponse, setFormResponse] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         `${SERVICE_ID}`,
@@ -80,7 +85,7 @@ export const Form = ({ SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY, id }) => {
             <Col md={6}></Col>
             <Col md={6} id="sendEmail" className="col align-self-end ">
               <Button variant="primary">
-                <input type="submit" value="ENVIAR CONSULTA" />
+                <input type="submit" value={submitText} />
               </Button>
             </Col>
           </Row>

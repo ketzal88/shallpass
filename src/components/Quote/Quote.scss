@@ -1,123 +1,113 @@
-@import '../../scss/layout.scss';
-@import '../../scss/colors.scss';
+@import "../../scss/layout.scss";
+@import "../../scss/colors.scss";
 
-#Quote{
-    margin-bottom: 250px;
-    .cont{
-        // background-color: aquamarine;
-        margin-left: $marginBoxDescktop;
-        margin-right: $marginBoxDescktop;
-        z-index: 10;
-        .card{
-            margin-top: 140px;
-            height: 250px;
-            text-align: left;
-            background-color: #EEE9E0;
-            color: black;
-            border-radius: 0 80px 0 80px;
-            padding-left: 36px;
-            padding-right: 25px;
-            #quoteIcon{
-                text-align: left;
-                img{
-                    height: 55px;
-                    margin-top: -22px;
-                }
-            }
-            .card-body{
-                margin-top: 30px;
-                // background-color: aquamarine;
-            }
-            .logoSponsor{
-                right: 20px;
-                width: 150px;
-                position: absolute;
-                top: 230px;
-                z-index: 11;
-            }
+#Quote {
+  margin-bottom: 250px;
+  .cont {
+    margin-left: $marginBoxDescktop;
+    margin-right: $marginBoxDescktop;
+    z-index: 10;
+    .card {
+      margin-top: 140px;
+      height: 250px;
+      text-align: left;
+      background-color: #eee9e0;
+      color: black;
+      border-radius: 0 80px 0 80px;
+      padding-left: 36px;
+      padding-right: 25px;
+      #quoteIcon {
+        text-align: left;
+        img {
+          height: 55px;
+          margin-top: -22px;
         }
+      }
+      .card-body {
+        margin-top: 30px;
+      }
+      .logoSponsor {
+        right: 20px;
+        width: 150px;
+        position: absolute;
+        top: 230px;
+        z-index: 11;
+      }
     }
-    .circleGrad{
-        position: relative;
-        // overflow-y: hidden;
-        width: 100%;
-        img{
-            width: 1414px;
-            height: 1414px;
-            top: -1100px;
-            position: absolute;
-            left: -600px;
-        }
+  }
+  .circleGrad {
+    position: relative;
+    width: 100%;
+    img {
+      width: 1414px;
+      height: 1414px;
+      top: -1100px;
+      position: absolute;
+      left: -600px;
     }
+  }
 }
 
-@media (max-width: 1023px) { 
-    #Quote{
-        // display: none;
-        .cont{
-            margin-left: 0px;
-            margin-right: 0px;
-            
-            .card{
-                padding-left: 16px;
-                padding-right: 12px;
-                margin-top: 94px;
-                height: unset;
-                min-height: 250px;
-                border-radius: 0 60px 0 60px;
-                
-                .card-body{
-                    margin-top: 0px;
-                    color: #66676A !important;
-                    font-size: 17px;
-                    line-height: 20px;
-                    padding-bottom: 4em;
-                    // margin-bottom: 10em;
-                }
-                #quoteIcon{
+@media (max-width: 1023px) {
+  #Quote {
+    .cont {
+      margin-left: 0px;
+      margin-right: 0px;
 
-                    img{
-                        height: 30px;
-                        margin-left: 10px;
-                    }
-                }
-            }
-            .logoSponsor{
+      .card {
+        padding-left: 16px;
+        padding-right: 12px;
+        margin-top: 94px;
+        height: unset;
+        min-height: 250px;
+        border-radius: 0 60px 0 60px;
 
-                position: absolute;
-                top: unset !important;
-                bottom: -50px !important;
-                z-index: 11;
-                right: -2px;
-                width: 85px !important;
-            }
+        .card-body {
+          margin-top: 0px;
+          color: #66676a !important;
+          font-size: 17px;
+          line-height: 20px;
+          padding-bottom: 4em;
         }
+        #quoteIcon {
+          img {
+            height: 30px;
+            margin-left: 10px;
+          }
+        }
+      }
+      .logoSponsor {
+        position: absolute;
+        top: unset !important;
+        bottom: -50px !important;
+        z-index: 11;
+        right: -2px;
+        width: 85px !important;
+      }
     }
+  }
 }
 
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-	// hacer algo en ese rango de ancho.
-    #Quote{
-        .cont{
-            margin-left: 0px;
-            margin-right: 0px;
-        
+  #Quote {
+    .cont {
+      margin-left: 0px;
+      margin-right: 0px;
 
-            .card{
-                width: 395px;
-                margin: auto;
-                margin-top: 104px;
+      .card {
+        width: 395px;
+        margin: auto;
+        margin-top: 104px;
 
-                .card-body{
-                    margin-top: 0px !important;
-                }
-            }
-            .logoSponsor{
-                top: unset !important;
-                bottom: -110px !important;
-                right: -33px !important;
-            }
-
+        .card-body {
+          margin-top: 0px !important;
         }
+      }
+      .logoSponsor {
+        top: unset !important;
+        bottom: -110px !important;
+        right: -33px !important;
+      }
     }
+  }
 }

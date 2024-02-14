@@ -1,0 +1,183 @@
+@import "../../scss/colors.scss";
+
+.servicios {
+  min-height: 1412px;
+  margin-top: 96px !important;
+  background-color: $bgLigth;
+  color: black;
+  padding-bottom: 96px;
+
+  button {
+    color: $grisOcuro;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 114.286% */
+  }
+}
+
+.serviciosRow {
+  margin-left: -24px;
+  margin-right: -24px;
+}
+
+.main {
+  margin-top: 96px;
+  min-height: 1220px;
+
+  h2 {
+    color: $grisOcuro;
+    text-align: center;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: "DM Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 96px;
+  }
+
+  h3 {
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+  }
+}
+
+.highlight {
+  border-radius: 100px;
+  border: 1px solid rgba(17, 17, 17, 0.16);
+  background: var(--Blanco, #fff);
+  position: absolute;
+  padding: 8px 16px;
+  width: 80%;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  small {
+    color: $grisOcuro;
+    font-weight: 700;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+  }
+}
+
+.servicioContainer {
+  position: relative;
+  border-radius: 20px;
+  padding: 48px 24px 48px 24px;
+  h2 {
+    margin-bottom: 12px;
+    color: $grisOcuro !important;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    span {
+      color: $secondaryColor;
+      text-align: center;
+      font-family: "DM Sans";
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 72px;
+
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  .note {
+    text-align: center !important;
+    margin-bottom: 24px;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-wrap: pretty;
+  }
+
+  button {
+    padding: 16px 24px;
+  }
+
+  ul {
+    text-align: left;
+    margin-top: 24px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 0px;
+
+    li {
+      margin-left: 0px;
+      margin-bottom: 16px;
+      list-style-type: none;
+      padding-left: 40px;
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: 24px 24px !important;
+      hr {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .footer {
+    margin-top: 24px;
+    padding-right: 40px;
+    text-align: left;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+  }
+}
+
+.dark {
+  background-color: $grisOcuro;
+  color: white;
+  h2 {
+    color: white !important;
+  }
+  h3 {
+    color: $bgLigth !important;
+  }
+}
+.light {
+  background-color: white;
+}
+
+@media (max-width: 420px) {
+  .servicios {
+    margin-left: -24px;
+    margin-right: -24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 0px;
+  }
+
+  .main {
+    margin-top: 64px;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 32px;
+      margin-bottom: 64px;
+    }
+  }
+}
