@@ -1,13 +1,17 @@
 import React from 'react'
 import { Button, Col, Container, Image, Row } from 'react-bootstrap'
+import { useDynamicNavigation } from '../../hooks/useDynamicNavigation '
 import { procesIcon, proceso01, proceso02, proceso03, vector } from '../../assets'
 import styles from './Proceso.module.scss'
 
 export const Proceso = () => {
+
+    const navigate = useDynamicNavigation();
+
     const data = [
         {
             title: `En 1/3 días`,
-            subTitle: `Registras la compañia`,
+            subTitle: `Registrás la compañia`,
             link: '#',
             img: proceso01,
             delay: 0,
@@ -21,7 +25,7 @@ export const Proceso = () => {
         },
         {
             title: `En 1/3 días`,
-            subTitle: `Abris tu cuenta bancaria`,
+            subTitle: `Abrís tu cuenta bancaria`,
             link: '#',
             img: proceso03,
             delay: 600,
@@ -38,9 +42,14 @@ export const Proceso = () => {
                         >
                             <h1>Un proceso <br /><span>rápido y <br />seguro</span></h1>
                         </Col>
-                        <Col className={`h-100 text-start`}>
+                        <Col className={`h-100 text-start`} style={{ paddingTop: '8px' }}>
                             <p>Sin papeleos ni dolores de cabeza legales. Nuestra plataforma en línea automatiza todo el proceso de constitución de empresas con cumplimiento de normativas y atención al cliente global 24/7.</p>
-                            <Button className={`rounded-pill`} >Enviar consulta <Image src={vector} width={24} /></Button>
+                            <Button
+                                className={`rounded-pill`}
+                                onClick={navigate({ newTab: true })}
+                            >
+                                Enviar consulta <Image src={vector} width={24} />
+                            </Button>
                         </Col>
                     </Row>
                     <Row className='g-3' style={{ marginTop: '74px' }}>
