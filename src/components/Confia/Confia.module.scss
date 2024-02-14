@@ -1,4 +1,5 @@
 @import "../../scss/colors";
+@import "../../scss/layout";
 
 $sectionHeigth: 1128px;
 
@@ -116,7 +117,7 @@ $sectionHeigth: 1128px;
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: $mobileBreak) {
   .confia {
     h1 {
       text-align: center;

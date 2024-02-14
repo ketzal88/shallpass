@@ -1,10 +1,11 @@
 @import "./scss/colors.scss";
+@import "./scss/layout.scss";
 
 .App {
   text-align: center;
 }
 
-@media (max-width: 420px) {
+@media (max-width: $mobileBreak) {
   .App {
     padding-left: 24px;
     padding-right: 24px;

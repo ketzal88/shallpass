@@ -1,4 +1,5 @@
 @import "../../scss/colors.scss";
+@import "../../scss/layout.scss";
 
 .servicios {
   min-height: 1412px;
@@ -161,7 +162,7 @@
   background-color: white;
 }
 
-@media (max-width: 420px) {
+@media (max-width: $mobileBreak) {
   .servicios {
     margin-left: -24px;
     margin-right: -24px;
@@ -178,6 +179,15 @@
       font-weight: 700;
       line-height: 32px;
       margin-bottom: 64px;
+    }
+    .servicioContainer {
+      h2 {
+        font-size: 64px;
+        margin-bottom: 16px;
+        span {
+          font-size: 48px;
+        }
+      }
     }
   }
 }

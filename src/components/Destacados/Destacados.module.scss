@@ -1,4 +1,6 @@
 @import "../../scss/colors";
+@import "../../scss/layout";
+
 $sectionHeigth: 112px;
 
 .destacados {
@@ -42,7 +44,7 @@ $sectionHeigth: 112px;
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: $mobileBreak) {
   .destacados {
     height: unset;
   }

@@ -1,4 +1,5 @@
 @import "../../scss/colors.scss";
+@import "../../scss/layout.scss";
 
 .consultas {
   min-height: 171px;
@@ -46,7 +47,7 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: $mobileBreak) {
   .consultas {
     padding-left: 0px;
     padding-right: 0px;
