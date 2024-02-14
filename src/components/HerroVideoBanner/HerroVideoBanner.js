@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, Col, Container, Image, Row } from 'react-bootstrap'
 import useScreenSize from '../../hooks/useScreenSize'
 import useIsIOS from '../../hooks/useIsIOS'
+import { useDynamicNavigation } from '../../hooks/useDynamicNavigation '
 import { vectorCircle } from '../../assets'
 import styles from './HerroVideoBanner.module.scss'
 
@@ -10,6 +11,8 @@ export const HerroVideoBanner = ({ video, videoMp4, poster }) => {
     const isMobile = useScreenSize();
 
     const isIOS = useIsIOS()
+
+    const navigate = useDynamicNavigation();
 
     return (
         <Container className={`${styles.HerroVideoBanner}`}>
@@ -20,7 +23,10 @@ export const HerroVideoBanner = ({ video, videoMp4, poster }) => {
                     <h4>Creá una cuenta bancaria en <span>USA y {!isMobile && <br />}cobrá en dolares.</span></h4>
                     <Col className={`${styles.ctaContainer}  h-100 `}>
                         <Col className='d-flex'>
-                            <Button className="rounded-pill">
+                            <Button
+                                className="rounded-pill"
+                                onClick={navigate({ newTab: true })}
+                            >
                                 Enviar consulta
                             </Button>
                             <Image className={`${styles.vectorColor}`} src={vectorCircle} />

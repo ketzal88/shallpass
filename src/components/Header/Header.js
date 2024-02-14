@@ -1,12 +1,15 @@
 import React from "react";
 import { Button, Col, Container, Image, Row } from "react-bootstrap";
 import { useMediaQuery } from 'react-responsive'
+import { useDynamicNavigation } from '../../hooks/useDynamicNavigation ';
 import { vector } from "../../assets";
 import styles from './Header.module.scss'
 
 export const Header = ({ logo }) => {
 
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 526px)' })
+
+  const navigate = useDynamicNavigation();
 
   return (
     <Container className={`${styles.header}`}>
@@ -15,7 +18,10 @@ export const Header = ({ logo }) => {
           <Image src={logo} fluid width='147px' />
         </Col>
         <Col className={`${styles.cta}`}>
-          <Button className="rounded-pill">
+          <Button
+            className="rounded-pill"
+            onClick={navigate({ newTab: true })}
+          >
             {isTabletOrMobile
               ? (<><span>Consultar </span><Image src={vector} width='16px' height='16px' /> </>)
               : (<><span>Enviar consulta </span><Image src={vector} width='16px' height='16px' /> </>)
