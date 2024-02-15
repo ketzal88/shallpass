@@ -5,28 +5,35 @@ import "./Form.scss";
 
 import { Button, Col, Container, Image, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import { vector } from '../../assets'
+import { vector } from "../../assets";
 
 export const FormLanding = ({
   SERVICE_ID = process.env.REACT_APP_SERVICE_ID,
   TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID,
   PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY,
   id = "fromHeader",
-  submitText = 'ENVIAR CONSULTA',
+  submitText = "ENVIAR CONSULTA",
 }) => {
-
   const form = useRef();
   const [formResponse, setFormResponse] = useState(false);
 
+  const handleFormDataLayer = (email, phone) => {
+    window.dataLayer.push({
+      event: "FormData",
+      email: email,
+      phone: phone,
+      sent: true,
+    });
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         `${SERVICE_ID}`,
         `${TEMPLATE_ID}`,
         form.current,
-        `${PUBLIC_KEY}`,
+        `${PUBLIC_KEY}`
       )
       .then(
         (result) => {
@@ -35,8 +42,10 @@ export const FormLanding = ({
         },
         (error) => {
           console.log(error.text);
-        },
+        }
       );
+
+    handleFormDataLayer(form.current[1].value, form.current[2].value);
   };
 
   const navigate = useNavigate();
@@ -88,10 +97,11 @@ export const FormLanding = ({
             </Col>
             <Col md={6}></Col>
             <Col
-              md={6} xs={12}
+              md={6}
+              xs={12}
               id="sendEmail"
               className={`align-self-end text-end`}
-              style={{ paddingRight: '12px', paddingLeft: '12px' }}
+              style={{ paddingRight: "12px", paddingLeft: "12px" }}
             >
               <Button variant="primary" className="rounded-pill" type="submit">
                 {submitText} <Image src={vector} />
