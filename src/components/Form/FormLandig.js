@@ -45,7 +45,7 @@ export const FormLanding = ({
         }
       );
 
-    handleFormDataLayer(form.current[1].value, form.current[2].value);
+    handleFormDataLayer(form.current[2].value, form.current[1].value);
   };
 
   const navigate = useNavigate();
