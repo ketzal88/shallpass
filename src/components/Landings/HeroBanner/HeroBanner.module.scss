@@ -1,0 +1,59 @@
+@import "../../../scss/landingsShared.scss";
+
+.main {
+  height: 753px;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-top: 24px;
+  border: 1px solid red;
+  display: flex;
+  align-content: flex-start;
+
+  h1 {
+    text-align: left;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    font-family: "DM Sans";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 96px; /* 100% */
+    text-transform: uppercase;
+    margin: 40px 0 0 0;
+    padding: 0px;
+  }
+  small {
+    margin: 130px 0 0 0;
+    padding: 0px;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 110% */
+    text-align: left;
+  }
+  p {
+    margin: 40px 0 0 0;
+    padding: 0 260px 0 0;
+    text-align: left;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 133.333% */
+  }
+}
+
+.spanText {
+  color: $Naranja;
+}

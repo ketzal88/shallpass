@@ -7,6 +7,7 @@ import { Home } from "./pages/Home";
 import { LLCLandings } from "./pages/LLCLanding";
 import { Thanks } from "./pages/Thanks";
 import "./App.scss";
+import { CiudadaniaEspanola } from "./pages/CiudadaniaEspanola";
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/llc" element={<LLCLandings />} />
         <Route path="thanks" element={<Thanks />} />
+        <Route path="ciudadania-espanola" element={<CiudadaniaEspanola />} />
 
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
