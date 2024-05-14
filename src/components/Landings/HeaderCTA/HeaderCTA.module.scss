@@ -1,0 +1,35 @@
+.main {
+  height: 98px;
+  padding-left: 72px;
+  padding-right: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ctaButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  text-align: right;
+  padding: 0px;
+  button {
+    height: 50px;
+    padding: 10px 20px 10px 20px;
+    span {
+      color: black;
+      font-weight: 600;
+      font-size: 16px;
+      margin: 0 10px 0 0px;
+    }
+  }
+}
+
+.cta {
+}

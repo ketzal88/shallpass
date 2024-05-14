@@ -1,9 +1,9 @@
 import { useNavigate } from 'react-router-dom';
 
-export const useDynamicNavigation = () => {
+export const useDynamicNavigation = (number = '+5491134658988') => {
     const navigate = useNavigate();
 
-    const whatsAppNumber = '+5491134658988';
+    const whatsAppNumber = number;
     const whatsAppData = `https://api.whatsapp.com/send?phone=${whatsAppNumber}&text=Hola!%20Quisiera%20consultar%20por%20sus%20servicios.`;
 
     // Función para manejar el click, acepta un objeto como argumento
