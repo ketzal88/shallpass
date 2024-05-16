@@ -1,0 +1,36 @@
+@import "../../../scss/landingsShared.scss";
+
+.cardGrid {
+  padding-left: 71px;
+  padding-right: 71px;
+  margin-top: 96px !important;
+}
+
+.cardItem {
+}
+.cardIcon {
+  min-height: 84px;
+  display: flex;
+}
+.cardCont {
+  min-height: 200px;
+  background-color: $Gris-oscuro !important;
+  padding-left: 24px;
+  border-radius: 26.6px;
+  padding-right: 24px;
+  text-align: left;
+  p {
+    color: $Beige;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26.625px; /* 133.125% */
+    text-align: left;
+  }
+}
+.cardBody {
+}
