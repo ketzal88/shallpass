@@ -5,7 +5,6 @@
   padding-left: 72px;
   padding-right: 72px;
   padding-top: 24px;
-  border: 1px solid red;
   display: flex;
   align-content: flex-start;
 
@@ -25,7 +24,7 @@
     padding: 0px;
   }
   small {
-    margin: 130px 0 0 0;
+    margin: 0px;
     padding: 0px;
     font-feature-settings:
       "clig" off,
@@ -36,7 +35,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 22px; /* 110% */
-    text-align: left;
   }
   p {
     margin: 40px 0 0 0;
@@ -52,8 +50,51 @@
     font-weight: 400;
     line-height: 32px; /* 133.333% */
   }
+
+  button {
+    color: black;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    padding: 24px;
+    margin: 0px;
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+.ctaContainer {
+  padding: 0px;
+  margin-top: 40px;
+}
+
+.textConatiner {
+  z-index: 14;
+  position: relative;
+  margin: 0px !important;
+  padding: 89px 260px 0 100px;
+  text-align: left;
 }
 
 .spanText {
   color: $Naranja;
+}
+
+.videoBack {
+  position: absolute;
+  z-index: 1 !important;
+  min-height: 680px;
+  left: 0px;
+  padding: 0px;
+  overflow: hidden;
+  border-radius: 30px;
+  top: 0px;
+}
+
+.videoStyle {
+  width: 100%;
 }

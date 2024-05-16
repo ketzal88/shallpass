@@ -8,6 +8,8 @@ export { default as bulletDark } from "./svg/bulletDark.svg";
 export { default as procesIcon } from "./svg/procesIcon.svg";
 export { default as vectorCircle } from "./svg/vectorCircle.svg";
 export { default as logoShallPassBaloon } from "./svg/logoShallPassBaloon.svg";
+export { default as bulletListStandar } from "./svg/bulletLandingListStandar.svg";
+
 
 // iconos
 export { default as comercialIcon } from "./svg/administarcionIcon.svg";
@@ -23,6 +25,14 @@ export { default as confia01 } from "./svg/confia01.svg";
 export { default as confia02 } from "./svg/confia02.svg";
 export { default as confia03 } from "./svg/confia03.svg";
 export { default as confia04 } from "./svg/confia04.svg";
+// Ciudadania española
+export { default as cardIcon01 } from "./svg/work_black_24dp 1.svg";
+export { default as cardIcon02 } from "./svg/school_black_36dp 1.svg";
+export { default as cardIcon03 } from "./svg/account_balance_black_36dp 1.svg";
+export { default as cardIcon04 } from "./svg/sync_black_36dp 1.svg";
+export { default as cardIcon05 } from "./svg/family_restroom_black_36dp 1.svg";
+export { default as cardIcon06 } from "./svg/subtitles_black_36dp 1.svg";
+
 
 // logos sponsors
 export { default as beatflowLogo } from "./svg/beatflowLogo.svg";
@@ -40,7 +50,10 @@ export { default as proceso01 } from "./img/image70.webp";
 export { default as proceso02 } from "./img/image71.webp";
 export { default as proceso03 } from "./img/image72.webp";
 export { default as posterVideoHero } from "./img/posterVideoHero.jpg";
+export { default as posterEspanol } from "./img/espanolPoster.webp";
 
 // videos
 export { default as heroVideo } from "./videos/heroVideo.webm";
 export { default as heroVideoMp4 } from "./videos/heroVideo.mp4";
+export { default as espanolHeroVideoMp4 } from "./videos/video-landing-ciudadanias.mp4";
+export { default as espanolHeroVideoWebm } from "./videos/video-landing-ciudadanias.webm";

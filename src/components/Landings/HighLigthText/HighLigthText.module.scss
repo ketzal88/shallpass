@@ -1,0 +1,17 @@
+.hightLightText {
+  padding-left: 71px;
+  padding-right: 71px;
+  h2 {
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: "DM Sans";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 100% */
+    text-align: left;
+
+    margin-top: 96px;
+  }
+}
