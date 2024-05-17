@@ -1,0 +1,57 @@
+@import "../../../scss/landingsShared.scss";
+.price {
+  margin-top: 96px !important;
+  color: $Beige !important;
+  .title {
+    color: $Beige;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    .claim {
+      display: flex;
+      text-align: center;
+      font-feature-settings:
+        "clig" off,
+        "liga" off;
+      font-family: "DM Sans";
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 64px; /* 100% */
+    }
+    .currency {
+      display: flex;
+      color: $Naranja;
+      text-align: center;
+      font-family: "DM Sans";
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 72px; /* 180% */
+      justify-content: flex-end;
+    }
+    .amount {
+      display: flex;
+      text-align: center;
+      font-family: "DM Sans";
+      font-size: 96px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 48px; /* 50% */
+    }
+  }
+  p {
+    color: white;
+    text-align: center;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: "DM Sans";
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 24px; /* 150% */
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+}

@@ -78,7 +78,7 @@ export const FormLanding = ({
               />
             </Col>
             <Col md={12} className="formItem">
-              <label>Consulta</label>
+              <label>Mensaje/Consulta</label>
               <br />
               <textarea
                 name="message"
