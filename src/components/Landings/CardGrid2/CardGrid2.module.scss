@@ -1,0 +1,62 @@
+@import "../../../scss/landingsShared.scss";
+
+.cardGrid {
+  margin-top: 32px !important;
+  padding: 0 42px 0 42px;
+}
+
+.cardItem {
+  //   border: 1px solid yellow;
+  padding-left: 34px !important;
+  padding-right: 34px !important;
+  margin-top: 64px !important;
+  height: 100% !important;
+}
+
+.center {
+  border-left: 1px solid rgba(255, 255, 255, 0.24);
+  border-right: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.cardCont {
+  text-align: left;
+  //   border: 1px solid blue;
+  background-color: transparent !important;
+  color: $Beige !important;
+}
+.cardIcon {
+  border: 1px solid green;
+}
+.cardTitle2 {
+  text-align: left;
+  color: white !important;
+
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 24px; /* 100% */
+  span {
+    color: $Naranja;
+  }
+}
+
+.cardBody2 {
+  //   padding-right: 20px !important;
+
+  p {
+    // color: $Beige;
+
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+  }
+}

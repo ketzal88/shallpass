@@ -1,0 +1,107 @@
+@import "../../../scss/landingsShared.scss";
+
+.dark {
+  background-color: $Gris-oscuro;
+  color: $Beige;
+}
+
+.light {
+  background-color: white;
+  color: $Negro;
+}
+
+.explainer {
+  padding: 96px 71px 96px 71px;
+  // margin-top: 96px !important;
+}
+
+.title {
+  h2 {
+    color: $Negro;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: "DM Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 100% */
+    text-align: left;
+    .spanText {
+      color: $Naranja;
+    }
+  }
+}
+
+.copy {
+  color: Negro;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  text-align: left;
+  margin-top: 30px;
+}
+
+.standarList {
+  text-align: left;
+  padding-left: 0px;
+  width: 100%;
+  margin-bottom: 40px;
+  li {
+    background-image: url(../../../assets/svg/bulletLandingListHigligth.svg);
+    margin-left: 0px;
+    margin-bottom: 16px;
+    list-style-type: none;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 24px 24px !important;
+    color: var(--Negro, #000);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+}
+
+.higligthList {
+  margin-top: 40px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  margin-bottom: 40px;
+  li {
+    background-image: url(../../../assets/svg/bulletLandingListHigligth.svg);
+  }
+}
+
+.higligthListTitle {
+  color: $Negro;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  text-align: left;
+  margin-bottom: 0px;
+  span {
+    color: $Naranja;
+  }
+}

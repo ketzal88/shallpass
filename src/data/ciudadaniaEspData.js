@@ -45,4 +45,46 @@ const explainerHigligthList = [
 
 ]
 
-export { cardData, expalinerStandarList, explainerHigligthListTitle, explainerHigligthList }
+const explainer2StandarList = [
+    `Te vas a ahorrar el estrés, la pérdida de tiempo y dinero al buscar información y documentación en lugares inadecuados.`,
+    `Podes delegar la complejidad y burocracia excesiva al tener que remitirnos a documentos de más de 100 años de antigüedad.`,
+    `La falta de tiempo necesaria para dedicarle a este tipo de gestión, así como varios temores, o el riesgo de que el consulado rechace nuestra carpeta o la solicitud de nacionalidad ya no será un problema.`,
+    `Nos ocuparemos de la dificultad para obtener un turno consular, o la posibilidad de no reunir todos los documentos necesarios. `,
+    `Te brindaremos seguridad al encomendar en nosotros una gestión tan crucial como esta.`,
+]
+
+const servicios = [
+    {
+        title: `<span>Agilización</span> <br/>de los plazos`,
+        body: `Gracias a nuestro experimentado equipo y nuestra red de colaboradores externos.`,
+    },
+    {
+        title: `<span>Recopilación</span> de toda la <br/>documentación`,
+        body: `necesaria, actualizada y legalizada según los requisitos.`,
+    },
+    {
+        title: `<span>Completado</span> de anexos y <br/>formularios específicos`,
+        body: `Requeridos por cada <br/>Consulado.`,
+    },
+    {
+        title: `<span>Acceso</span> directo a nuestro <br/>personal`,
+        body: `De forma física o virtual, en nuestras oficinas en CABA o a través de whatsapp.`,
+    },
+    {
+        title: `<span>Firma</span> de un <br/>contrato`,
+        body: `Vinculante previo al inicio de la gestión, para tu tranquilidad y seguridad.`,
+    },
+    {
+        title: `<span>Envío</span> de la <br/>documentación`,
+        body: `De forma virtual y física, a través de correo certificado, etc`,
+    },
+]
+
+export {
+    cardData,
+    expalinerStandarList,
+    explainerHigligthListTitle,
+    explainerHigligthList,
+    explainer2StandarList,
+    servicios,
+}
