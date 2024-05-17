@@ -37,6 +37,9 @@ export const HeroBanner = ({ heroTex, spanText, smallText, explainer, video, vid
                         </Col>
                     </Col>
                 </Col>
+                <Col className={`${styles.shadow}`}>
+                    hola
+                </Col>
 
                 <Col className={`${styles.videoBack}`}>
                     {
