@@ -1,5 +1,32 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
 .mian {
   max-width: 1440px !important;
   margin: 0px;
   padding: 0px;
+}
+
+.bgR {
+  background-image: url(../assets/svg/EllipseRight.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: -12px;
+  padding-right: 12px;
+
+  @include media-breakpoint-down(md) {
+    background-image: none;
+  }
+}
+.bgL {
+  background-image: url(../assets/svg/Ellipse.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-left: -12px;
+  padding-left: 12px;
+
+  @include media-breakpoint-down(md) {
+    background-image: none;
+  }
 }
