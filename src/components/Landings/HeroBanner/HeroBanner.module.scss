@@ -80,6 +80,16 @@
   text-align: left;
 }
 
+.shadow {
+  position: absolute;
+  z-index: 2 !important;
+  min-height: 108%;
+  min-width: 100%;
+  top: 0px;
+  opacity: 0.77;
+  background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
 .spanText {
   color: $Naranja;
 }
