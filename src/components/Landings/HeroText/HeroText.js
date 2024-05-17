@@ -9,7 +9,7 @@ export const HeroText = ({ titel, copy }) => {
     const sanitizer = DOMPurify.sanitize;
 
     return (
-        <Row className={`${styles.heroTex}`}>
+        <Row className={`${styles.heroTex}`} data-aos="zoom-out">
             <h1 dangerouslySetInnerHTML={{ __html: sanitizer(titel) }} />
             <p dangerouslySetInnerHTML={{ __html: sanitizer(copy) }} />
         </Row>

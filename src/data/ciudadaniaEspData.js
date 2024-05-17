@@ -3,27 +3,33 @@ import { cardIcon01, cardIcon02, cardIcon03, cardIcon04, cardIcon05, cardIcon06 
 const cardData = [
     {
         icon: cardIcon01,
-        body: `Podrás obtener un trabajo formal dentro de la comunidad europea.`
+        body: `Podrás obtener un trabajo formal dentro de la comunidad europea.`,
+        delay: 300,
     },
     {
         icon: cardIcon02,
-        body: `Podrás realizar estudios en cualquier institución. `
+        body: `Podrás realizar estudios en cualquier institución. `,
+        delay: 500,
     },
     {
         icon: cardIcon03,
-        body: `Accedé a empleos en la administración pública.`
+        body: `Accedé a empleos en la administración pública.`,
+        delay: 700,
     },
     {
         icon: cardIcon04,
-        body: `Tendrás libre circulación por el espacio Schengen.`
+        body: `Tendrás libre circulación por el espacio Schengen.`,
+        delay: 900,
     },
     {
         icon: cardIcon05,
-        body: `Podrás transmitir la nacionalidad a tus hijos menores de edad.`
+        body: `Podrás transmitir la nacionalidad a tus hijos menores de edad.`,
+        delay: 1100,
     },
     {
         icon: cardIcon06,
-        body: `Ingresá de forma libre a otros países de la unión europea, sin necesidad de una visa.`
+        body: `Ingresá de forma libre a otros países de la unión europea, sin necesidad de una visa.`,
+        delay: 1300,
     },
 ]
 
