@@ -14,11 +14,17 @@ export const CardGrid2 = ({ cardData, xsColum = 1, mdColumn = 2, lgColum = 3 }) 
             <Col md={10} style={{ padding: '0px' }} className='h-100'>
                 <Row xs={xsColum} md={mdColumn} lg={lgColum} className={`g-4`}>
                     {cardData.map((data, id) => (
-                        <Col key={id} className={`
-                                        ${styles.cardItem} 
-                                        h-100
-                                        ${((lgColum % 2 === 1) && (id === 1 || id === 4 || id === 7)) ? (styles.center) : ''}
-                                        `}>
+                        <Col
+                            key={id}
+                            className={`
+                                ${styles.cardItem} 
+                                h-100
+                                ${((lgColum % 2 === 1) && (id === 1 || id === 4 || id === 7)) ? (styles.center) : ''}`}
+                            data-aos="fade-up"
+                            data-aos-delay={(id + 1) * 200}
+                            data-aos-anchor-placement="top-bottom"
+
+                        >
                             <Card className={`${styles.cardCont}`}>
                                 <Card.Title className={`${styles.cardTitle2}`}>
                                     <h4 dangerouslySetInnerHTML={{ __html: sanitizer(data.title) }} />

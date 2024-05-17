@@ -13,7 +13,12 @@ export const CardGrid = ({ cardData, xsColum = 1, mdColumn = 2, lgColum = 3 }) =
             <Col md={10} style={{ padding: '0px' }}>
                 <Row xs={xsColum} md={mdColumn} lg={lgColum} className={`g-4`}>
                     {cardData.map((data, id) => (
-                        <Col key={id} className={`${styles.cardItem} h-100`}>
+                        <Col
+                            key={id}
+                            className={`${styles.cardItem} h-100`}
+                            data-aos="fade-up"
+                            data-aos-delay={data.delay}
+                        >
                             <Card className={`${styles.cardCont}`}>
                                 <Card.Title className={`${styles.cardIcon}`}>
                                     <Image src={data.icon} />

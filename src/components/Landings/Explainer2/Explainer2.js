@@ -27,7 +27,7 @@ export const Explainer2 = ({ dark = false, title, titleSpan, copy, standarList, 
         >
             <Col md={10} style={{ padding: '0px' }}>
                 <Row className={``}>
-                    <Col className={`${styles.title}`} xs={12} md={5}>
+                    <Col className={`${styles.title}`} xs={12} md={5} data-aos="zoom-out">
                         <h2 className={styles.heroText}>
                             <span dangerouslySetInnerHTML={{ __html: sanitizer(title) }} />
                             <span className={`${styles.spanText}`} dangerouslySetInnerHTML={{ __html: sanitizer(titleSpan) }} />
@@ -38,7 +38,13 @@ export const Explainer2 = ({ dark = false, title, titleSpan, copy, standarList, 
                         <Col xs={12} md={{ span: 6, offset: 1 }} >
                             <ul className={`${styles.standarList}`}>
                                 {standarList.map((li, id) => (
-                                    <li key={id} dangerouslySetInnerHTML={{ __html: sanitizer(li) }} />
+                                    <li
+                                        key={id}
+                                        dangerouslySetInnerHTML={{ __html: sanitizer(li) }}
+                                        data-aos="fade-up"
+                                        data-aos-delay={(id + 1) * 200}
+                                        data-aos-anchor-placement="top-bottom"
+                                    />
                                 ))}
                             </ul>
                             {hihligthList &&
@@ -48,7 +54,13 @@ export const Explainer2 = ({ dark = false, title, titleSpan, copy, standarList, 
                                     ))}
                                     <ul className={`${styles.standarList}`}>
                                         {hihligthList.map((li, id) => (
-                                            <li key={id} dangerouslySetInnerHTML={{ __html: sanitizer(li) }} />
+                                            <li
+                                                key={id}
+                                                dangerouslySetInnerHTML={{ __html: sanitizer(li) }}
+                                                data-aos="fade-up"
+                                                data-aos-delay={(id + 1) * 200}
+                                                data-aos-anchor-placement="top-bottom"
+                                            />
                                         ))}
                                     </ul>
                                 </Col>
