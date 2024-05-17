@@ -93,6 +93,10 @@
   overflow: hidden;
   border-radius: 30px;
   top: 0px;
+  video {
+    // transform: scaleY(2);
+    transform: scaleX(-1.35) scaleY(1.35) translate(-150px);
+  }
 }
 
 .videoStyle {
