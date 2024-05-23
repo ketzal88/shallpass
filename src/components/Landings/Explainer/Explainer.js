@@ -25,7 +25,12 @@ export const Explainer = ({ dark = false, title, titleSpan, standarList, hihligt
         `}
 
         >
-            <Col md={10} style={{ padding: '0px' }}>
+            <Col md={10} style={{ padding: '0px' }}
+                className={`
+                    ${styles.explainer}
+                    ${styles.main}
+                    `}>
+
                 <Row className={``}>
                     <Col className={`${styles.title}`} xs={12} md={4} data-aos="zoom-out">
                         <h2 className={styles.heroText}>

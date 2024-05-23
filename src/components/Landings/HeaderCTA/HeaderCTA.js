@@ -15,7 +15,7 @@ export const HeaderCTA = () => {
     return (
         <Row className={`${styles.main}`}>
             <Col md={2} className={`${styles.logoContainer}`}>
-                <Image src={logoShallPassBaloon} />
+                <Image src={logoShallPassBaloon} alt='Logo de Shall Pass' />
             </Col>
             <Col className={`${styles.ctaButtonContainer} h-100`}>
                 <Button
@@ -23,8 +23,8 @@ export const HeaderCTA = () => {
                     onClick={navigate({ newTab: true })}
                 >
                     {isTabletOrMobile
-                        ? (<><span>Consultar </span><Image src={vector} width='16px' height='16px' /> </>)
-                        : (<><span>Enviar consulta </span><Image src={vector} width='16px' height='16px' /> </>)
+                        ? (<><span>Consultar </span><Image src={vector} width='16px' height='16px' alt='flecha hacia la derecha' /> </>)
+                        : (<><span>Enviar consulta </span><Image src={vector} width='16px' height='16px' alt='flecha hacia la derecha' /> </>)
                     }
                 </Button>
             </Col>
