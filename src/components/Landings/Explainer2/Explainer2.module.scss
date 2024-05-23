@@ -1,5 +1,7 @@
 @import "../../../scss/landingsShared.scss";
 
+$anchoDeCaja: $maxWith - (4 * $margin);
+
 .dark {
   background-color: $Gris-oscuro;
   color: $Beige;
@@ -13,6 +15,10 @@
 .explainer {
   padding: 96px 71px 96px 71px;
   // margin-top: 96px !important;
+}
+
+.main {
+  max-width: $anchoDeCaja !important;
 }
 
 .title {

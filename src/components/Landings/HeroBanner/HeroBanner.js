@@ -33,7 +33,7 @@ export const HeroBanner = ({ heroTex, spanText, smallText, explainer, video, vid
                             >
                                 Enviar consulta
                             </Button>
-                            <Image className={`${styles.vectorColor}`} src={vectorCircle} />
+                            <Image className={`${styles.vectorColor}`} src={vectorCircle} alt='flecha hacia la derecha' />
                         </Col>
                     </Col>
                 </Col>

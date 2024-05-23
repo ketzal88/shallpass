@@ -2,8 +2,13 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
-.mian {
+.main {
   max-width: 1440px !important;
+  margin: 0px;
+  padding: 0px;
+}
+.mainFullW {
+  // max-width: 1440px !important;
   margin: 0px;
   padding: 0px;
 }

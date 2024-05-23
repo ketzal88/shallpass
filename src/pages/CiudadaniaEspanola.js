@@ -1,6 +1,6 @@
 import React from 'react'
 import { Atencion } from '../components/Landings/Atencion/Atencion'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 
 import { HeaderCTA } from '../components/Landings/HeaderCTA/HeaderCTA'
 import { HeroBanner } from '../components/Landings/HeroBanner/HeroBanner'
@@ -21,11 +21,11 @@ import styles from './Landings.module.scss'
 
 export const CiudadaniaEspanola = () => {
     return (
-        < >
+        <>
             <Row className={`justify-content-md-center ${styles.bgR}`}>
-                <Col className={`${styles.mian}`}>
+                <Atencion />
+                <Col className={`${styles.main}`}>
 
-                    <Atencion />
                     <HeaderCTA />
                     <HeroBanner
                         heroTex={`Conviértete <br/>en `}
@@ -41,19 +41,27 @@ export const CiudadaniaEspanola = () => {
                 </Col>
             </Row>
             <Row className={`justify-content-md-center ${styles.bgL}`}>
-                <Col className={`${styles.mian}`}>
-                    <Explainer
-                        title={`Quienes pueden solicitar la `}
-                        titleSpan={`ciudadanía española?`}
-                        standarList={expalinerStandarList}
-                        higligthListTitle={explainerHigligthListTitle}
-                        hihligthList={explainerHigligthList}
-                    />
-                    <Explainer2
-                        title={`Beneficios de tramitar tu carpeta con Shall Pass`}
-                        copy={` Nos enfrentamos a una serie de desafíos al buscar obtener la nacionalidad española, nosotros lo sabemos y te vamos a asesorar durante todo el proceso.`}
-                        standarList={explainer2StandarList}
-                    />
+                <Row className={`justify-content-md-center`}>
+                    <Col className={`${styles.mainFullW}`}>
+                        <Explainer
+                            title={`Quienes pueden solicitar la `}
+                            titleSpan={`ciudadanía española?`}
+                            standarList={expalinerStandarList}
+                            higligthListTitle={explainerHigligthListTitle}
+                            hihligthList={explainerHigligthList}
+                        />
+                    </Col>
+                </Row>
+                <Row className={`justify-content-md-center`}>
+                    <Col className={`${styles.mainFullW}`}>
+                        <Explainer2
+                            title={`Beneficios de tramitar tu carpeta con Shall Pass`}
+                            copy={` Nos enfrentamos a una serie de desafíos al buscar obtener la nacionalidad española, nosotros lo sabemos y te vamos a asesorar durante todo el proceso.`}
+                            standarList={explainer2StandarList}
+                        />
+                    </Col>
+                </Row>
+                <Col className={`${styles.main}`}>
                     <HeroText titel={`Servicio de armado de<br/>carpeta`} copy={`Con nuestro servicio de armado de carpeta encontrarás`} />
                     <CardGrid2 cardData={servicios} />
                     <Price />
