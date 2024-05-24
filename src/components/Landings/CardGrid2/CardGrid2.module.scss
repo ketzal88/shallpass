@@ -3,6 +3,18 @@
 .cardGrid {
   margin-top: 32px !important;
   padding: 0 42px 0 42px;
+  @include media-breakpoint-down(md) {
+    margin: 0px !important;
+
+    padding: 0px !important;
+    .cardItem {
+      margin: 0px !important;
+      padding: 0px $marginMobile 0 $marginMobile !important;
+    }
+    .cardContainer {
+      margin: 0px !important;
+    }
+  }
 }
 
 .cardItem {
@@ -16,6 +28,17 @@
 .center {
   border-left: 1px solid rgba(255, 255, 255, 0.24);
   border-right: 1px solid rgba(255, 255, 255, 0.24);
+  @include media-breakpoint-down(md) {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 24px;
+      right: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.24);
+    }
+  }
 }
 
 .cardCont {
@@ -28,19 +51,28 @@
   border: 1px solid green;
 }
 .cardTitle2 {
-  text-align: left;
-  color: white !important;
+  h4 {
+    text-align: left;
+    color: white !important;
 
-  font-feature-settings:
-    "clig" off,
-    "liga" off;
-  font-family: "DM Sans";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700 !important;
-  line-height: 24px; /* 100% */
-  span {
-    color: $Naranja;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700 !important;
+    line-height: 24px; /* 100% */
+    span {
+      color: $Naranja;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700 !important;
+      line-height: 24px; /* 100% */
+      margin-top: 40px;
+    }
   }
 }
 
@@ -58,5 +90,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 120% */
+    @include media-breakpoint-down(md) {
+      margin-bottom: 40px;
+      color: var(--Beige, #f5f0e1);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 120% */
+    }
   }
 }

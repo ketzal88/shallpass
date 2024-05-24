@@ -15,11 +15,15 @@ import { CardGrid2 } from '../components/Landings/CardGrid2/CardGrid2'
 import { Price } from '../components/Landings/Price/Price'
 import { FooterLanding } from '../components/Landings/FooterLanding/FooterLanding'
 import { FormSection } from '../components/FormSection/FormSection'
+import useScreenSize from '../hooks/useScreenSize'
 
 import styles from './Landings.module.scss'
 
 
 export const CiudadaniaEspanola = () => {
+
+    const isMobile = useScreenSize()
+
     return (
         <>
             <Row className={`justify-content-md-center ${styles.bgR}`}>
@@ -54,7 +58,7 @@ export const CiudadaniaEspanola = () => {
                         />
                     </Col>
                 </Row>
-                {/* <Row className={`justify-content-md-center`}>
+                <Row className={`justify-content-md-center  ${styles.explainerContainer}`}>
                     <Col className={`${styles.mainFullW}`}>
                         <Explainer2
                             title={`Beneficios de tramitar tu carpeta con Shall Pass`}
@@ -62,14 +66,16 @@ export const CiudadaniaEspanola = () => {
                             standarList={explainer2StandarList}
                         />
                     </Col>
-                </Row> */}
-                {/* <Col className={`${styles.main}`}>
+                </Row>
+                <Col className={`${styles.main}`}>
                     <HeroText titel={`Servicio de armado de<br/>carpeta`} copy={`Con nuestro servicio de armado de carpeta encontrarás`} />
                     <CardGrid2 cardData={servicios} />
                     <Price />
+                    {isMobile && <Col style={{ minHeight: '64px' }} />}
                     <FormSection />
+                    {isMobile && <Col style={{ minHeight: '64px' }} />}
                     <FooterLanding />
-                </Col> */}
+                </Col>
             </Row>
 
         </>

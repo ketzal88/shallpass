@@ -2,6 +2,7 @@
 .price {
   margin-top: 96px !important;
   color: $Beige !important;
+
   .title {
     color: $Beige;
     display: flex;
@@ -19,25 +20,30 @@
       font-weight: 700;
       line-height: 64px; /* 100% */
     }
-    .currency {
+    .piceContaimer {
       display: flex;
-      color: $Naranja;
-      text-align: center;
-      font-family: "DM Sans";
-      font-size: 40px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 72px; /* 180% */
-      justify-content: flex-end;
-    }
-    .amount {
-      display: flex;
-      text-align: center;
-      font-family: "DM Sans";
-      font-size: 96px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 48px; /* 50% */
+      align-items: center;
+      .currency {
+        display: flex;
+        color: $Naranja;
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 72px; /* 180% */
+        justify-content: flex-end;
+        padding-right: 0.7em;
+      }
+      .amount {
+        display: flex;
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px; /* 50% */
+      }
     }
   }
   p {
@@ -53,5 +59,40 @@
     line-height: 24px; /* 150% */
     margin-top: 64px;
     margin-bottom: 64px;
+  }
+  @include media-breakpoint-down(md) {
+    margin: 127px 0 0 0 !important;
+    .title {
+      flex-direction: column;
+      margin: 0px;
+      .claim {
+        justify-content: center;
+      }
+      .piceContaimer {
+        margin-top: 40px;
+        .currency {
+          display: inline-flexbox;
+          padding-right: 10px;
+        }
+        .amount {
+          display: inline-flexbox;
+          margin-bottom: 0px;
+          justify-content: flex-end;
+          padding-right: $marginMobile;
+          font-size: 96px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 70px;
+        }
+      }
+    }
+    p {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+      padding: 40px $marginMobile 0px $marginMobile !important;
+      margin: 0 0 40px 0 !important;
+    }
   }
 }
