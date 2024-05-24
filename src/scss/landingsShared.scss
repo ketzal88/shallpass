@@ -1,3 +1,6 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
 // Colors
 $Gris-oscuro: #1e1e1e;
 $Beige: #f5f0e1;
@@ -8,3 +11,7 @@ $Negro: #000000;
 //Grid
 $maxWith: 1440px;
 $margin: 70px;
+$marginMobile: 24px;
+
+//   @include media-breakpoint-down(md) {
+//   }

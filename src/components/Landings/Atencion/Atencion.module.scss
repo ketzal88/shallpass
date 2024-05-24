@@ -1,3 +1,6 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
 @import "../../../scss/landingsShared.scss";
 
 .atencionContainer {
@@ -6,6 +9,12 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 12px;
+
+  @include media-breakpoint-down(md) {
+    height: 64px;
+    margin: 0 0px 0px 0 !important;
+    padding: 16px 24px !important;
+  }
 
   background-color: $Gris-oscuro;
   p {
@@ -30,6 +39,13 @@
       font-style: normal;
       font-weight: 700;
       line-height: 22px;
+    }
+
+    @include media-breakpoint-down(md) {
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px; /* 114.286% */
     }
   }
 }

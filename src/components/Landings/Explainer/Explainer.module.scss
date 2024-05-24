@@ -15,6 +15,11 @@ $anchoDeCaja: $maxWith - (4 * $margin);
 .explainer {
   padding: 96px 71px 96px 71px;
   margin-top: 96px !important;
+
+  @include media-breakpoint-down(md) {
+    padding: 64px $marginMobile 64px $marginMobile !important;
+    margin-top: 64px !important;
+  }
 }
 
 .main {
@@ -35,6 +40,14 @@ $anchoDeCaja: $maxWith - (4 * $margin);
     text-align: left;
     .spanText {
       color: black;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    h2 {
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px; /* 100% */
     }
   }
 }
@@ -62,6 +75,16 @@ $anchoDeCaja: $maxWith - (4 * $margin);
     font-weight: 400;
     line-height: 24px; /* 150% */
   }
+
+  @include media-breakpoint-down(md) {
+    margin-top: 40px;
+    li {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
+  }
 }
 
 .higligthList {
@@ -75,8 +98,17 @@ $anchoDeCaja: $maxWith - (4 * $margin);
   gap: 24px;
   align-self: stretch;
   margin-bottom: 40px;
+  .standarList {
+    margin-top: 0px !important;
+    margin-bottom: 0px;
+  }
   li {
     background-image: url(../../../assets/svg/bulletLandingListHigligth.svg);
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-top: 24px !important;
+    padding-bottom: 0px;
   }
 }
 

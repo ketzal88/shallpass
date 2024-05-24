@@ -27,7 +27,6 @@ export const Explainer = ({ dark = false, title, titleSpan, standarList, hihligt
         >
             <Col md={10} style={{ padding: '0px' }}
                 className={`
-                    ${styles.explainer}
                     ${styles.main}
                     `}>
 
@@ -65,7 +64,7 @@ export const Explainer = ({ dark = false, title, titleSpan, standarList, hihligt
                             }
                             <Row>
                                 <Col md={5} >
-                                    <Row style={{ paddingLeft: '12px' }}>
+                                    <Row style={{ paddingLeft: '12px', paddingRight: '12px' }}>
                                         <CTAButton text='Consulta gratis' />
                                     </Row>
                                 </Col>
