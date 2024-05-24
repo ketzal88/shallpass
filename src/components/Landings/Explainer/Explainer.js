@@ -25,7 +25,7 @@ export const Explainer = ({ dark = false, title, titleSpan, standarList, hihligt
         `}
 
         >
-            <Col md={10} style={{ padding: '0px' }}
+            <Col md={10}
                 className={`
                     ${styles.main}
                     `}>
