@@ -1,6 +1,4 @@
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/mixins";
+@import "../scss/landingsShared.scss";
 
 .main {
   max-width: 1440px !important;

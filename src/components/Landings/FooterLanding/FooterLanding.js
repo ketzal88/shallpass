@@ -10,7 +10,7 @@ export const FooterLanding = () => {
     }
     return (
         <Row className={`${styles.FooterLanding}`}>
-            <Col className={`${styles.brand}`} >
+            <Col xs={12} md={6} className={`${styles.brand}`} >
                 <Image src={logoShallPassBaloon} height={36.5} />
                 <p>Confía en shallpass</p>
             </Col>
