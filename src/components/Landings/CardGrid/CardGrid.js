@@ -26,7 +26,6 @@ export const CardGrid = ({ cardData, xsColum = 1, mdColumn = 2, lgColum = 3 }) =
                                 <Card.Body style={{ padding: '0px' }}><p dangerouslySetInnerHTML={{ __html: sanitizer(data.body) }} /></Card.Body>
                             </Card>
                         </Col>
-
                     ))}
                 </Row>
             </Col>

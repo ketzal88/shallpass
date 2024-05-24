@@ -6,16 +6,19 @@ import DOMPurify from 'dompurify';
 import { vectorCircle } from '../../../assets';
 import { useDynamicNavigation } from '../../../hooks/useDynamicNavigation ';
 import useIsIOS from '../../../hooks/useIsIOS';
+import useScreenSize from '../../../hooks/useScreenSize';
 
-export const HeroBanner = ({ heroTex, spanText, smallText, explainer, video, videoMp4, poster }) => {
+export const HeroBanner = ({ heroTex, spanText, smallText, explainer, video, videoMp4, videoMobile, videoMobileMp4, poster }) => {
 
     const sanitizer = DOMPurify.sanitize;
 
     const navigate = useDynamicNavigation();
 
+    const isMobile = useScreenSize();
+
     return (
         <Row className={styles.main} >
-            <Col style={{ position: 'relative', padding: '0px' }}>
+            <Col className={`${styles.mainColumn}`}>
                 <Col
                     className={`${styles.textConatiner}`}
                 >
@@ -37,17 +40,27 @@ export const HeroBanner = ({ heroTex, spanText, smallText, explainer, video, vid
                         </Col>
                     </Col>
                 </Col>
-                <Col className={`${styles.shadow}`}>
+                <Col className={`${styles.shadow} h-100`}></Col>
+                {
+                    isMobile ? (
+                        <Col className={`${styles.videoBack}`}>
+                            {
+                                useIsIOS === true
+                                    ? <video className={`${styles.videoStyle}`} playsInline muted autoPlay loop poster={poster} src={videoMobileMp4} type="video/mp4" />
+                                    : <video className={`${styles.videoStyle}`} playsInline muted autoPlay loop poster={poster} src={videoMobile} type="video/webm" />
+                            }
+                        </Col>
 
-                </Col>
-
-                <Col className={`${styles.videoBack}`}>
-                    {
-                        useIsIOS === true
-                            ? <video className={`${styles.videoStyle}`} playsInline muted autoPlay loop poster={poster} src={videoMp4} type="video/mp4" />
-                            : <video className={`${styles.videoStyle}`} playsInline muted autoPlay loop poster={poster} src={video} type="video/webm" />
-                    }
-                </Col>
+                    ) : (
+                        <Col className={`${styles.videoBack}`}>
+                            {
+                                useIsIOS === true
+                                    ? <video className={`${styles.videoStyle}`} playsInline muted autoPlay loop poster={poster} src={videoMp4} type="video/mp4" />
+                                    : <video className={`${styles.videoStyle}`} playsInline muted autoPlay loop poster={poster} src={video} type="video/webm" />
+                            }
+                        </Col>
+                    )
+                }
             </Col>
         </Row>
     );

@@ -4,7 +4,7 @@ import { Col, Row } from 'react-bootstrap'
 
 import { HeaderCTA } from '../components/Landings/HeaderCTA/HeaderCTA'
 import { HeroBanner } from '../components/Landings/HeroBanner/HeroBanner'
-import { espanolHeroVideoMp4, espanolHeroVideoWebm, posterEspanol } from '../assets'
+import { espanolHeroVideoMobileMp4, espanolHeroVideoMp4, espanolHeroVideoWebm, posterEspanol } from '../assets'
 import { HighLigthText } from '../components/Landings/HighLigthText/HighLigthText'
 import { CardGrid } from '../components/Landings/CardGrid/CardGrid'
 import { cardData, expalinerStandarList, explainer2StandarList, explainerHigligthList, explainerHigligthListTitle, servicios } from '../data/ciudadaniaEspData'
@@ -28,20 +28,22 @@ export const CiudadaniaEspanola = () => {
 
                     <HeaderCTA />
                     <HeroBanner
-                        heroTex={`Conviértete <br/>en `}
+                        heroTex={`CONVERTITE <br/>en `}
                         spanText={`Ciudadano <br/>Español`}
-                        smallText={`Abraza un futuro de oportunidades`}
+                        smallText={`Abrazá un futuro de oportunidades`}
                         explainer={`Realizá estudios, obtené un trabajo formal, ingresá de forma libre a otros países fuera de la unión europea, sin necesidad de tramitar una visa, entre otros beneficios.`}
                         poster={posterEspanol}
                         videoMp4={espanolHeroVideoMp4}
                         video={espanolHeroVideoWebm}
+                        videoMobile={espanolHeroVideoMobileMp4}
+                        videoMobileMp4={espanolHeroVideoMobileMp4}
                     />
                     <HighLigthText text={`Beneficios <br/>de obtener la <br/>ciudadanía <br/>española`} />
                     <CardGrid cardData={cardData} />
                 </Col>
             </Row>
             <Row className={`justify-content-md-center ${styles.bgL}`}>
-                <Row className={`justify-content-md-center`}>
+                <Row className={`justify-content-md-center ${styles.explainerContainer}`}>
                     <Col className={`${styles.mainFullW}`}>
                         <Explainer
                             title={`Quienes pueden solicitar la `}
@@ -52,7 +54,7 @@ export const CiudadaniaEspanola = () => {
                         />
                     </Col>
                 </Row>
-                <Row className={`justify-content-md-center`}>
+                {/* <Row className={`justify-content-md-center`}>
                     <Col className={`${styles.mainFullW}`}>
                         <Explainer2
                             title={`Beneficios de tramitar tu carpeta con Shall Pass`}
@@ -60,14 +62,14 @@ export const CiudadaniaEspanola = () => {
                             standarList={explainer2StandarList}
                         />
                     </Col>
-                </Row>
-                <Col className={`${styles.main}`}>
+                </Row> */}
+                {/* <Col className={`${styles.main}`}>
                     <HeroText titel={`Servicio de armado de<br/>carpeta`} copy={`Con nuestro servicio de armado de carpeta encontrarás`} />
                     <CardGrid2 cardData={servicios} />
                     <Price />
                     <FormSection />
                     <FooterLanding />
-                </Col>
+                </Col> */}
             </Row>
 
         </>

@@ -1,3 +1,9 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+@import "../../../scss/landingsShared.scss";
+
 .hightLightText {
   padding-left: 71px;
   padding-right: 71px;
@@ -13,5 +19,19 @@
     text-align: left;
 
     margin-top: 96px;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 64px;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px; /* 100% */
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-left: $marginMobile !important;
+    padding-right: $marginMobile !important;
+    margin: 0px !important;
   }
 }

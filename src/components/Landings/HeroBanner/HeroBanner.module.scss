@@ -1,3 +1,7 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
 @import "../../../scss/landingsShared.scss";
 
 .main {
@@ -22,6 +26,12 @@
     text-transform: uppercase;
     margin: 40px 0 0 0;
     padding: 0px;
+    @include media-breakpoint-down(md) {
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+      font-size: 44px;
+      line-height: 44px; /* 100% */
+      margin: 24px 0 0 0;
+    }
   }
   small {
     margin: 0px;
@@ -35,6 +45,14 @@
     font-style: normal;
     font-weight: 400;
     line-height: 22px; /* 110% */
+    @include media-breakpoint-down(md) {
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px; /* 100% */
+      padding-right: 50%;
+    }
   }
   p {
     margin: 40px 0 0 0;
@@ -49,6 +67,15 @@
     font-style: normal;
     font-weight: 400;
     line-height: 32px; /* 133.333% */
+    @include media-breakpoint-down(md) {
+      margin: 40px 0 0 0;
+      padding: 0px;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px; /* 100% */
+    }
   }
 
   button {
@@ -64,6 +91,26 @@
     &:hover {
       color: black;
     }
+    @include media-breakpoint-down(md) {
+      padding: 24px 60px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 16px; /* 100% */
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+.mainColumn {
+  position: relative;
+  padding: 0 0 40px 0 !important;
+  @include media-breakpoint-down(md) {
+    padding: 0 0 156px 0 !important;
   }
 }
 
@@ -78,17 +125,28 @@
   margin: 0px !important;
   padding: 89px 260px 0 100px;
   text-align: left;
+
+  @include media-breakpoint-down(md) {
+    padding: 132px $marginMobile $marginMobile;
+    // margin-left: -($margin / 2) !important;
+    // margin-right: -($margin / 2) !important;
+  }
 }
 
 .shadow {
   position: absolute;
   z-index: 2 !important;
-  min-height: 108%;
+  min-height: 101%;
   min-width: 100%;
   top: -2px;
   left: -2px;
   opacity: 0.77;
   background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+
+  @include media-breakpoint-down(md) {
+    // margin-left: -$margin;
+    min-height: 101%;
+  }
 }
 
 .spanText {
@@ -99,14 +157,29 @@
   position: absolute;
   z-index: 1 !important;
   min-height: 680px;
+  height: 100%;
   left: 0px;
   padding: 0px;
   overflow: hidden;
   border-radius: 30px;
   top: 0px;
+
   video {
-    // transform: scaleY(2);
-    transform: scaleX(-1.35) scaleY(1.35) translate(-150px);
+    transform: scaleX(1) scaleY(1) translate(0px);
+  }
+
+  @include media-breakpoint-down(md) {
+    border-radius: 0px;
+    width: 100vw;
+    // margin-left: -$margin;
+    overflow: hidden;
+
+    video {
+      // transform: scaleX(1) scaleY(100%) translateY(0px);
+      position: relative;
+      height: 100% !important;
+      object-fit: cover;
+    }
   }
 }
 

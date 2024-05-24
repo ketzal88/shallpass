@@ -14,7 +14,7 @@ export const HeaderCTA = () => {
 
     return (
         <Row className={`${styles.main}`}>
-            <Col md={2} className={`${styles.logoContainer}`}>
+            <Col xs={4} md={2} className={`${styles.logoContainer}`}>
                 <Image src={logoShallPassBaloon} alt='Logo de Shall Pass' />
             </Col>
             <Col className={`${styles.ctaButtonContainer} h-100`}>

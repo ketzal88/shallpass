@@ -55,5 +55,6 @@ export { default as posterEspanol } from "./img/espanolPoster.webp";
 // videos
 export { default as heroVideo } from "./videos/heroVideo.webm";
 export { default as heroVideoMp4 } from "./videos/heroVideo.mp4";
-export { default as espanolHeroVideoMp4 } from "./videos/video-landing-ciudadanias.mp4";
-export { default as espanolHeroVideoWebm } from "./videos/video-landing-ciudadanias.webm";
+export { default as espanolHeroVideoMp4 } from "./videos/VideoLandingFlipEspanolaWorker.mp4";
+export { default as espanolHeroVideoWebm } from "./videos/VideoLandingFlipEspanolaWorker.mp4";
+export { default as espanolHeroVideoMobileMp4 } from "./videos/landingEspanolaMobile.mp4";
