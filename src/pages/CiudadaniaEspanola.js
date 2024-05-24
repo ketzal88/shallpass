@@ -47,8 +47,8 @@ export const CiudadaniaEspanola = () => {
                 </Col>
             </Row>
             <Row className={`justify-content-md-center ${styles.bgL}`}>
-                <Row className={`justify-content-md-center ${styles.explainerContainer}`} >
-                    <Col className={`${styles.mainFullW}`}>
+                <Row className={`justify-content-md-center ${styles.explainerContainer}`}  >
+                    <Col className={`${styles.mainFullW}`} >
                         <Explainer
                             title={`Quienes pueden solicitar la `}
                             titleSpan={`ciudadanía española?`}

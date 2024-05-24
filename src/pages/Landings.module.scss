@@ -39,5 +39,6 @@
 .explainerContainer {
   @include media-breakpoint-down(md) {
     margin: 0px !important;
+    padding: 0px !important;
   }
 }
