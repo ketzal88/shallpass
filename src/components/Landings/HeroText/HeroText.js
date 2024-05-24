@@ -7,7 +7,6 @@ import styles from './HeroText.module.scss'
 export const HeroText = ({ titel, copy }) => {
 
     const sanitizer = DOMPurify.sanitize;
-
     return (
         <Row className={`${styles.heroTex}`} data-aos="zoom-out">
             <h1 dangerouslySetInnerHTML={{ __html: sanitizer(titel) }} />
