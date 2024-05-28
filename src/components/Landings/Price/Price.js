@@ -18,7 +18,7 @@ export const Price = () => {
                     </Col>
                 </Row>
                 <Row style={{ margin: '0px' }}>
-                    <p>Antes de aceptar el caso, coordinaremos una consulta profesional (presencial o por video) para analizar su árbol genealógico, la información y documentación que posee, así como para aclarar todas sus dudas.</p>
+                    <p>Antes de aceptar el caso, programaremos una consulta profesional - ya sea presencial o por videoconferencia - para analizar detalladamente tu árbol genealógico, revisar la información y documentación que poseas y aclarar todas sus dudas.</p>
                 </Row>
                 <CTAButton text='Enviar consulta' textMobile='Enviar consulta' />
             </Col>

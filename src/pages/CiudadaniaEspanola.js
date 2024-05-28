@@ -35,7 +35,7 @@ export const CiudadaniaEspanola = () => {
                         heroTex={`CONVERTITE <br/>en `}
                         spanText={`Ciudadano <br/>Español`}
                         smallText={`Abrazá un futuro de oportunidades`}
-                        explainer={`Realizá estudios, obtené un trabajo formal, ingresá de forma libre a otros países fuera de la unión europea, sin necesidad de tramitar una visa, entre otros beneficios.`}
+                        explainer={`Estudiá, conseguí trabajo formal y disfrutá de la libertad de ingresar a países fuera de la Unión Europea sin necesidad de tramitar una visa, entre otros beneficios.`}
                         poster={posterEspanol}
                         videoMp4={espanolHeroVideoMp4}
                         video={espanolHeroVideoWebm}
@@ -50,7 +50,7 @@ export const CiudadaniaEspanola = () => {
                 <Row className={`justify-content-md-center ${styles.explainerContainer}`}  >
                     <Col className={`${styles.mainFullW}`} >
                         <Explainer
-                            title={`Quienes pueden solicitar la `}
+                            title={`Quiénes pueden solicitar la `}
                             titleSpan={`ciudadanía española?`}
                             standarList={expalinerStandarList}
                             higligthListTitle={explainerHigligthListTitle}
@@ -62,13 +62,13 @@ export const CiudadaniaEspanola = () => {
                     <Col className={`${styles.mainFullW}`}>
                         <Explainer2
                             title={`Beneficios de tramitar tu carpeta con Shall Pass`}
-                            copy={` Nos enfrentamos a una serie de desafíos al buscar obtener la nacionalidad española, nosotros lo sabemos y te vamos a asesorar durante todo el proceso.`}
+                            copy={`Obtener la ciudadanía española puede ser desafiante. Nosotros lo sabemos, por eso te vamos a asesorar durante todo el proceso.`}
                             standarList={explainer2StandarList}
                         />
                     </Col>
                 </Row>
                 <Col className={`${styles.main}`}>
-                    <HeroText titel={`Servicio de armado de<br/>carpeta`} copy={`Con nuestro servicio de armado de carpeta encontrarás`} />
+                    <HeroText titel={`Servicio de armado de<br/>carpeta`} copy={`Con nuestro servicio vas a obtener`} />
                     <CardGrid2 cardData={servicios} />
                     <Price />
                     {isMobile && <Col style={{ minHeight: '64px' }} />}
