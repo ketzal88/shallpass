@@ -11,7 +11,7 @@ export const CTAButton = ({ text = `Enviar consulta`, textMobile = `Consultar` }
 
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 526px)' })
 
-    const navigate = useDynamicNavigation();
+    const navigate = useDynamicNavigation({ subject: `${process.env.REACT_APP_CIUDADANIA_SUBJECT}` });
 
     return (
 

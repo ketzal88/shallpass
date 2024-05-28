@@ -12,7 +12,7 @@ export const HeroBanner = ({ heroTex, spanText, smallText, explainer, video, vid
 
     const sanitizer = DOMPurify.sanitize;
 
-    const navigate = useDynamicNavigation();
+    const navigate = useDynamicNavigation({ subject: `${process.env.REACT_APP_CIUDADANIA_SUBJECT}` });
 
     const isMobile = useScreenSize();
 
