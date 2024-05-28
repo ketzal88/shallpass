@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardBody, Col, Image, Row } from 'react-bootstrap'
+import { Card, Col, Image, Row } from 'react-bootstrap'
 
 import styles from './CardGrid.module.scss'
 import DOMPurify from 'dompurify'
