@@ -82,8 +82,7 @@ const servicios = [
     },
     {
         title: `<span>Envío</span> de la <br/>documentación`,
-        body: `de forma virtual y física, a través de correo certificado a cualquier parte de Argentina y el mundo
-`,
+        body: `de forma virtual y física, a través de correo certificado a cualquier parte de Argentina y el mundo.`,
     },
 ]
 
