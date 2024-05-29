@@ -12,7 +12,7 @@ export const HerroVideoBanner = ({ video, videoMp4, poster }) => {
 
     const isIOS = useIsIOS()
 
-    const navigate = useDynamicNavigation();
+    const navigate = useDynamicNavigation({ subject: `${process.env.REACT_APP_LLC_SUBJECT}` });
 
     return (
         <Container className={`${styles.HerroVideoBanner}`}>

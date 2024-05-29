@@ -6,7 +6,7 @@ import styles from './Proceso.module.scss'
 
 export const Proceso = () => {
 
-    const navigate = useDynamicNavigation();
+    const navigate = useDynamicNavigation({ subject: `${process.env.REACT_APP_LLC_SUBJECT}` });
 
     const data = [
         {
