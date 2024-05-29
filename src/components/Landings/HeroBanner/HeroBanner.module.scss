@@ -22,7 +22,7 @@
     text-transform: uppercase;
     margin: 40px 0 0 0;
     padding: 0px;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
       font-size: 44px;
       line-height: 44px; /* 100% */
@@ -41,7 +41,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 22px; /* 110% */
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
       font-size: 16px;
       font-style: normal;
@@ -63,7 +63,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 32px; /* 133.333% */
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       margin: 40px 0 0 0;
       padding: 0px;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
@@ -87,7 +87,7 @@
     &:hover {
       color: black;
     }
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       padding: 24px 60px;
       font-size: 16px;
       font-style: normal;
@@ -96,7 +96,7 @@
     }
   }
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     padding: 0 !important;
     margin: 0 !important;
   }
@@ -105,7 +105,7 @@
 .mainColumn {
   position: relative;
   padding: 0 0 40px 0 !important;
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     padding: 0 0 156px 0 !important;
   }
 }
@@ -122,7 +122,7 @@
   padding: 89px 260px 0 100px;
   text-align: left;
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     padding: 132px $marginMobile $marginMobile;
     // margin-left: -($margin / 2) !important;
     // margin-right: -($margin / 2) !important;
@@ -139,7 +139,7 @@
   opacity: 0.77;
   background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0) 100%);
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     // margin-left: -$margin;
     min-height: 101%;
   }
@@ -164,7 +164,7 @@
     transform: scaleX(1) scaleY(1) translate(0px);
   }
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     border-radius: 0px;
     width: 100vw;
     // margin-left: -$margin;

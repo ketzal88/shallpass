@@ -1,12 +1,13 @@
 import React from 'react'
 
-import styles from './HeroBanner.module.scss'
 import { Button, Col, Image, Row } from 'react-bootstrap'
 import DOMPurify from 'dompurify';
 import { vectorCircle } from '../../../assets';
 import { useDynamicNavigation } from '../../../hooks/useDynamicNavigation ';
 import useIsIOS from '../../../hooks/useIsIOS';
 import useScreenSize from '../../../hooks/useScreenSize';
+
+import styles from './HeroBanner.module.scss'
 
 export const HeroBanner = ({ heroTex, spanText, smallText, explainer, video, videoMp4, videoMobile, videoMobileMp4, poster }) => {
 
