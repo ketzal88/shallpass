@@ -6,7 +6,7 @@ import styles from './Consultas.module.scss'
 
 export const Consultas = () => {
 
-  const navigate = useDynamicNavigation();
+  const navigate = useDynamicNavigation({ subject: `${process.env.REACT_APP_LLC_SUBJECT}` });
 
   return (
     <Container className={`${styles.consultas}`}>
