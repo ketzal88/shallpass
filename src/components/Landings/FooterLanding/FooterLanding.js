@@ -12,7 +12,7 @@ export const FooterLanding = () => {
         <Row className={`${styles.FooterLanding}`}>
             <Col xs={12} md={6} className={`${styles.brand}`} >
                 <Image src={logoShallPassBaloon} height={36.5} />
-                <p>Confía en shallpass</p>
+                <p>Confiá en shallpass</p>
             </Col>
             <Col className={`${styles.date}`} >
                 <p>© Copyright {date()}. All Rights Reserved.</p>

@@ -56,7 +56,7 @@ const explainer2StandarList = [
     `Podés delegar la complejidad y burocracia excesiva en nosotros, incluyendo la gestión de documentos de más de 100 años de antigüedad.`,
     `La falta de tiempo, los temores y el riesgo de que el consulado rechace la carpeta o solicitud de nacionalidad ya no será un problema.`,
     `Nos encargamos de obtener un turno consular y nos aseguramos de reunir todos los documentos necesarios para el trámite y armado de carpeta.`,
-    `Te brindamos seguridad y tranquilar al encomendarnos una gestión tan crucial como esta.`,
+    `Te brindamos seguridad y tranquilidad al encomendarnos una gestión tan crucial como esta.`,
 ]
 
 const servicios = [
@@ -82,7 +82,8 @@ const servicios = [
     },
     {
         title: `<span>Envío</span> de la <br/>documentación`,
-        body: `de forma virtual y física, a través de correo certificado, etc`,
+        body: `de forma virtual y física, a través de correo certificado a cualquier parte de Argentina y el mundo
+`,
     },
 ]
 
