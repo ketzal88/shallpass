@@ -35,7 +35,7 @@ export const CiudadaniaEspanola = () => {
                         heroTex={`CONVERTITE <br/>en `}
                         spanText={`Ciudadano <br/>Español`}
                         smallText={`Abrazá un futuro de oportunidades`}
-                        explainer={`Estudiá, conseguí trabajo formal y disfrutá de la libertad de ingresar a países fuera de la Unión Europea sin necesidad de tramitar una visa, entre otros beneficios.`}
+                        explainer={`Estudiá, conseguí trabajo formal y disfrutá de la libertad de ingresar a otros países de la Unión Europea sin necesidad de tramitar una visa, entre otros beneficios.`}
                         poster={posterEspanol}
                         videoMp4={espanolHeroVideoMp4}
                         video={espanolHeroVideoWebm}
