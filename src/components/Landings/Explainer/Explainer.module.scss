@@ -16,7 +16,7 @@ $anchoDeCaja: $maxWith - (4 * $margin);
   padding: 96px 71px 96px 71px;
   margin-top: 96px !important;
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     padding: 64px $marginMobile 64px $marginMobile !important;
     margin: 64px 0 0 0 !important;
   }
@@ -42,7 +42,7 @@ $anchoDeCaja: $maxWith - (4 * $margin);
       color: black;
     }
   }
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     h2 {
       font-size: 40px;
       font-style: normal;
@@ -76,7 +76,7 @@ $anchoDeCaja: $maxWith - (4 * $margin);
     line-height: 24px; /* 150% */
   }
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     margin-top: 40px;
     li {
       font-size: 16px;
@@ -106,7 +106,7 @@ $anchoDeCaja: $maxWith - (4 * $margin);
     background-image: url(../../../assets/svg/bulletLandingListHigligth.svg);
   }
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     margin-top: 24px !important;
     padding-bottom: 0px;
   }

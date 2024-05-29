@@ -15,7 +15,7 @@ $anchoDeCaja: $maxWith - (4 * $margin);
 .explainer {
   padding: 96px 71px 96px 71px;
   // margin-top: 96px !important;
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     padding: 64px $marginMobile 64px $marginMobile !important;
     margin: -1px 0 0 0 !important;
   }
