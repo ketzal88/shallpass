@@ -11,9 +11,9 @@ export const FormSection = ({ submitText, id }) => {
     <Container className={`${styles.formSection}`}>
       <Row className={`justify-content-md-center h-100`}>
         <Col md={6}
-          style={{ padding: '0px' }}
+
         >
-          <Col >
+          <Col>
             <h6>Confiá en shallpass</h6>
             <h4>Déjanos tu email y un asesor de Shallpass te estará contactando<br /><span>a la brevedad</span></h4>
           </Col>
