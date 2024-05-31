@@ -34,7 +34,7 @@ export const Thanks = () => {
           </h1>
           <p>Hemos enviado su consulta con éxito. {!isMobile && <br />}Si estas apurado, podes contactarnos a través de Whatsapp</p>
           <Row>
-            <Col md={12} className="btnContainer text-end">
+            <Col xs={12} lg={6} className="btnContainer text-end">
               <Button
                 className={`rounded-pill left`}
                 variant="outline-primary"
