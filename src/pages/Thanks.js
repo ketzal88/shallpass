@@ -24,7 +24,9 @@ export const Thanks = () => {
   return (
     <Container id="thanks" fluid>
       <Row className="mesageContainer">
-        <Col xs={12} className="col align-self-center">
+        <Col xs={12} className="col align-self-center"
+          style={{ maxWidth: '650px' }}
+        >
           <Row>
             <Image src={logoShallPassBaloon} />
           </Row>
