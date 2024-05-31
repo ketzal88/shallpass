@@ -6,11 +6,11 @@ import { logoShallPassBaloon, vector } from '../../../assets'
 import { useDynamicNavigation } from '../../../hooks/useDynamicNavigation '
 import { useMediaQuery } from 'react-responsive'
 
-export const HeaderCTA = () => {
+export const HeaderCTA = ({ whatsAppSubject = process.env.REACT_APP_CIUDADANIA_SUBJECT }) => {
 
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 526px)' })
 
-    const navigate = useDynamicNavigation({ subject: `${process.env.REACT_APP_CIUDADANIA_SUBJECT}` });
+    const navigate = useDynamicNavigation({ subject: `${whatsAppSubject}` });
 
     return (
         <Row className={`${styles.main}`}>

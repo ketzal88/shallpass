@@ -25,6 +25,7 @@ export { default as confia01 } from "./svg/confia01.svg";
 export { default as confia02 } from "./svg/confia02.svg";
 export { default as confia03 } from "./svg/confia03.svg";
 export { default as confia04 } from "./svg/confia04.svg";
+export { default as whatsAppBlack } from "./svg/whatsAppBlack.svg";
 // Ciudadania española
 export { default as cardIcon01 } from "./svg/work_black_24dp 1.svg";
 export { default as cardIcon02 } from "./svg/school_black_36dp 1.svg";

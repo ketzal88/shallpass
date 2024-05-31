@@ -1,18 +1,19 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-import "./Form.scss";
 
-import { Button, Col, Container, Image, Row } from "react-bootstrap";
+import { Button, Col, Image, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { vector } from '../../assets'
+
+import styles from './FormLanding.module.scss'
 
 export const FormLanding = ({
   SERVICE_ID = process.env.REACT_APP_SERVICE_ID,
   TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID,
   PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY,
   id = "fromHeader",
-  submitText = 'ENVIAR CONSULTA',
+  submitText,
 }) => {
 
   const form = useRef();
@@ -43,62 +44,35 @@ export const FormLanding = ({
 
   formResponse && navigate("/thanks");
 
+  console.log(id + ' ' + submitText)
+
   return (
     <>
-      <form id={id} ref={form} onSubmit={sendEmail}>
-        <Container className="h-100">
-          <Row className="h-100 justify-content-between gy-0">
-            <Col md={6} className="fomItem ">
-              <label>Nombre</label>
-              <br />
-              <input
-                type="text"
-                name="user_name"
-                placeholder="Ingresa tu nombre"
-              />
-            </Col>
-            <Col md={6} className="fomItem">
-              <label>Teléfono</label>
-              <br />
-              <input
-                type="tel"
-                name="user_phone"
-                placeholder="Ingresa tu teléfono"
-                required
-              />
-            </Col>
-            <Col md={12} className="fomItem ">
-              <label>Email</label>
-              <br />
-              <input
-                type="email"
-                name="user_email"
-                placeholder="Ingresa tu email"
-                required
-              />
-            </Col>
-            <Col md={12} className="formItem">
-              <label>Mensaje/Consulta</label>
-              <br />
-              <textarea
-                name="message"
-                placeholder="Escribinos tu mensaje o consulta"
-                required
-              />
-            </Col>
-            <Col md={6}></Col>
-            <Col
-              md={6} xs={12}
-              id="sendEmail"
-              className={`align-self-end text-end`}
-              style={{ paddingRight: '12px', paddingLeft: '12px' }}
-            >
-              <Button variant="primary" className="rounded-pill" type="submit">
-                {submitText} <Image src={vector} />
-              </Button>
-            </Col>
-          </Row>
-        </Container>
+
+      <form id={id} ref={form} onSubmit={sendEmail} className={`${styles.formComponet}`}>
+        <Row>
+          <Col className={`${styles.itemForm} ${styles.emailBox}`}>
+            <label>Email</label>
+            <input
+              type="email"
+              name="user_email"
+              placeholder="Ingresa tu email"
+              required
+              style={{ borderRadius: '24px !important' }}
+            />
+          </Col>
+          <Col
+            md={4} xs={12}
+            id="sendEmail"
+            className={`${styles.itemForm} `}
+            style={{ paddingRight: '12px', paddingLeft: '12px' }}
+          >
+            <Button variant="primary" className="rounded-pill" type="submit">
+              {submitText} <Image src={vector} />
+            </Button>
+          </Col>
+        </Row>
+        <input type="hidden" name="form_id" value={id} />
       </form>
     </>
   );

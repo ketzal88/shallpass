@@ -72,7 +72,7 @@ export const CiudadaniaEspanola = () => {
                     <CardGrid2 cardData={servicios} />
                     <Price />
                     {isMobile && <Col style={{ minHeight: '64px' }} />}
-                    <FormSection />
+                    <FormSection id={'espanola'} submitText={'Contactanos'} />
                     {isMobile && <Col style={{ minHeight: '64px' }} />}
                     <FooterLanding />
                 </Col>
