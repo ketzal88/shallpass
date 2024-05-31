@@ -2,9 +2,10 @@ import React from 'react'
 import { Button, Col, Container, Image, Row } from 'react-bootstrap'
 import useScreenSize from '../../hooks/useScreenSize'
 import useIsIOS from '../../hooks/useIsIOS'
-import { useDynamicNavigation } from '../../hooks/useDynamicNavigation '
+// import { useDynamicNavigation } from '../../hooks/useDynamicNavigation '
 import { vectorCircle } from '../../assets'
 import styles from './HerroVideoBanner.module.scss'
+import useScrollTo from '../../hooks/useScrollTo'
 
 export const HerroVideoBanner = ({ video, videoMp4, poster }) => {
 
@@ -12,7 +13,9 @@ export const HerroVideoBanner = ({ video, videoMp4, poster }) => {
 
     const isIOS = useIsIOS()
 
-    const navigate = useDynamicNavigation({ subject: `${process.env.REACT_APP_LLC_SUBJECT}` });
+    // const navigate = useDynamicNavigation({ subject: `${process.env.REACT_APP_LLC_SUBJECT}` });
+
+    const scrollTo = useScrollTo()
 
     return (
         <Container className={`${styles.HerroVideoBanner}`}>
@@ -25,7 +28,8 @@ export const HerroVideoBanner = ({ video, videoMp4, poster }) => {
                         <Col className='d-flex'>
                             <Button
                                 className="rounded-pill"
-                                onClick={navigate({ newTab: true })}
+                                // onClick={navigate({ newTab: true })}
+                                onClick={() => scrollTo('llc')}
                             >
                                 Enviar consulta
                             </Button>

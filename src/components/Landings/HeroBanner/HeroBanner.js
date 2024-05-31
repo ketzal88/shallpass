@@ -3,17 +3,19 @@ import React from 'react'
 import { Button, Col, Image, Row } from 'react-bootstrap'
 import DOMPurify from 'dompurify';
 import { vectorCircle } from '../../../assets';
-import { useDynamicNavigation } from '../../../hooks/useDynamicNavigation ';
 import useIsIOS from '../../../hooks/useIsIOS';
 import useScreenSize from '../../../hooks/useScreenSize';
 
 import styles from './HeroBanner.module.scss'
+import useScrollTo from '../../../hooks/useScrollTo';
 
 export const HeroBanner = ({ heroTex, spanText, smallText, explainer, video, videoMp4, videoMobile, videoMobileMp4, poster }) => {
 
     const sanitizer = DOMPurify.sanitize;
 
-    const navigate = useDynamicNavigation({ subject: `${process.env.REACT_APP_CIUDADANIA_SUBJECT}` });
+    // const navigate = useDynamicNavigation({ subject: `${process.env.REACT_APP_CIUDADANIA_SUBJECT}` });
+
+    const scrollTo = useScrollTo();
 
     const isMobile = useScreenSize();
 
@@ -33,7 +35,8 @@ export const HeroBanner = ({ heroTex, spanText, smallText, explainer, video, vid
                         <Col className='d-flex'>
                             <Button
                                 className="rounded-pill"
-                                onClick={navigate({ newTab: true })}
+                                // onClick={navigate({ newTab: true })}
+                                onClick={() => scrollTo('espanola')}
                             >
                                 Enviar consulta
                             </Button>

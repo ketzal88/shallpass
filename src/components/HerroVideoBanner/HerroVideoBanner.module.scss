@@ -5,7 +5,7 @@ $seccionHeigth: 800px;
 
 .HerroVideoBanner {
   height: $seccionHeigth;
-  padding: 113px 0 113px 0;
+  padding: 40px 0 113px 0;
   position: relative;
 }
 
@@ -102,8 +102,9 @@ $seccionHeigth: 800px;
   min-height: 680px;
   height: 680px;
   left: 0px;
-  padding: 0px;
+  padding: 0px !important;
   overflow: hidden;
+
   border-radius: 30px;
 }
 

@@ -3,14 +3,16 @@ import { Button, Col, Image, Row } from 'react-bootstrap'
 
 import styles from './HeaderCTA.module.scss'
 import { logoShallPassBaloon, vector } from '../../../assets'
-import { useDynamicNavigation } from '../../../hooks/useDynamicNavigation '
 import { useMediaQuery } from 'react-responsive'
+import useScrollTo from '../../../hooks/useScrollTo'
 
-export const HeaderCTA = ({ whatsAppSubject = process.env.REACT_APP_CIUDADANIA_SUBJECT }) => {
+export const HeaderCTA = ({ whatsAppSubject = process.env.REACT_APP_CIUDADANIA_SUBJECT, idTo = 'espanola' }) => {
 
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 526px)' })
 
-    const navigate = useDynamicNavigation({ subject: `${whatsAppSubject}` });
+    // const navigate = useDynamicNavigation({ subject: `${whatsAppSubject}` });
+
+    const scrollTo = useScrollTo();
 
     return (
         <Row className={`${styles.main}`}>
@@ -20,7 +22,8 @@ export const HeaderCTA = ({ whatsAppSubject = process.env.REACT_APP_CIUDADANIA_S
             <Col className={`${styles.ctaButtonContainer} h-100`}>
                 <Button
                     className="rounded-pill"
-                    onClick={navigate({ newTab: true })}
+                    // onClick={navigate({ newTab: true })}
+                    onClick={() => scrollTo(idTo)}
                 >
                     {isTabletOrMobile
                         ? (<><span>Consultar </span><Image src={vector} width='16px' height='16px' alt='flecha hacia la derecha' /> </>)
