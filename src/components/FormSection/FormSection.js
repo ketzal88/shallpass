@@ -3,20 +3,23 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { FormLanding } from '../Form/FormLandig'
 import styles from './FormSection.module.scss'
 
-export const FormSection = () => {
+export const FormSection = ({ submitText, id }) => {
+
+
+
   return (
     <Container className={`${styles.formSection}`}>
       <Row className={`justify-content-md-center h-100`}>
-        <Col md={10}>
-          <Row>
-            <Col md={{ span: 5 }}>
-              <h6>Confiá en shallpass</h6>
-              <h4>Ponete en contacto con nosotros, <span>te esperamos</span></h4>
-            </Col>
-            <Col md={{ offset: 1 }} >
-              <FormLanding submitText='Enviar consulta' TEMPLATE_ID={process.env.REACT_APP_LANDING_TEMPLATE_ID} />
-            </Col>
-          </Row>
+        <Col md={6}
+          style={{ padding: '0px' }}
+        >
+          <Col >
+            <h6>Confiá en shallpass</h6>
+            <h4>Déjanos tu email y un asesor de Shallpass te estará contactando<br /><span>a la brevedad</span></h4>
+          </Col>
+          <Col >
+            <FormLanding submitText={submitText} TEMPLATE_ID={process.env.REACT_APP_LANDING_TEMPLATE_ID} id={id} />
+          </Col>
         </Col>
       </Row>
     </Container>

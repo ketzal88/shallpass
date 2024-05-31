@@ -1,7 +1,6 @@
 import React from "react";
-import { Col, Container } from "react-bootstrap";
-import { heroVideo, heroVideoMp4, logoPassFullColor, posterVideoHero } from "../assets";
-import { Header } from "../components/Header/Header";
+import { Col, Container, Row } from "react-bootstrap";
+import { heroVideo, heroVideoMp4, posterVideoHero } from "../assets";
 import { HerroVideoBanner } from "../components/HerroVideoBanner/HerroVideoBanner";
 import { Destacados } from "../components/Destacados/Destacados";
 import { Confia } from "../components/Confia/Confia";
@@ -9,17 +8,25 @@ import { Servicios } from "../components/Servicios/Servicios";
 import { Consultas } from "../components/Consultas/Consultas";
 import { Proceso } from "../components/Proceso/Proceso";
 import { FormSection } from "../components/FormSection/FormSection";
-import { FooterLanding } from "../components/FooterLanding/FooterLanding";
+
 
 import styles from './Home.module.scss'
+import { FooterLanding } from "../components/Landings/FooterLanding/FooterLanding";
+import { Atencion } from "../components/Landings/Atencion/Atencion";
+import { HeaderCTA } from "../components/Landings/HeaderCTA/HeaderCTA";
 
 
 export const LLCLandings = () => {
 
   return (
     <>
-      <Header logo={logoPassFullColor} />
+      <Atencion />
       <Col className={`${styles.bgR}`}>
+        <Row className={`justify-content-md-center`}>
+          <Col className={`${styles.main}`} >
+            <HeaderCTA whatsAppSubject={`${process.env.REACT_APP_LLC_SUBJECT}`} />
+          </Col>
+        </Row>
         <HerroVideoBanner video={heroVideo} videoMp4={heroVideoMp4} poster={posterVideoHero} />
         <Destacados />
         <Confia />
@@ -28,11 +35,11 @@ export const LLCLandings = () => {
       <Col className={`${styles.bgL}`}>
         <Consultas />
         <Proceso />
-        <FormSection />
+        <FormSection id={'llc'} submitText={'Contactanos'} />
+        <Container>
+          <FooterLanding />
+        </Container>
       </Col>
-      <Container>
-        <FooterLanding />
-      </Container>
     </>
   );
 };
