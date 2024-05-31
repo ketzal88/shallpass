@@ -71,6 +71,7 @@ export const CiudadaniaEspanola = () => {
                     <HeroText titel={`Servicio de armado de<br/>carpeta`} copy={`Con nuestro servicio vas a obtener`} />
                     <CardGrid2 cardData={servicios} />
                     <Price />
+                    <Col style={{ minHeight: '64px' }} />
                     {isMobile && <Col style={{ minHeight: '64px' }} />}
                     <FormSection id={'espanola'} submitText={'Contactanos'} />
                     {isMobile && <Col style={{ minHeight: '64px' }} />}

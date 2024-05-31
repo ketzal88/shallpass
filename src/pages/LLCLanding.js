@@ -8,12 +8,12 @@ import { Servicios } from "../components/Servicios/Servicios";
 import { Consultas } from "../components/Consultas/Consultas";
 import { Proceso } from "../components/Proceso/Proceso";
 import { FormSection } from "../components/FormSection/FormSection";
-
-
-import styles from './Home.module.scss'
 import { FooterLanding } from "../components/Landings/FooterLanding/FooterLanding";
 import { Atencion } from "../components/Landings/Atencion/Atencion";
 import { HeaderCTA } from "../components/Landings/HeaderCTA/HeaderCTA";
+
+
+import styles from './Home.module.scss'
 
 
 export const LLCLandings = () => {
@@ -24,7 +24,7 @@ export const LLCLandings = () => {
       <Col className={`${styles.bgR}`}>
         <Row className={`justify-content-md-center`}>
           <Col className={`${styles.main}`} >
-            <HeaderCTA whatsAppSubject={`${process.env.REACT_APP_LLC_SUBJECT}`} />
+            <HeaderCTA idTo='llc' />
           </Col>
         </Row>
         <HerroVideoBanner video={heroVideo} videoMp4={heroVideoMp4} poster={posterVideoHero} />
