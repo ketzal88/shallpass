@@ -15,19 +15,26 @@ export const FormLanding = ({
   id = "fromHeader",
   submitText,
 }) => {
-
   const form = useRef();
   const [formResponse, setFormResponse] = useState(false);
 
+  const handleFormDataLayer = (email, phone) => {
+    window.dataLayer.push({
+      event: "FormData",
+      email: email,
+      phone: phone,
+      sent: true,
+    });
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         `${SERVICE_ID}`,
         `${TEMPLATE_ID}`,
         form.current,
-        `${PUBLIC_KEY}`,
+        `${PUBLIC_KEY}`
       )
       .then(
         (result) => {
@@ -36,8 +43,10 @@ export const FormLanding = ({
         },
         (error) => {
           console.log(error.text);
-        },
+        }
       );
+
+    handleFormDataLayer(form.current[2].value, form.current[1].value);
   };
 
   const navigate = useNavigate();
