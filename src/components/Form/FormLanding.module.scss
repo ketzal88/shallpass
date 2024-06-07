@@ -1,4 +1,5 @@
 @import "../../scss/layout";
+@import "../../scss/landingsShared.scss";
 
 .formComponet {
   padding: 0px;
@@ -7,8 +8,9 @@
   width: 100%;
 }
 .itemForm {
-  margin: 0px;
+  margin: 0px !important;
   align-content: flex-end;
+  padding: 0px;
 }
 .emailBox {
   padding-right: 0px !important;

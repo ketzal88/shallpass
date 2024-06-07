@@ -10,7 +10,7 @@ export const FormSection = ({ submitText, id }) => {
   return (
     <Container className={`${styles.formSection}`}>
       <Row className={`justify-content-md-center h-100`}>
-        <Col md={6}
+        <Col lg={8} xl={6}
 
         >
           <Col>

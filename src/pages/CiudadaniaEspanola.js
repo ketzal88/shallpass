@@ -18,9 +18,11 @@ import { FormSection } from '../components/FormSection/FormSection'
 import useScreenSize from '../hooks/useScreenSize'
 
 import styles from './Landings.module.scss'
+import { HeroBannerV2 } from '../components/Landings/HeroBannerV2/HeroBannerV2'
 
 
 export const CiudadaniaEspanola = () => {
+
 
     const isMobile = useScreenSize()
 
@@ -31,15 +33,13 @@ export const CiudadaniaEspanola = () => {
                 <Col className={`${styles.main}`}>
 
                     <HeaderCTA />
-                    <HeroBanner
+                    <HeroBannerV2
                         heroTex={`CONVERTITE <br/>en `}
                         spanText={`Ciudadano <br/>Español`}
                         smallText={`Abrazá un futuro de oportunidades`}
                         explainer={`Estudiá, conseguí trabajo formal y disfrutá de la libertad de ingresar a otros países de la Unión Europea sin necesidad de tramitar una visa, entre otros beneficios.`}
                         poster={posterEspanol}
                         videoMp4={espanolHeroVideoMp4}
-                        video={espanolHeroVideoWebm}
-                        videoMobile={espanolHeroVideoMobileMp4}
                         videoMobileMp4={espanolHeroVideoMobileMp4}
                     />
                     <HighLigthText text={`Beneficios <br/>de obtener la <br/>ciudadanía <br/>española`} />

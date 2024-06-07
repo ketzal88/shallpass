@@ -6,7 +6,9 @@ import styles from './Confia.module.scss'
 
 export const Confia = () => {
 
-    const isMobile = useScreenSize()
+    const { isMobile } = useScreenSize()
+
+    console.log(isMobile)
 
     return (
         <Container className={`${styles.confia}`}>

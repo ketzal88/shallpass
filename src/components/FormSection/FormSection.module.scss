@@ -21,7 +21,7 @@
       color: $Naranja;
       font-weight: 700;
     }
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       font-size: 32px;
       font-style: normal;
       font-weight: 400;
@@ -95,7 +95,7 @@
   }
 }
 
-@media (max-width: $mobileBreak) {
+@media (max-width: 992px) {
   h4 {
     padding: 0px !important;
   }

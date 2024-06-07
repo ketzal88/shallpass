@@ -1,3 +1,187 @@
+@import "../../../scss/landingsShared";
+
 .main {
-  border: 1px solid red($color: #000000);
+  padding: 0 $margin;
+  @include media-breakpoint-down(lg) {
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  small {
+    margin: 0px;
+    padding: 0px;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    @include media-breakpoint-down(lg) {
+      font-size: 16px;
+      line-height: 16px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+      line-height: 16px;
+      padding-right: 50%;
+    }
+  }
+
+  h1 {
+    text-align: left;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    font-family: "DM Sans";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 96px; /* 100% */
+    text-transform: uppercase;
+    margin: 40px 0 0 0;
+    padding: 0px;
+    @include media-breakpoint-down(lg) {
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+      font-size: 44px;
+      line-height: 44px; /* 100% */
+      margin: 24px 0 0 0;
+    }
+  }
+
+  p {
+    margin: 40px 0 0 0;
+    padding: 0 260px 0 0;
+    text-align: left;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 133.333% */
+    @include media-breakpoint-down(lg) {
+      margin: 40px 0 0 0;
+      padding: 0px;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      padding-right: 20%;
+    }
+  }
+  button {
+    color: black;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    padding: 24px;
+    margin: 0px;
+
+    &:hover {
+      color: black;
+    }
+    @include media-breakpoint-down(lg) {
+      padding: 24px 60px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 16px; /* 100% */
+      flex-grow: 1;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+.heroContainer {
+  position: relative;
+  // border: 1px solid red;
+  padding: $margin;
+
+  @include media-breakpoint-down(lg) {
+    padding: $margin $marginMobile;
+  }
+}
+.heroText {
+  text-align: left;
+  position: relative;
+  // border: 1px solid blue;
+  width: 70%;
+  z-index: 10;
+  margin: $margin;
+  .spanText {
+    color: $Naranja;
+  }
+  @include media-breakpoint-down(md) {
+    width: 100%;
+    margin: 0px;
+  }
+  @include media-breakpoint-down(lg) {
+    width: 60%;
+    margin: 0px;
+    margin: $marginMobile;
+  }
+  @include media-breakpoint-down(xl) {
+    width: 90%;
+  }
+  .ctaContainer {
+    position: relative;
+    padding: 0px;
+    margin-top: 40px;
+    // border: 1px solid greenyellow;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.videoContainer {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  // border: 1px solid greenyellow;
+  min-height: 100%;
+  min-width: 100%;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: 1;
+  border-radius: 26px;
+  video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    object-fit: cover;
+  }
+  @include media-breakpoint-down(lg) {
+    video {
+      margin: 0px;
+      right: 0px;
+      //   transform: translate(-50%, -50%);
+      //   transform: translateY(-30%);
+    }
+    border-radius: 0px;
+  }
+}
+
+.sombra {
+  content: "";
+  position: absolute;
+  opacity: 0.77;
+  min-height: 100% !important;
+  min-width: 100% !important;
+  z-index: 2;
+  background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0) 100%);
 }
