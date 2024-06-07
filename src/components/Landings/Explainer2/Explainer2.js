@@ -69,7 +69,7 @@ export const Explainer2 = ({ dark = false, title, titleSpan, copy, standarList, 
                                 </Col>
                             }
                             <Row>
-                                <Col md={5} >
+                                <Col lg={5} >
                                     <Row style={{ paddingLeft: '12px', paddingRight: '12px' }}>
                                         <CTAButton text='Consulta gratis' />
                                     </Row>

@@ -59,7 +59,7 @@ export const FormLanding = ({
     <>
 
       <form id={id} ref={form} onSubmit={sendEmail} className={`${styles.formComponet}`}>
-        <Row>
+        <Row className="">
           <Col className={`${styles.itemForm} ${styles.emailBox}`}>
             <label>Email</label>
             <input
@@ -71,7 +71,7 @@ export const FormLanding = ({
             />
           </Col>
           <Col
-            md={4} xs={12}
+            lg={4} xs={12}
             id="sendEmail"
             className={`${styles.itemForm} `}
             style={{ paddingRight: '12px', paddingLeft: '12px' }}

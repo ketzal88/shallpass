@@ -21,7 +21,7 @@ export const CardGrid2 = ({ cardData, xsColum = 1, mdColumn = 2, lgColum = 3 }) 
                             key={id}
                             className={`
                                 ${styles.cardItem} 
-                                h-100
+                                
                                 ${isMobile
                                     ? (id > 0 && styles.center)
                                     : (((lgColum % 2 === 1) && (id === 1 || id === 4 || id === 7)) && styles.center)

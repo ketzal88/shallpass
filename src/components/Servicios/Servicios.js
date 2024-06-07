@@ -11,7 +11,7 @@ export const Servicios = () => {
 
     const sanitizer = DOMPurify.sanitize;
 
-    const isMobile = useScreenSize();
+    const { isMobile } = useScreenSize();
 
     // const navigate = useDynamicNavigation({ subject: `${process.env.REACT_APP_LLC_SUBJECT}` });
 
