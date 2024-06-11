@@ -1,5 +1,6 @@
 @import "../scss/colors.scss";
 @import "../scss/layout.scss";
+@import "../scss//landingsShared.scss";
 
 #thanks {
   min-height: 100vh;
@@ -91,6 +92,11 @@
     }
     .btnContainer {
       margin-bottom: 2em;
+      @include media-breakpoint-down(sm) {
+        button {
+          font-size: 14px;
+        }
+      }
     }
   }
 }
