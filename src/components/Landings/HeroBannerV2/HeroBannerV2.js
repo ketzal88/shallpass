@@ -15,7 +15,7 @@ export const HeroBannerV2 = ({ heroTex, spanText, smallText, explainer, video, v
 
     const scrollTo = useScrollTo();
 
-    console.log(`Is mobile: ${isMobile}, viewport W: ${viewport.width}, viwport H: ${viewport.height}`)
+    // console.log(`Is mobile: ${isMobile}, viewport W: ${viewport.width}, viwport H: ${viewport.height}`)
 
 
     return (

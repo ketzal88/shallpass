@@ -3,13 +3,13 @@
 $anchoDeCaja: $maxWith - (4 * $margin);
 
 .dark {
-  background-color: $Gris-oscuro;
-  color: $Beige;
+  background-color: transparent;
+  color: white;
 }
 
 .light {
-  background-color: white;
-  color: $Negro;
+  background-color: transparent;
+  color: white;
 }
 
 .noBg {
@@ -28,11 +28,15 @@ $anchoDeCaja: $maxWith - (4 * $margin);
 
 .main {
   max-width: $anchoDeCaja !important;
+  margin-top: 48px;
+  button {
+    margin-left: 36px !important;
+  }
 }
 
 .title {
   h2 {
-    color: $Negro;
+    color: white;
     font-feature-settings:
       "clig" off,
       "liga" off;
@@ -49,17 +53,17 @@ $anchoDeCaja: $maxWith - (4 * $margin);
 }
 
 .copy {
-  color: Negro;
+  margin-top: 40px !important;
+  color: $Amarillo;
+  text-align: left;
   font-feature-settings:
     "clig" off,
     "liga" off;
   font-family: "DM Sans";
-  font-size: 16px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
-  text-align: left;
-  margin-top: 30px;
+  line-height: 32px; /* 133.333% */
 }
 
 .standarList {
@@ -76,7 +80,6 @@ $anchoDeCaja: $maxWith - (4 * $margin);
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 24px 24px !important;
-    color: var(--Negro, #000);
     font-feature-settings:
       "clig" off,
       "liga" off;
@@ -90,7 +93,7 @@ $anchoDeCaja: $maxWith - (4 * $margin);
 
 .higligthList {
   margin-top: 40px;
-  background-color: white;
+  background-color: transparent;
   border-radius: 8px;
   display: flex;
   padding: 16px;

@@ -7,7 +7,7 @@ import { servicios } from '../../data/data'
 import styles from './Servicios.module.scss'
 import useScrollTo from '../../hooks/useScrollTo'
 
-export const Servicios = () => {
+export const Servicios = ({ cont = servicios, ctaId = 'llc', colums = 4, darkHighlight = false }) => {
 
     const sanitizer = DOMPurify.sanitize;
 
@@ -42,26 +42,24 @@ export const Servicios = () => {
             <Container fluid>
                 <Container className={`${styles.main}`} >
                     <h2>Nuestros servicios</h2>
-                    <Row md={4} className={`${styles.serviciosRow} g-4`}>
+                    <Row md={colums} className={`${styles.serviciosRow} g-4`}>
                         {
-                            servicios.map((data, id) => (
+                            cont.map((data, id) => (
                                 <Col key={id} className={isMobile && 'mb-5'}>
                                     <Col className={`${data.dark ? styles.dark : styles.light} ${styles.servicioContainer} ${!isMobile && 'h-100'}`}>
                                         {
                                             data.highlight !== '' ? (
-                                                <Col className={`${styles.highlight}`} >
+                                                <Col className={`${darkHighlight ? styles.darkHighlight : styles.highlight}`} >
                                                     <small>{data.highlight}</small>
                                                 </Col>
                                             ) : ''
                                         }
                                         <Col>
                                             <h3 dangerouslySetInnerHTML={{ __html: sanitizer(data.title) }} />
+                                            <small className={`${styles.priceClaim}`}>{data.priceClaim}</small>
                                             <Row className='align-items-center'>
-                                                <Col style={{ padding: '0 6px 0 0' }} >
-                                                    <h2 className='text-end' ><span>U$D </span></h2>
-                                                </Col>
-                                                <Col style={{ padding: '0 0 0 6px' }}>
-                                                    <h2 className='text-start' >{data.price}</h2>
+                                                <Col >
+                                                    <h2><span>{data.currency}</span>{data.price}</h2>
                                                 </Col>
                                             </Row>
                                             <p className={`${styles.note}`} dangerouslySetInnerHTML={{ __html: sanitizer(data.note) }} />
@@ -70,7 +68,7 @@ export const Servicios = () => {
                                                     <Button
                                                         className={`rounded-pill`}
                                                         // onClick={navigate({ newTab: true })}
-                                                        onClick={() => scrollTo('llc')}
+                                                        onClick={() => scrollTo(ctaId)}
                                                     >
                                                         {data.ctaText}
                                                     </Button>
