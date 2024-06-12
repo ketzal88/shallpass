@@ -8,6 +8,7 @@ import { LLCLandings } from "./pages/LLCLanding";
 import { Thanks } from "./pages/Thanks";
 import "./App.scss";
 import { CiudadaniaEspanola } from "./pages/CiudadaniaEspanola";
+import { Monotributo } from "./pages/Monotributo";
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/llc" element={<LLCLandings />} />
         <Route path="thanks" element={<Thanks />} />
         <Route path="ciudadania-espanola" element={<CiudadaniaEspanola />} />
+        <Route path="monotributo" element={<Monotributo />} />
 
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

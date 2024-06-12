@@ -53,7 +53,7 @@ export const FormLanding = ({
 
   formResponse && navigate("/thanks");
 
-  console.log(id + ' ' + submitText)
+  // console.log(id + ' ' + submitText)
 
   return (
     <>

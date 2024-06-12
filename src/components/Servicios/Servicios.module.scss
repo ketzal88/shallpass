@@ -1,9 +1,14 @@
 @import "../../scss/colors.scss";
 @import "../../scss/layout.scss";
+@import "../../scss/landingsShared.scss";
+
+@function breakpoint($size) {
+  @return map-get($grid-breakpoints, $size);
+}
 
 .servicios {
   min-height: 1412px;
-  margin-top: 96px !important;
+  // margin-top: 96px !important;
   background-color: $bgLigth;
   color: black;
   padding-bottom: 96px;
@@ -48,7 +53,15 @@
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
+    margin-bottom: 24px;
   }
+}
+
+.priceClaim {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px !important;
 }
 
 .highlight {
@@ -72,11 +85,35 @@
   }
 }
 
+.darkHighlight {
+  border-radius: 100px;
+  border: 1px solid rgba(17, 17, 17, 0.16);
+  background: black;
+  position: absolute;
+  padding: 8px 26px;
+  // width: 80%;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  small {
+    color: var(--Beige, #f5f0e1);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+  }
+}
+
 .servicioContainer {
   position: relative;
-  border-radius: 20px;
+  border-radius: 24px;
   padding: 48px 24px 48px 24px;
   h2 {
+    padding: 0 0 40px 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
     margin-bottom: 12px;
     color: $grisOcuro !important;
     text-align: center;
@@ -86,16 +123,15 @@
     font-weight: 700;
     line-height: 48px;
     span {
+      display: flex;
       color: $secondaryColor;
       text-align: center;
       font-family: "DM Sans";
       font-size: 40px;
       font-style: normal;
       font-weight: 700;
-      line-height: 72px;
-
-      display: inline-block;
       vertical-align: middle;
+      margin-right: 0.3em !important;
     }
   }
 
@@ -112,6 +148,7 @@
 
   button {
     padding: 16px 24px;
+    margin-bottom: 24px;
   }
 
   ul {
@@ -181,11 +218,15 @@
     }
     .servicioContainer {
       h2 {
-        font-size: 64px;
-        margin-bottom: 16px;
+        font-size: 44px;
+        margin-bottom: 0px !important;
         span {
-          font-size: 48px;
+          font-size: 30px;
         }
+      }
+      h3 {
+        font-size: 20px;
+        line-height: 21px;
       }
     }
   }

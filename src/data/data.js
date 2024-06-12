@@ -9,11 +9,12 @@ import {
 } from "../assets";
 
 // 2024
-const servicios =[
+const servicios = [
   {
     dark: true,
     title: `Armado<br/>LLC en USA`,
     highlight: ``,
+    currency: `U$D`,
     price: 699,
     note: `<b>Pago único,</b> Incluye todas las tasas y registros.`,
     ctaText: `Quiero más información`,
@@ -45,7 +46,7 @@ const servicios =[
       },
 
     ],
-    footer:[
+    footer: [
       `Demora: 1 a 3 días hábiles la LLC, 3 a 10 días hábiles el EIN.`
     ]
   },
@@ -53,6 +54,7 @@ const servicios =[
     dark: false,
     title: `Taxes<br/>anual`,
     highlight: `Requiere tener LLC constituida`,
+    currency: `U$D`,
     price: 699,
     note: `<b>Pago único,</b> Incluye el pago de todas las tasas y liquidación de taxes.`,
     ctaText: `Quiero más información`,
@@ -83,7 +85,7 @@ const servicios =[
         bulletText: `Renovación de Domicilio y teléfono en USA.`
       },
     ],
-    footer:[
+    footer: [
       `Incluye el pago de todas las tasas y liquidación de taxes.`,
       `Estos aranceles son los promocionados para sociedades que hayan sido constituidas con la Consultora, en casos ajenos consultar por honorarios.`,
     ]
@@ -92,6 +94,7 @@ const servicios =[
     dark: false,
     title: `Taxes<br/>mensual`,
     highlight: `Requiere tener LLC constituida`,
+    currency: `U$D`,
     price: 99,
     note: `Incluye el pago de todas las tasas y liquidación de taxes.`,
     ctaText: `Quiero más información`,
@@ -118,7 +121,7 @@ const servicios =[
         bulletText: `Servicio de Bookkeeping, nos hacemos cargo de los invoices emitidos y recibidos de tu empresa para una correcta liquidación de los impuestos y facilitar tus procesos comerciales.`
       },
     ],
-    footer:[
+    footer: [
       `Incluye el pago de todas las tasas y liquidación de taxes. Estos valores son indicados para sociedades que hayan sido constituidas con la Consultora, en otros casos consultar por aranceles.`,
       `Este servicio es con contrato fijo a 12 meses.`,
     ]
@@ -127,6 +130,7 @@ const servicios =[
     dark: false,
     title: `Tarjeta de debito física`,
     highlight: `Requiere tener cuenta bancaria`,
+    currency: `U$D`,
     price: 180,
     note: `<b>Pago único,</b> Incluye costo de envío, seguimiento y gestión.`,
     ctaText: `Quiero más información`,
@@ -145,7 +149,7 @@ const servicios =[
         bulletText: `Entrega en cualquier parte de Argentina de la tarjeta de débito física.`
       },
     ],
-    footer:[
+    footer: [
       `Para las aperturas de las cuentas bancarias que no requieran de tarjeta de débito física, la asistencia en la apertura de la cuenta no tendrá costo alguno.`,
     ]
   },

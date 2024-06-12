@@ -5,7 +5,16 @@ import { Col, Row } from 'react-bootstrap';
 import styles from './Explainer2.module.scss'
 import { CTAButton } from '../CTAButton/CTAButton';
 
-export const Explainer2 = ({ dark = false, title, titleSpan, copy, standarList, hihligthList = false, higligthListTitle, }) => {
+export const Explainer2 = ({
+    dark = false,
+    title,
+    titleSpan,
+    copy,
+    standarList,
+    hihligthList = false,
+    higligthListTitle,
+
+}) => {
     const sanitizer = DOMPurify.sanitize;
 
     const [darck, setDarck] = useState(false);
@@ -15,6 +24,8 @@ export const Explainer2 = ({ dark = false, title, titleSpan, copy, standarList, 
         setDarck(dark)
 
     }, [darck, dark]);
+
+
 
 
     return (
