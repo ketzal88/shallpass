@@ -3,7 +3,7 @@ import { Atencion } from '../components/Landings/Atencion/Atencion'
 import { Col, Row } from 'react-bootstrap'
 
 import { HeaderCTA } from '../components/Landings/HeaderCTA/HeaderCTA'
-import { espanolHeroVideoMobileMp4, espanolHeroVideoMp4, posterEspanol } from '../assets'
+import { espanolHeroVideoMobileMp4, espanolHeroVideoMp4, monotributoDescktopMp4, monotributoMobileMp4, posterEspanol } from '../assets'
 import { FooterLanding } from '../components/Landings/FooterLanding/FooterLanding'
 import { FormSection } from '../components/FormSection/FormSection'
 import useScreenSize from '../hooks/useScreenSize'
@@ -32,8 +32,8 @@ export const Monotributo = () => {
                         smallText={`Asesoramiento integral`}
                         explainer={`Orientado a monotributistas prestadores de servicios, emprendedores, freelancers y profesionales que necesitan ayuda con su administración y mantenimiento impositivo.`}
                         poster={posterEspanol}
-                        videoMp4={espanolHeroVideoMp4}
-                        videoMobileMp4={espanolHeroVideoMobileMp4}
+                        videoMp4={monotributoDescktopMp4}
+                        videoMobileMp4={monotributoMobileMp4}
                     />
                 </Col>
                 <Row className={`justify-content-md-center ${styles.explainerContainer}`}  >
