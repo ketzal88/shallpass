@@ -59,3 +59,5 @@ export { default as heroVideoMp4 } from "./videos/heroVideo.mp4";
 export { default as espanolHeroVideoMp4 } from "./videos/VideoLandingFlipEspanolaWorker.mp4";
 export { default as espanolHeroVideoWebm } from "./videos/VideoLandingFlipEspanolaWorker.mp4";
 export { default as espanolHeroVideoMobileMp4 } from "./videos/landingEspanolaMobile.mp4";
+export { default as monotributoMobileMp4 } from "./videos/monostributo-mobile.mp4";
+export { default as monotributoDescktopMp4 } from "./videos/monostributo-desktop.mp4";
