@@ -7,7 +7,7 @@ import DOMPurify from 'dompurify';
 import { vectorCircle } from '../../../assets';
 import useScrollTo from '../../../hooks/useScrollTo';
 
-export const HeroBannerV2 = ({ heroTex, spanText, smallText, explainer, video, videoMp4, videoMobile, videoMobileMp4, poster }) => {
+export const HeroBannerV2 = ({ heroTex, spanText, smallText, explainer, video, videoMp4, videoMobile, videoMobileMp4, poster, pageId }) => {
 
     const { isMobile, viewport } = useScreenSize();
 
@@ -33,7 +33,7 @@ export const HeroBannerV2 = ({ heroTex, spanText, smallText, explainer, video, v
                             <Button
                                 className="rounded-pill"
                                 // onClick={navigate({ newTab: true })}
-                                onClick={() => scrollTo('espanola')}
+                                onClick={() => scrollTo(pageId)}
                             >
                                 Enviar consulta
                             </Button>

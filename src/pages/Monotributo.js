@@ -3,7 +3,7 @@ import { Atencion } from '../components/Landings/Atencion/Atencion'
 import { Col, Row } from 'react-bootstrap'
 
 import { HeaderCTA } from '../components/Landings/HeaderCTA/HeaderCTA'
-import { espanolHeroVideoMobileMp4, espanolHeroVideoMp4, monotributoDescktopMp4, monotributoMobileMp4, posterEspanol } from '../assets'
+import { monotributoDescktopMp4, monotributoMobileMp4, posterEspanol } from '../assets'
 import { FooterLanding } from '../components/Landings/FooterLanding/FooterLanding'
 import { FormSection } from '../components/FormSection/FormSection'
 import useScreenSize from '../hooks/useScreenSize'
@@ -20,12 +20,14 @@ export const Monotributo = () => {
 
     const isMobile = useScreenSize()
 
+    const idPage = 'monotributo'
+
     return (
         <>
             <Row className={`justify-content-md-center ${styles.bgR}`}>
                 <Atencion />
                 <Col className={`${styles.main}`}>
-                    <HeaderCTA />
+                    <HeaderCTA idTo={idPage} />
                     <HeroBannerV2
                         heroTex={`TU MONOTRIBUTO DE FORMA `}
                         spanText={`CLARA Y SENCILLA`}
@@ -34,6 +36,7 @@ export const Monotributo = () => {
                         poster={posterEspanol}
                         videoMp4={monotributoDescktopMp4}
                         videoMobileMp4={monotributoMobileMp4}
+                        pageId={idPage}
                     />
                 </Col>
                 <Row className={`justify-content-md-center ${styles.explainerContainer}`}  >
@@ -42,16 +45,18 @@ export const Monotributo = () => {
                             title={`Te ayudamos a comprender como funciona el sistema tributario.`}
                             copy={`Delegá con nosotros todas esas situaciones que te generan estrés.`}
                             standarList={expalinerStandarList}
+                            idPage={idPage}
+
                         />
                     </Col>
                 </Row>
             </Row>
-            <Servicios cont={servicios} ctaId='monotributo' colums={3} separator={false} darkHighlight />
+            <Servicios cont={servicios} ctaId={idPage} colums={3} separator={false} darkHighlight />
             <Row className={`justify-content-md-center ${styles.bgL}`}>
                 <Col className={`${styles.main}`}>
                     <Col style={{ minHeight: '64px' }} />
                     {isMobile && <Col style={{ minHeight: '64px' }} />}
-                    <FormSection id={'monotributo'} submitText={'Contactanos'} />
+                    <FormSection id={idPage} submitText={'Contactanos'} />
                     {isMobile && <Col style={{ minHeight: '64px' }} />}
                     <FooterLanding />
                 </Col>

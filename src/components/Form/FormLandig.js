@@ -1,12 +1,9 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-
-
 import { Button, Col, Image, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import { vector } from '../../assets'
-
-import styles from './FormLanding.module.scss'
+import { vector } from '../../assets';
+import styles from './FormLanding.module.scss';
 
 export const FormLanding = ({
   SERVICE_ID = process.env.REACT_APP_SERVICE_ID,
@@ -51,13 +48,14 @@ export const FormLanding = ({
 
   const navigate = useNavigate();
 
-  formResponse && navigate("/thanks");
-
-  // console.log(id + ' ' + submitText)
+  useEffect(() => {
+    if (formResponse) {
+      navigate(`/thanks/${id}`);
+    }
+  }, [formResponse, navigate, id]);
 
   return (
     <>
-
       <form id={id} ref={form} onSubmit={sendEmail} className={`${styles.formComponet}`}>
         <Row className="">
           <Col className={`${styles.itemForm} ${styles.emailBox}`}>
@@ -73,7 +71,7 @@ export const FormLanding = ({
           <Col
             lg={4} xs={12}
             id="sendEmail"
-            className={`${styles.itemForm} `}
+            className={`${styles.itemForm}`}
             style={{ paddingRight: '12px', paddingLeft: '12px' }}
           >
             <Button variant="primary" className="rounded-pill" type="submit">

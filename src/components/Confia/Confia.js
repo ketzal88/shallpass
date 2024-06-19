@@ -8,8 +8,6 @@ export const Confia = () => {
 
     const { isMobile } = useScreenSize()
 
-    console.log(isMobile)
-
     return (
         <Container className={`${styles.confia}`}>
             <Row className={`mb-5`} >

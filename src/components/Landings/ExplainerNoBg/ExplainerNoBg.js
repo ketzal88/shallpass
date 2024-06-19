@@ -14,6 +14,7 @@ export const ExplainerNoBg = ({
     standarList,
     hihligthList = false,
     higligthListTitle,
+    idPage,
 
 }) => {
     const sanitizer = DOMPurify.sanitize;
@@ -88,7 +89,7 @@ export const ExplainerNoBg = ({
                                     <Row >
                                         <Col lg={7}>
                                             <Row style={{ paddingLeft: '12px', paddingRight: '12px' }}>
-                                                <CTAButton text='Consulta gratis' />
+                                                <CTAButton text='Consulta gratis' idPage={idPage} />
                                             </Row>
                                         </Col>
                                     </Row>
