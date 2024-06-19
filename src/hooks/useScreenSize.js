@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 const useScreenSize = (viewPortW = 769) => {
 
-    console.log(viewPortW)
+    // console.log(viewPortW)
 
     const [isMobile, setIsMobile] = useState(
         window.matchMedia(`(max-width: ${viewPortW}px)`).matches

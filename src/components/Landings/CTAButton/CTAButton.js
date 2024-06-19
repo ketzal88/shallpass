@@ -8,7 +8,7 @@ import { useMediaQuery } from 'react-responsive'
 import styles from './CTAButton.module.scss'
 import useScrollTo from '../../../hooks/useScrollTo'
 
-export const CTAButton = ({ text = `Enviar consulta`, textMobile = `Consultar` }) => {
+export const CTAButton = ({ text = `Enviar consulta`, textMobile = `Consultar`, idPage = 'espanola' }) => {
 
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 526px)' })
 
@@ -22,7 +22,7 @@ export const CTAButton = ({ text = `Enviar consulta`, textMobile = `Consultar` }
         <Button
             className={`${styles.button} rounded-pill`}
             // onClick={navigate({ newTab: true })}
-            onClick={() => scrollTo('espanola')}
+            onClick={() => scrollTo(idPage)}
 
         >
             {isTabletOrMobile

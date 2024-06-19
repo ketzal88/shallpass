@@ -18,7 +18,11 @@ export const FormSection = ({ submitText, id }) => {
             <h4>Déjanos tu email y un asesor de Shallpass te estará contactando<br /><span>a la brevedad</span></h4>
           </Col>
           <Col >
-            <FormLanding submitText={submitText} TEMPLATE_ID={process.env.REACT_APP_LANDING_TEMPLATE_ID} id={id} />
+            <FormLanding
+              submitText={submitText}
+              TEMPLATE_ID={process.env.REACT_APP_LANDING_TEMPLATE_ID}
+              id={id}
+            />
           </Col>
         </Col>
       </Row>

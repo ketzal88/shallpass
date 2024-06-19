@@ -26,13 +26,15 @@ export const CiudadaniaEspanola = () => {
 
     const isMobile = useScreenSize()
 
+    const idPage = 'espanola'
+
     return (
         <>
             <Row className={`justify-content-md-center ${styles.bgR}`}>
                 <Atencion />
                 <Col className={`${styles.main}`}>
 
-                    <HeaderCTA />
+                    <HeaderCTA idTo={idPage} />
                     <HeroBannerV2
                         heroTex={`CONVERTITE <br/>en `}
                         spanText={`Ciudadano <br/>Español`}
@@ -41,6 +43,8 @@ export const CiudadaniaEspanola = () => {
                         poster={posterEspanol}
                         videoMp4={espanolHeroVideoMp4}
                         videoMobileMp4={espanolHeroVideoMobileMp4}
+                        pageId={idPage}
+
                     />
                     <HighLigthText text={`Beneficios <br/>de obtener la <br/>ciudadanía <br/>española`} />
                     <CardGrid cardData={cardData} />
@@ -73,7 +77,7 @@ export const CiudadaniaEspanola = () => {
                     <Price />
                     <Col style={{ minHeight: '64px' }} />
                     {isMobile && <Col style={{ minHeight: '64px' }} />}
-                    <FormSection id={'espanola'} submitText={'Contactanos'} />
+                    <FormSection id={idPage} submitText={'Contactanos'} />
                     {isMobile && <Col style={{ minHeight: '64px' }} />}
                     <FooterLanding />
                 </Col>

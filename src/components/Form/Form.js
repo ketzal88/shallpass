@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
@@ -37,7 +37,12 @@ export const Form = ({
 
   const navigate = useNavigate();
 
-  formResponse ? navigate("/thanks") : console.log("form sin completar");
+  // formResponse ? navigate("/thanks") : console.log("form sin completar");
+  useEffect(() => {
+    if (formResponse) {
+      navigate(`/thanks/${id}`);
+    }
+  }, [formResponse, navigate, id]);
 
   return (
     <>
