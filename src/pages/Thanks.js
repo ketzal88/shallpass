@@ -11,7 +11,6 @@ import useScreenSize from "../hooks/useScreenSize";
 import "./Thanks.scss";
 
 
-
 export const Thanks = () => {
 
   const isMobile = useScreenSize()
