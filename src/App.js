@@ -9,6 +9,7 @@ import { Thanks } from "./pages/Thanks";
 import "./App.scss";
 import { CiudadaniaEspanola } from "./pages/CiudadaniaEspanola";
 import { Monotributo } from "./pages/Monotributo";
+import { WhatsAppButton } from "./components/WhatsAppButton/WhatsAppButton";
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
 
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+      <WhatsAppButton />
     </Container>
   );
 }

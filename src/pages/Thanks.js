@@ -3,12 +3,12 @@ import { Col, Row, Container, Image, Button } from "react-bootstrap";
 import { useNavigate, useParams } from 'react-router-dom';
 import { logoShallPassBaloon, whatsAppBlack } from "../assets";
 import { useDynamicNavigation } from "../hooks/useDynamicNavigation ";
+import useScreenSize from "../hooks/useScreenSize";
 
 
 
 
 import "./Thanks.scss";
-import useScreenSize from "../hooks/useScreenSize";
 
 
 
@@ -18,24 +18,23 @@ export const Thanks = () => {
 
   const { id } = useParams()
 
-
   const [newMsg, setNewMsg] = useState('No msg');
 
   useEffect(() => {
 
     switch (id) {
       case 'monotributo':
-        setNewMsg("Hola quisiera tener información sobre Monotributo")
+        setNewMsg(process.env.REACT_APP_MONOTRIBUTO_MSG)
         break;
       case 'llc':
-        setNewMsg("Hola quisiera tener información sobre LLC")
+        setNewMsg(process.env.REACT_APP_LLC_MSG)
         break;
       case 'espanola':
-        setNewMsg("Hola quisiera tener información sobre las Ciudadanias Españolas")
+        setNewMsg(process.env.REACT_APP_ESPANOLA_MSG)
         break;
 
       default:
-        setNewMsg('Hola quisiera tener información sobre sus servicios')
+        setNewMsg(process.env.REACT_APP_HOME_MSG)
         break;
     }
 
@@ -70,23 +69,11 @@ export const Thanks = () => {
                 Volver a la página anterior
               </Button>
             </Col>
-            {/* <Col className="btnContainer text-start">
-              <Button
-                className="rounded-pill"
-                onClick={navigateWhatsApp({ newTab: true })}
-              >
-                <Row className="justify-content-md-center " style={{ border: '1px solid blue' }}>
-                  <Col className="text-center">Consultar por Whatsapp <Image src={whatsAppBlack} /></Col>
-                </Row>
-              </Button>
-            </Col> */}
             <Col className="btnContainer text-start">
               <Button className="rounded-pill d-flex align-items-center justify-content-center" onClick={navigateWhatsApp({ newTab: true })}>
                 Consultar por Whatsapp <Image src={whatsAppBlack} className="whatsapp-icon" />
               </Button>
             </Col>
-
-
           </Row>
         </Col>
       </Row>
