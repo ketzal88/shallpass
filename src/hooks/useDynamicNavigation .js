@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-export const useDynamicNavigation = ({ number = '+5491134658988', subject = `${process.env.REACT_APP_HOME_SUBJECT}` } = {}) => {
+export const useDynamicNavigation = ({ number = process.env.REACT_APP_WP_PHONE, subject = `${process.env.REACT_APP_HOME_SUBJECT}` } = {}) => {
   const navigate = useNavigate();
 
   // Construir la URL de WhatsApp
