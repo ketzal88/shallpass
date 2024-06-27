@@ -9,7 +9,7 @@ export const WhatsAppButton = ({ page }) => {
   const location = useLocation();
 
 
-
+  const [visible, setVisible] = useState(true)
   const [newMsg, setNewMsg] = useState('No msg');
 
   useEffect(() => {
@@ -23,6 +23,7 @@ export const WhatsAppButton = ({ page }) => {
         break;
       case '/ciudadania-espanola':
         setNewMsg(process.env.REACT_APP_ESPANOLA_MSG)
+        setVisible(false)
         break;
 
       default:
@@ -48,16 +49,21 @@ export const WhatsAppButton = ({ page }) => {
   };
 
   return (
-    <div>
-      <a
-        href={whatsAppData}
-        className="whatsapp"
-        target="_blank"
-        rel="noreferrer"
-        onClick={handleWhatsAppClick}
-      >
-        <img alt="WhatsApp" src={whatsAppCTA} />
-      </a>
-    </div>
+    <>
+      {visible &&
+        <div>
+          <a
+            href={whatsAppData}
+            className="whatsapp"
+            target="_blank"
+            rel="noreferrer"
+            onClick={handleWhatsAppClick}
+          >
+            <img alt="WhatsApp" src={whatsAppCTA} />
+          </a>
+        </div>
+
+      }
+    </>
   );
 };
