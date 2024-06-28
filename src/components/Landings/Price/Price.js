@@ -4,7 +4,7 @@ import { Col, Row } from "react-bootstrap";
 import styles from "./Price.module.scss";
 // import { CTAButton } from "../CTAButton/CTAButton";
 
-export const Price = ({ id }) => {
+export const Price = ({ id = '' }) => {
   return (
     <Row id={id} className={` ${styles.price} justify-content-md-center`}>
       <Col md={5} style={{ padding: "0px" }}>
