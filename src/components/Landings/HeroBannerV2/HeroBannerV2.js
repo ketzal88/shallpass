@@ -15,9 +15,6 @@ export const HeroBannerV2 = ({ heroTex, spanText, smallText, explainer, video, v
 
     const scrollTo = useScrollTo();
 
-    // console.log(`Is mobile: ${isMobile}, viewport W: ${viewport.width}, viwport H: ${viewport.height}`)
-
-
     return (
         <Row className={`${styles.main}`}>
             <Col className={`${styles.heroContainer}`} >
@@ -32,7 +29,6 @@ export const HeroBannerV2 = ({ heroTex, spanText, smallText, explainer, video, v
                         <Col className='d-flex'>
                             <Button
                                 className="rounded-pill"
-                                // onClick={navigate({ newTab: true })}
                                 onClick={() => scrollTo(pageId)}
                             >
                                 Enviar consulta

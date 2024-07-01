@@ -2,7 +2,6 @@ import React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import DOMPurify from 'dompurify'
 import useScreenSize from '../../hooks/useScreenSize'
-// import { useDynamicNavigation } from '../../hooks/useDynamicNavigation '
 import { servicios } from '../../data/data'
 import styles from './Servicios.module.scss'
 import useScrollTo from '../../hooks/useScrollTo'
@@ -12,8 +11,6 @@ export const Servicios = ({ cont = servicios, ctaId = 'llc', colums = 4, darkHig
     const sanitizer = DOMPurify.sanitize;
 
     const { isMobile } = useScreenSize();
-
-    // const navigate = useDynamicNavigation({ subject: `${process.env.REACT_APP_LLC_SUBJECT}` });
 
     const scrollTo = useScrollTo()
 
@@ -67,7 +64,6 @@ export const Servicios = ({ cont = servicios, ctaId = 'llc', colums = 4, darkHig
                                                 <Row>
                                                     <Button
                                                         className={`rounded-pill`}
-                                                        // onClick={navigate({ newTab: true })}
                                                         onClick={() => scrollTo(ctaId)}
                                                     >
                                                         {data.ctaText}

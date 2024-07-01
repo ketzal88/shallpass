@@ -30,8 +30,6 @@ export const ExplainerNoBg = ({
     }, [darck, dark]);
 
 
-
-
     return (
         <>
             <Row className={` 

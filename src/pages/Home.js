@@ -8,7 +8,6 @@ import { Quote } from "../components/Quote/Quote";
 import { Rubros } from "../components/Rubros/Rubros";
 import { Tips } from "../components/Tips/Tips";
 import { quote, rubros, textHero, texts } from "../data/data";
-// import { WhatsAppButton } from "../components/WhatsAppButton/WhatsAppButton";
 import { Footer } from "../components/Footer/Footer";
 import { HeaderHome } from "../components/Header/HeaderHome";
 
@@ -22,7 +21,6 @@ export const Home = () => {
       <PorqueElegirnos />
       <Quote data={quote} />
       <LandingForm />
-      {/* <WhatsAppButton /> */}
       <Footer />
     </Container>
   );

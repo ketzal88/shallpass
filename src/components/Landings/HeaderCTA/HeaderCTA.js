@@ -10,8 +10,6 @@ export const HeaderCTA = ({ whatsAppSubject = process.env.REACT_APP_CIUDADANIA_S
 
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 526px)' })
 
-    // const navigate = useDynamicNavigation({ subject: `${whatsAppSubject}` });
-
     const scrollTo = useScrollTo();
 
     return (
@@ -22,7 +20,6 @@ export const HeaderCTA = ({ whatsAppSubject = process.env.REACT_APP_CIUDADANIA_S
             <Col className={`${styles.ctaButtonContainer} h-100`}>
                 <Button
                     className="rounded-pill"
-                    // onClick={navigate({ newTab: true })}
                     onClick={() => scrollTo(idTo)}
                 >
                     {isTabletOrMobile

@@ -43,7 +43,7 @@ export const FormLanding = ({
           },
           (error) => {
             console.log(error.text);
-            setLoading(false); // Enable the button again if there's an error
+            setLoading(false);
           }
         );
 
