@@ -36,9 +36,6 @@ export const WhatsAppButton = ({ page }) => {
 
   const number = process.env.REACT_APP_WP_PHONE
 
-  // const whatsAppData =
-  //   "https://api.whatsapp.com/send?phone=+5491122529837&text=Hola!%20Quisiera%20consultar%20por%20sus%20servicios.";
-
   const whatsAppData = `https://api.whatsapp.com/send?phone=${encodeURIComponent(number)}&text=${encodeURIComponent(newMsg)}`;
 
   const handleWhatsAppClick = () => {

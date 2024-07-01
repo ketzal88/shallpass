@@ -1,13 +1,11 @@
 import React from 'react'
 import { Button, Col, Container, Image, Row } from 'react-bootstrap'
-// import { useDynamicNavigation } from '../../hooks/useDynamicNavigation '
 import { procesIcon, proceso01, proceso02, proceso03, vector } from '../../assets'
 import styles from './Proceso.module.scss'
 import useScrollTo from '../../hooks/useScrollTo'
 
 export const Proceso = () => {
 
-    // const navigate = useDynamicNavigation({ subject: `${process.env.REACT_APP_LLC_SUBJECT}` });
     const scrollTo = useScrollTo()
 
     const data = [
@@ -48,7 +46,6 @@ export const Proceso = () => {
                             <p>Sin papeleos ni dolores de cabeza legales. Nuestra plataforma en línea automatiza todo el proceso de constitución de empresas con cumplimiento de normativas y atención al cliente global 24/7.</p>
                             <Button
                                 className={`rounded-pill`}
-                                // onClick={navigate({ newTab: true })}
                                 onClick={() => scrollTo('llc')}
                             >
                                 Enviar consulta <Image src={vector} width={24} />

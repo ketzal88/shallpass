@@ -1,13 +1,10 @@
 import React from 'react'
 import { Button, Col, Container, Image, Row } from 'react-bootstrap'
-// import { useDynamicNavigation } from '../../hooks/useDynamicNavigation '
 import { vector } from '../../assets'
 import styles from './Consultas.module.scss'
 import useScrollTo from '../../hooks/useScrollTo'
 
 export const Consultas = () => {
-
-  // const navigate = useDynamicNavigation({ subject: `${process.env.REACT_APP_LLC_SUBJECT}` });
 
 
   const scrollTo = useScrollTo();
