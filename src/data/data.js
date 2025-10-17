@@ -11,149 +11,117 @@ import {
 // 2024
 const servicios = [
   {
-    dark: true,
-    title: `Armado<br/>LLC en USA`,
-    highlight: ``,
-    currency: `U$D`,
-    price: 699,
-    note: `<b>Pago único,</b> Incluye todas las tasas y registros.`,
-    ctaText: `Quiero más información`,
-    ctaLink: `#`,
-    bulet: [
-      {
-        acent: false,
-        bulletText: `Búsqueda de nombre, nos encargamos de verificar la disponibilidad y registrar el nombre de tu empresa en USA.`
-      },
-      {
-        acent: false,
-        bulletText: `Artículos de Organización, preparamos y presentamos los documentos legales necesarios para establecer tu LLC en USA.`
-      },
-      {
-        acent: false,
-        bulletText: `Estatutos, elaboramos los estatutos de tu empresa, detallando la estructura y funcionamiento de tu LLC.`
-      },
-      {
-        acent: false,
-        bulletText: `Dirección de empresa en USA, ofrecemos una dirección comercial en USA para tu LLC.`
-      },
-      {
-        acent: false,
-        bulletText: `Agente Registrado, proporcionamos un agente registrado para recibir documentos legales y fiscales en nombre de tu empresa.`
-      },
-      {
-        acent: false,
-        bulletText: `EIN, obtenemos el EIN para que puedas acceder a cuentas bancarias o integrar plataformas de pago como Paypal o Stripe para tus negocios o abrir cuenta como Amazon Seller.`
-      },
-
-    ],
-    footer: [
-      `Demora: 1 a 3 días hábiles la LLC, 3 a 10 días hábiles el EIN.`
-    ]
-  },
-  {
     dark: false,
-    title: `Taxes<br/>anual`,
-    highlight: `Requiere tener LLC constituida`,
+    title: `Pack Start<br/>LLC`,
+    highlight: `Ideal: Freelancer inicial`,
+    priceClaim: `Desde`,
     currency: `U$D`,
-    price: 699,
-    note: `<b>Pago único,</b> Incluye el pago de todas las tasas y liquidación de taxes.`,
-    ctaText: `Quiero más información`,
+    price: 499,
+    note: `<b>Pago único,</b> Incluye constitución y documentación básica.`,
+    ctaText: `Pagar ahora`,
     ctaLink: `#`,
     bulet: [
       {
         acent: false,
-        bulletText: `Asesoramiento sobre los impuestos a declarar.`
+        bulletText: `Constitución LLC (FL/NM/WY)`,
       },
       {
         acent: false,
-        bulletText: `Presentación de los impuestos y formularios federales.`
+        bulletText: `EIN (IRS)`,
       },
       {
         acent: false,
-        bulletText: `Presentación de los impuestos y formularios estatales.`
+        bulletText: `Registered Agent (1 año)`,
       },
       {
         acent: false,
-        bulletText: `Pago de las Tasas Estatales.`
+        bulletText: `Domicilio fiscal (1 año)`,
       },
       {
         acent: false,
-        bulletText: `Renovación de Agente Registrador anual.`
-      },
-      {
-        acent: false,
-        bulletText: `Renovación de Domicilio y teléfono en USA.`
+        bulletText: `Manual de uso`,
       },
     ],
     footer: [
-      `Incluye el pago de todas las tasas y liquidación de taxes.`,
-      `Estos aranceles son los promocionados para sociedades que hayan sido constituidas con la Consultora, en casos ajenos consultar por honorarios.`,
-    ]
+      // `Perfil ideal: Freelancer inicial`,
+      `Demora: 1 a 3 días hábiles la LLC, 3 a 10 días hábiles el EIN.`,
+    ],
   },
   {
     dark: false,
-    title: `Taxes<br/>mensual`,
-    highlight: `Requiere tener LLC constituida`,
+    title: `Pack Pro<br/>LLC`,
+    highlight: `Ideal: Emprendedor consolidado`,
+    priceClaim: `Desde`,
     currency: `U$D`,
-    price: 99,
-    note: `Incluye el pago de todas las tasas y liquidación de taxes.`,
-    ctaText: `Quiero más información`,
+    price: 799,
+    note: `<b>Pago único,</b> Incluye cuenta bancaria y tarjeta física.`,
+    ctaText: `Pagar ahora`,
     ctaLink: `#`,
     bulet: [
+      {
+        acent: false,
+        bulletText: `Todo lo incluido en el Pack Start`,
+      },
       {
         acent: true,
-        bulletText: `Incluye todos los servicios del pack anual.`
+        bulletText: `Cuenta bancaria (Relay/Mercury)`,
       },
       {
-        acent: false,
-        bulletText: `Consultas ilimitadas dentro del mes por asesoramiento fiscal o comercial.`
+        acent: true,
+        bulletText: `Tarjeta física internacional`,
       },
       {
-        acent: false,
-        bulletText: `Asistencia sobre presentaciones por las cuentas bancarias.`
-      },
-      {
-        acent: false,
-        bulletText: `Generación de Invoice a los clientes.`
-      },
-      {
-        acent: false,
-        bulletText: `Servicio de Bookkeeping, nos hacemos cargo de los invoices emitidos y recibidos de tu empresa para una correcta liquidación de los impuestos y facilitar tus procesos comerciales.`
+        acent: true,
+        bulletText: `Acompañamiento 1 a 1 (proceso)`,
       },
     ],
     footer: [
-      `Incluye el pago de todas las tasas y liquidación de taxes. Estos valores son indicados para sociedades que hayan sido constituidas con la Consultora, en otros casos consultar por aranceles.`,
-      `Este servicio es con contrato fijo a 12 meses.`,
-    ]
+      // `Perfil ideal: Emprendedor consolidado`,
+      `Incluye el pago de todas las tasas y liquidación de taxes.`,
+    ],
   },
   {
-    dark: false,
-    title: `Tarjeta de debito física`,
-    highlight: `Requiere tener cuenta bancaria`,
+    dark: true,
+    title: `Pack Elite<br/>LLC`,
+    highlight: `Ideal: Agencia / negocio escalado`,
+    priceClaim: `Desde`,
     currency: `U$D`,
-    price: 180,
-    note: `<b>Pago único,</b> Incluye costo de envío, seguimiento y gestión.`,
-    ctaText: `Quiero más información`,
+    price: 1799,
+    note: `<b>Pago único,</b> Incluye estructura completa 360° y criptomonedas.`,
+    ctaText: `Agendar una llamada`,
     ctaLink: `#`,
     bulet: [
       {
         acent: false,
-        bulletText: `Asistencia y gestión de la apertura de la cuenta bancaria o plataforma de pago; RelayFi, Mercury Bank, Stripe o Wise.`
+        bulletText: `Todo lo incluido en el Pack Pro`,
       },
       {
-        acent: false,
-        bulletText: `Gestión de la tarjeta de débito física.`
+        acent: true,
+        bulletText: `Acompañamiento 1 a 1 (3 meses + soporte 1 año)`,
       },
       {
-        acent: false,
-        bulletText: `Entrega en cualquier parte de Argentina de la tarjeta de débito física.`
+        acent: true,
+        bulletText: `Stripe configurado`,
+      },
+      {
+        acent: true,
+        bulletText: `Kraken/Coinbase Business`,
+      },
+      {
+        acent: true,
+        bulletText: `Estructura 360° divisas/cripto`,
+      },
+      {
+        acent: true,
+        bulletText: `Asesoramiento fiscal en EE.UU.`,
       },
     ],
     footer: [
-      `Para las aperturas de las cuentas bancarias que no requieran de tarjeta de débito física, la asistencia en la apertura de la cuenta no tendrá costo alguno.`,
-    ]
+      // `Perfil ideal: Agencia / negocio escalado`,
+      `Incluye el pago de todas las tasas y liquidación de taxes.`,
+    ],
   },
-]
+];
 
 const rubros = [
   {
@@ -290,4 +258,13 @@ const quote = [
   },
 ];
 
-export { rubros, textHero, texts, quote, rubrosLLC, textsLLC, textHeroLLC, servicios };
+export {
+  rubros,
+  textHero,
+  texts,
+  quote,
+  rubrosLLC,
+  textsLLC,
+  textHeroLLC,
+  servicios,
+};
