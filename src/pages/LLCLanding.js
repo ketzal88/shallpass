@@ -12,23 +12,23 @@ import { FooterLanding } from "../components/Landings/FooterLanding/FooterLandin
 import { Atencion } from "../components/Landings/Atencion/Atencion";
 import { HeaderCTA } from "../components/Landings/HeaderCTA/HeaderCTA";
 
-
-import styles from './Home.module.scss'
-
-
+import styles from "./Home.module.scss";
 
 export const LLCLandings = () => {
-
   return (
     <>
       <Atencion />
       <Col className={`${styles.bgR}`}>
         <Row className={`justify-content-md-center`}>
-          <Col className={`${styles.main}`} >
-            <HeaderCTA idTo='llc' />
+          <Col className={`${styles.main}`}>
+            <HeaderCTA idTo="llc" />
           </Col>
         </Row>
-        <HerroVideoBanner video={heroVideo} videoMp4={heroVideoMp4} poster={posterVideoHero} />
+        <HerroVideoBanner
+          video={heroVideo}
+          videoMp4={heroVideoMp4}
+          poster={posterVideoHero}
+        />
         <Destacados />
         <Confia />
       </Col>
@@ -36,7 +36,7 @@ export const LLCLandings = () => {
       <Col className={`${styles.bgL}`}>
         <Consultas />
         <Proceso />
-        <FormSection id={'llc'} submitText={'Contactanos'} />
+        {/* <FormSection id={'llc'} submitText={'Contactanos'} /> */}
         <Container>
           <FooterLanding />
         </Container>

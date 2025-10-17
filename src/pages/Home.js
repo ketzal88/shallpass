@@ -7,7 +7,8 @@ import { PorqueElegirnos } from "../components/PorqueElegirnos/PorqueElegirnos";
 import { Quote } from "../components/Quote/Quote";
 import { Rubros } from "../components/Rubros/Rubros";
 import { Tips } from "../components/Tips/Tips";
-import { quote, rubros, textHero, texts } from "../data/data";
+import { Servicios } from "../components/Servicios/Servicios";
+import { quote, rubros, textHero, texts, servicios } from "../data/data";
 import { Footer } from "../components/Footer/Footer";
 import { HeaderHome } from "../components/Header/HeaderHome";
 
@@ -18,6 +19,7 @@ export const Home = () => {
       <Rubros data={rubros} />
       <HeroText data={textHero} />
       <Tips texts={texts} />
+      <Servicios cont={servicios} ctaId="home" colums={4} />
       <PorqueElegirnos />
       <Quote data={quote} />
       <LandingForm />

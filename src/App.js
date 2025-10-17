@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 import { Container } from "react-bootstrap";
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { Home } from "./pages/Home";
 import { LLCLandings } from "./pages/LLCLanding";
 import { Thanks } from "./pages/Thanks";
