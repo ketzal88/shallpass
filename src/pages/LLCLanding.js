@@ -5,7 +5,7 @@ import { HerroVideoBanner } from "../components/HerroVideoBanner/HerroVideoBanne
 import { Destacados } from "../components/Destacados/Destacados";
 import { Confia } from "../components/Confia/Confia";
 import { Servicios } from "../components/Servicios/Servicios";
-import { Consultas } from "../components/Consultas/Consultas";
+// import { Consultas } from "../components/Consultas/Consultas";
 import { Proceso } from "../components/Proceso/Proceso";
 import { FooterLanding } from "../components/Landings/FooterLanding/FooterLanding";
 import { Atencion } from "../components/Landings/Atencion/Atencion";
@@ -33,7 +33,7 @@ export const LLCLandings = () => {
       </Col>
       <Servicios id={"llc"} />
       <Col className={`${styles.bgL}`}>
-        <Consultas />
+        {/* <Consultas /> */}
         <Proceso />
         {/* <FormSection id={'llc'} submitText={'Contactanos'} /> */}
         <Container>

@@ -29,7 +29,7 @@ export const HerroVideoBanner = ({ video, videoMp4, poster }) => {
           <Col className={`${styles.ctaContainer}  h-100 `}>
             <Col className="d-flex">
               <Button className="rounded-pill" onClick={() => scrollTo("llc")}>
-                Enviar consulta
+                Ver precios
               </Button>
               <Image className={`${styles.vectorColor}`} src={vectorCircle} />
             </Col>

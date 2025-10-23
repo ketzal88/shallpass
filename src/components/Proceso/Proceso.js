@@ -60,7 +60,7 @@ export const Proceso = () => {
                 className={`rounded-pill`}
                 onClick={() => scrollTo("llc")}
               >
-                Enviar consulta <Image src={vector} width={24} />
+                Ver precios <Image src={vector} width={24} />
               </Button>
             </Col>
           </Row>
