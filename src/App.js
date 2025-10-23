@@ -19,7 +19,7 @@ function App() {
   return (
     <Container fluid className="App">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<LLCLandings />} />
         <Route path="/llc" element={<LLCLandings />} />
         <Route path="/thanks/:id" element={<Thanks />} />
         <Route path="ciudadania-espanola" element={<CiudadaniaEspanola />} />

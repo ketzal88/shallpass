@@ -7,7 +7,6 @@ import { Confia } from "../components/Confia/Confia";
 import { Servicios } from "../components/Servicios/Servicios";
 import { Consultas } from "../components/Consultas/Consultas";
 import { Proceso } from "../components/Proceso/Proceso";
-import { FormSection } from "../components/FormSection/FormSection";
 import { FooterLanding } from "../components/Landings/FooterLanding/FooterLanding";
 import { Atencion } from "../components/Landings/Atencion/Atencion";
 import { HeaderCTA } from "../components/Landings/HeaderCTA/HeaderCTA";
