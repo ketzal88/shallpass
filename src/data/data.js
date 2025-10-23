@@ -19,7 +19,7 @@ const servicios = [
     price: 499,
     note: `<b>Pago único,</b> Incluye constitución y documentación básica.`,
     ctaText: `Pagar ahora`,
-    ctaLink: `#`,
+    ctaLink: `https://info.shallpassconsultora.com/pack-start-llc`,
     bulet: [
       {
         acent: false,
@@ -44,7 +44,7 @@ const servicios = [
     ],
     footer: [
       // `Perfil ideal: Freelancer inicial`,
-      `Demora: 1 a 3 días hábiles la LLC, 3 a 10 días hábiles el EIN.`,
+      `Demora: 7 días hábiles la LLC, 3 a 10 días hábiles el EIN.`,
     ],
   },
   {
@@ -56,7 +56,7 @@ const servicios = [
     price: 799,
     note: `<b>Pago único,</b> Incluye cuenta bancaria y tarjeta física.`,
     ctaText: `Pagar ahora`,
-    ctaLink: `#`,
+    ctaLink: `https://info.shallpassconsultora.com/pack-pro-llc`,
     bulet: [
       {
         acent: false,
@@ -89,7 +89,7 @@ const servicios = [
     price: 1799,
     note: `<b>Pago único,</b> Incluye estructura completa 360° y criptomonedas.`,
     ctaText: `Agendar una llamada`,
-    ctaLink: `#`,
+    ctaLink: `https://info.shallpassconsultora.com/agendar`,
     bulet: [
       {
         acent: false,
