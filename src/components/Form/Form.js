@@ -9,9 +9,8 @@ export const Form = ({
   TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID,
   PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY,
   id = "fromHeader",
-  submitText = 'ENVIAR CONSULTA',
+  submitText = "Ver precios",
 }) => {
-
   const form = useRef();
   const [formResponse, setFormResponse] = useState(false);
 
@@ -22,7 +21,7 @@ export const Form = ({
         `${SERVICE_ID}`,
         `${TEMPLATE_ID}`,
         form.current,
-        `${PUBLIC_KEY}`,
+        `${PUBLIC_KEY}`
       )
       .then(
         (result) => {
@@ -31,7 +30,7 @@ export const Form = ({
         },
         (error) => {
           console.log(error.text);
-        },
+        }
       );
   };
 
