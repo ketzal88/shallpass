@@ -31,7 +31,7 @@ export const LLCLandings = () => {
         <Destacados />
         <Confia />
       </Col>
-      <Servicios />
+      <Servicios id={"llc"} />
       <Col className={`${styles.bgL}`}>
         <Consultas />
         <Proceso />

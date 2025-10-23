@@ -40,7 +40,7 @@ export const Servicios = ({
   return (
     <Row className={`${styles.servicios}`}>
       <Container fluid>
-        <Container className={`${styles.main}`}>
+        <Container className={`${styles.main}`} id={"llc"}>
           <h2>Nuestros servicios</h2>
           <Row md={colums} className={`${styles.serviciosRow} g-3`}>
             {cont.map((data, id) => (
@@ -86,7 +86,7 @@ export const Servicios = ({
                       <Row>
                         <Button
                           className={`rounded-pill`}
-                          onClick={() => scrollTo(ctaId)}
+                          onClick={() => window.open(data.ctaLink, "_blank")}
                         >
                           {data.ctaText}
                         </Button>
