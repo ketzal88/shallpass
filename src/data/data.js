@@ -89,7 +89,7 @@ const servicios = [
     price: 1799,
     note: `<b>Pago único,</b> Incluye estructura completa 360° y criptomonedas.`,
     ctaText: `Agendar una llamada`,
-    ctaLink: `https://info.shallpassconsultora.com/agendar`,
+    ctaLink: `https://info.shallpassconsultora.com/form-elite`,
     bulet: [
       {
         acent: false,
