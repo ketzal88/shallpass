@@ -23,7 +23,7 @@ export const HeaderCTA = ({
         <Button className="rounded-pill" onClick={() => scrollTo(idTo)}>
           {isTabletOrMobile ? (
             <>
-              <span>Contratar </span>
+              <span>Agendar llamada </span>
               <Image
                 src={vector}
                 width="16px"
@@ -33,7 +33,7 @@ export const HeaderCTA = ({
             </>
           ) : (
             <>
-              <span>Contratar </span>
+              <span>Agendar llamada </span>
               <Image
                 src={vector}
                 width="16px"

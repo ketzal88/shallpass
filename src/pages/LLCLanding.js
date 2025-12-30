@@ -4,6 +4,8 @@ import { heroVideo, heroVideoMp4, posterVideoHero } from "../assets";
 import { HerroVideoBanner } from "../components/HerroVideoBanner/HerroVideoBanner";
 import { Destacados } from "../components/Destacados/Destacados";
 import { Confia } from "../components/Confia/Confia";
+import { PlatformLogos } from "../components/PlatformLogos/PlatformLogos";
+import { VideosEducativos } from "../components/VideosEducativos/VideosEducativos";
 import { Servicios } from "../components/Servicios/Servicios";
 // import { Consultas } from "../components/Consultas/Consultas";
 import { Proceso } from "../components/Proceso/Proceso";
@@ -16,7 +18,7 @@ import styles from "./Home.module.scss";
 export const LLCLandings = () => {
   return (
     <>
-      <Atencion />
+      {/* <Atencion /> */}
       <Col className={`${styles.bgR}`}>
         <Row className={`justify-content-md-center`}>
           <Col className={`${styles.main}`}>
@@ -30,6 +32,9 @@ export const LLCLandings = () => {
         />
         <Destacados />
         <Confia />
+        <PlatformLogos />
+        {/* Sección de videos - Ocultar hasta que los videos estén listos */}
+        {/* <VideosEducativos /> */}
       </Col>
       <Servicios id={"llc"} />
       <Col className={`${styles.bgL}`}>

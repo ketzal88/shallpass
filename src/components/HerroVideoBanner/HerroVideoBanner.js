@@ -20,16 +20,16 @@ export const HerroVideoBanner = ({ video, videoMp4, poster }) => {
           <small>Internacionalizá tus negocios</small>
           <h1>
             ARMÁ {isMobile && <br />}TU LLC <br />
-            EN <span>7 DÍAS</span>
+            EN <span>10 DÍAS</span>
           </h1>
           <h4>
-            Creá una cuenta bancaria en{" "}
-            <span>USA y {!isMobile && <br />}cobrá en dolares.</span>
+            Tu sociedad en USA, cuenta bancaria y cobros globales,{" "}
+            <span>en dolares y {!isMobile && <br />}múltiples divisas.</span>
           </h4>
           <Col className={`${styles.ctaContainer}  h-100 `}>
             <Col className="d-flex">
               <Button className="rounded-pill" onClick={() => scrollTo("llc")}>
-                Ver precios
+                Ver planes
               </Button>
               <Image className={`${styles.vectorColor}`} src={vectorCircle} />
             </Col>

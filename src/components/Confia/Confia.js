@@ -13,9 +13,10 @@ export const Confia = () => {
         <Col></Col>
         <Col md={7} data-aos="zoom-out" data-aos-delay="500">
           <h1>
-            En SHALLPASS entendemos lo que tu negocio necesita.{" "}
-            {!isMobile && <br />}
-            <span>Confiá en nosotros {isMobile && <br />}para crecer.</span>
+            Más de 150 LLC legalmente registradas en USA. {!isMobile && <br />}
+            <span>
+              ¿Por qué no deberías confiar en nosotros? {isMobile && <br />}
+            </span>
           </h1>
         </Col>
         <Col></Col>
@@ -34,11 +35,13 @@ export const Confia = () => {
                 data-aos-delay="100"
                 data-aos-offset="0"
               >
-                <Image src={confia01} />
+                <span style={{ fontSize: "2em", lineHeight: "1" }}>💼</span>
+                {/* <Image src={confia01} /> */}
                 <p>
-                  Ideal para tu <br />
+                  <b>Pensada para negocios digitales</b>
+                  <br />
                   <span>
-                    tienda de Amazon, agencia, venta de servicios o productos
+                    Agencias, freelancers, Amazon, SaaS y servicios al exterior.
                   </span>
                 </p>
               </Col>
@@ -51,10 +54,14 @@ export const Confia = () => {
                 data-aos-delay="200"
                 data-aos-offset="1"
               >
-                <Image src={confia02} />
+                <span style={{ fontSize: "2em", lineHeight: "1" }}>🌍</span>
+                {/* <Image src={confia02} /> */}
                 <p>
-                  Recibí y realizá{" "}
-                  <span>pagos a cualquier parte del mundo</span>
+                  Pagá y recibí desde cualquier país
+                  <br />
+                  <span>
+                    Transferencias internacionales simples y ordenadas.
+                  </span>
                 </p>
               </Col>
             </Col>
@@ -75,10 +82,14 @@ export const Confia = () => {
                 data-aos-delay="300"
                 data-aos-offset="2"
               >
-                <Image src={confia03} />
+                <span style={{ fontSize: "2em", lineHeight: "1" }}>💳</span>
+                {/* <Image src={confia03} /> */}
                 <p>
-                  <span>Cobrá en USD</span> por internet utilizando Stripe,
-                  Wise, Payoneer
+                  <b>Cobrá online como empresa</b>
+                  <br />
+                  <span>
+                    Stripe, Wise y Payoneer integrados para ventas globales.
+                  </span>
                 </p>
               </Col>
             </Col>
@@ -90,13 +101,14 @@ export const Confia = () => {
                 data-aos-delay="400"
                 data-aos-offset="3"
               >
-                <Image src={confia04} />
+                <span style={{ fontSize: "2em", lineHeight: "1" }}>💳</span>
+                {/* <Image src={confia04} /> */}
                 <p>
-                  Utilizá tu
+                  Tarjeta de débito empresarial
                   <br />
-                  <span>tarjeta de débito internacional </span>
-                  <br />
-                  sin restricciones
+                  <span>
+                    Usala para gastos operativos y suscripciones del negocio.
+                  </span>
                 </p>
               </Col>
             </Col>
