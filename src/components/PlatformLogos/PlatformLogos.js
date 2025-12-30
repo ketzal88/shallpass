@@ -3,18 +3,21 @@ import { Col, Container, Row } from "react-bootstrap";
 import styles from "./PlatformLogos.module.scss";
 
 export const PlatformLogos = () => {
-  // Placeholder logos - reemplazar con imágenes reales
+  // Logos de plataformas - ubicar en public/
   const platforms = [
-    { name: "Stripe", logo: "/placeholder-stripe.png" },
-    { name: "Kraken", logo: "/placeholder-kraken.png" },
-    { name: "Relay", logo: "/placeholder-relay.png" },
-    { name: "Wise", logo: "/placeholder-wise.png" },
-    { name: "PayPal", logo: "/placeholder-paypal.png" },
+    { name: "Stripe", logo: "/stripe-logo.png" },
+    { name: "Kraken", logo: "/kraken-logo.png" },
+    { name: "Relay", logo: "/relay-logo.png" },
+    { name: "Wise", logo: "/wise-2.svg" },
+    {
+      name: "PayPal",
+      logo: "/PayPal.png",
+    },
   ];
 
   const partners = [
-    { name: "Mercury", logo: "/placeholder-mercury.png" },
-    { name: "Payoneer", logo: "/placeholder-payoneer.png" },
+    { name: "Mercury", logo: "/mercury-logo.png" },
+    { name: "Payoneer", logo: "/Payoneer_logo.png" },
   ];
 
   return (
