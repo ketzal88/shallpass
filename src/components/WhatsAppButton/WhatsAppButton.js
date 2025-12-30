@@ -48,7 +48,16 @@ export const WhatsAppButton = ({ page }) => {
   return (
     <>
       {visible && (
-        <div>
+        <div
+          className="whatsapp-tooltip-container"
+          style={{
+            position: "fixed",
+            bottom: "20px",
+            right: "20px",
+            zIndex: 9999,
+          }}
+        >
+          <div className="whatsapp-tooltip">Chatea con nosotros!</div>
           <a
             href={whatsAppData}
             className="whatsapp"
@@ -56,6 +65,7 @@ export const WhatsAppButton = ({ page }) => {
             rel="noopener noreferrer"
             onClick={handleWhatsAppClick}
             aria-label="Contactar por WhatsApp"
+            style={{ display: "inline-block" }}
           >
             <img alt="WhatsApp" src={whatsAppCTA} />
           </a>

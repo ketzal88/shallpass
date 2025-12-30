@@ -83,10 +83,10 @@ const servicios = [
   {
     dark: true,
     title: `Pack Elite<br/>LLC`,
-    highlight: `Ideal: Agencia / negocio escalado`,
+    highlight: `Premium - Operacion 360°`,
     priceClaim: `Desde`,
     currency: `U$D`,
-    price: 1799,
+    price: 1399,
     note: `<b>Pago único,</b> Incluye estructura completa 360° y criptomonedas.`,
     ctaText: `Agendar una llamada`,
     ctaLink: `https://info.shallpassconsultora.com/form-elite`,

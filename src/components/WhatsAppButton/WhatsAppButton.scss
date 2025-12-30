@@ -11,6 +11,21 @@
   z-index: 100;
 }
 
+.whatsapp-tooltip {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 1rem;
+  font-style: bold;
+  margin-bottom: 24px;
+  margin-right: 82px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  white-space: nowrap;
+}
+
 .whatsapp-icon {
   margin-top: 13px;
 }

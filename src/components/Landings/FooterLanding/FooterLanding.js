@@ -12,10 +12,12 @@ export const FooterLanding = () => {
     <Row className={`${styles.FooterLanding}`}>
       <Col xs={12} md={6} className={`${styles.brand}`}>
         <Image src={logoShallPassBaloon} height={36.5} />
-        <p>Confiá en shallpass</p>
+        {/* <p>Confiá en shallpass</p> */}
       </Col>
-      <Col className={`${styles.date}`}>
-        <p>© Copyright {date()}. All Rights Reserved.</p>
+      <Col xs={12} lg={6} className={`text-end ${styles.date}`}>
+        30 N Gould St Ste N Sheridan, WY 82801 <br />{" "}
+        joel@consultorashallpass.com <br /> +54 9 11 3465 8988 <br /> ©
+        Copyright {date()}. All Rights Reserved.
       </Col>
     </Row>
   );
