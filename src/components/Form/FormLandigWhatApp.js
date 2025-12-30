@@ -6,34 +6,62 @@ import styles from "./FormLanding.module.scss";
 export const FormLandingWhatsApp = ({ id = "fromHeader", submitText }) => {
   const [loading, setLoading] = useState(false);
 
-  const openWhatApp = () => {
+  const validatePhone = (phone) => {
+    // Allow digits, spaces, +, -, and parentheses
+    const phoneRegex = /^[\d\s+\-()]+$/;
+    return phoneRegex.test(phone) && phone.replace(/\D/g, "").length >= 8;
+  };
+
+  const openWhatApp = (e) => {
+    e.preventDefault();
+
+    const phoneInput = e.target
+      .closest("form")
+      .querySelector('input[name="user_phone"]');
+    const phone = phoneInput?.value?.trim() || "";
+
+    if (!phone || !validatePhone(phone)) {
+      alert("Por favor, ingrese un teléfono válido.");
+      return;
+    }
+
     setLoading(true);
     window.dataLayer.push({
       event: "WhatAppCiudania",
       sent: true,
     });
 
+    const message = process.env.REACT_APP_ESPANOLA_MSG || "";
+    const safeMessage = encodeURIComponent(message);
+    const safePhone = encodeURIComponent("+5491161030547");
+
     window.open(
-      `https://api.whatsapp.com/send?phone=+5491161030547&text=${encodeURIComponent(
-        process.env.REACT_APP_ESPANOLA_MSG
-      )}`,
+      `https://api.whatsapp.com/send?phone=${safePhone}&text=${safeMessage}`,
       "_blank",
-      "noreferrer"
+      "noopener,noreferrer"
     );
     setLoading(false);
   };
 
   return (
     <>
-      <form id={id} className={`${styles.formComponet}`}>
+      <form
+        id={id}
+        className={`${styles.formComponet}`}
+        onSubmit={openWhatApp}
+        noValidate
+      >
         <Row className="">
           <Col className={`${styles.itemForm} ${styles.emailBox}`}>
-            <label>Teléfono</label>
+            <label htmlFor={`${id}-phone`}>Teléfono</label>
             <input
-              type="number"
+              id={`${id}-phone`}
+              type="tel"
               name="user_phone"
               placeholder="Dejá tu teléfono"
+              maxLength={20}
               required
+              autoComplete="tel"
               style={{ borderRadius: "24px !important" }}
             />
           </Col>
@@ -47,11 +75,11 @@ export const FormLandingWhatsApp = ({ id = "fromHeader", submitText }) => {
             <Button
               variant="primary"
               className="rounded-pill"
-              onClick={() => openWhatApp()}
+              type="submit"
               disabled={loading}
               style={{ display: "flex", alignItems: "center" }}
             >
-              {submitText} <Image src={vector} />
+              {loading ? "Abriendo..." : submitText} <Image src={vector} />
             </Button>
           </Col>
         </Row>

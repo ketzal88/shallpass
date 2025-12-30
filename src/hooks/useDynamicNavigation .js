@@ -1,17 +1,35 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
-export const useDynamicNavigation = ({ number = process.env.REACT_APP_WP_PHONE, subject = `${process.env.REACT_APP_HOME_SUBJECT}` } = {}) => {
+export const useDynamicNavigation = ({
+  number = process.env.REACT_APP_WP_PHONE,
+  subject = `${process.env.REACT_APP_HOME_SUBJECT}`,
+} = {}) => {
   const navigate = useNavigate();
 
   // Construir la URL de WhatsApp
-  const whatsAppData = `https://api.whatsapp.com/send?phone=${encodeURIComponent(number)}&text=${encodeURIComponent(subject)}`;
+  const whatsAppData = `https://api.whatsapp.com/send?phone=${encodeURIComponent(
+    number
+  )}&text=${encodeURIComponent(subject)}`;
 
   // Función para manejar el click, acepta un objeto como argumento
   const handleNavigation = ({ url = whatsAppData, newTab = false } = {}) => {
     return () => {
       if (newTab) {
-        // Abrir en una nueva pestaña
-        window.open(url, '_blank');
+        // Abrir en una nueva pestaña con seguridad mejorada
+        // Validate URL to prevent open redirect vulnerabilities
+        if (
+          url &&
+          (url.startsWith("http://") ||
+            url.startsWith("https://") ||
+            url.startsWith("/"))
+        ) {
+          const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+          if (!newWindow) {
+            console.warn("Popup blocked. Please allow popups for this site.");
+          }
+        } else {
+          console.error("Invalid URL provided to handleNavigation");
+        }
       } else {
         // Navegación interna normal con React Router
         navigate(url, { replace: true });

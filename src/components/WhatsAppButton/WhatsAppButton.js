@@ -30,15 +30,19 @@ export const WhatsAppButton = ({ page }) => {
 
   const number = process.env.REACT_APP_WP_PHONE;
 
-  const whatsAppData = `https://api.whatsapp.com/send?phone=${encodeURIComponent(
-    number
-  )}&text=${encodeURIComponent(newMsg)}`;
+  // Validate and sanitize phone number and message
+  const safeNumber = number ? encodeURIComponent(String(number).trim()) : "";
+  const safeMessage = newMsg ? encodeURIComponent(String(newMsg).trim()) : "";
+
+  const whatsAppData = `https://api.whatsapp.com/send?phone=${safeNumber}&text=${safeMessage}`;
 
   const handleWhatsAppClick = () => {
-    window.dataLayer.push({
-      event: "WhatsApp",
-      sent: true,
-    });
+    if (window.dataLayer) {
+      window.dataLayer.push({
+        event: "WhatsApp",
+        sent: true,
+      });
+    }
   };
 
   return (
@@ -49,8 +53,9 @@ export const WhatsAppButton = ({ page }) => {
             href={whatsAppData}
             className="whatsapp"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             onClick={handleWhatsAppClick}
+            aria-label="Contactar por WhatsApp"
           >
             <img alt="WhatsApp" src={whatsAppCTA} />
           </a>

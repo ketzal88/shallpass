@@ -86,7 +86,24 @@ export const Servicios = ({
                       <Row>
                         <Button
                           className={`rounded-pill`}
-                          onClick={() => window.open(data.ctaLink, "_blank")}
+                          onClick={() => {
+                            if (
+                              data.ctaLink &&
+                              (data.ctaLink.startsWith("http://") ||
+                                data.ctaLink.startsWith("https://"))
+                            ) {
+                              const newWindow = window.open(
+                                data.ctaLink,
+                                "_blank",
+                                "noopener,noreferrer"
+                              );
+                              if (!newWindow) {
+                                console.warn(
+                                  "Popup blocked. Please allow popups for this site."
+                                );
+                              }
+                            }
+                          }}
                         >
                           {data.ctaText}
                         </Button>
