@@ -4,6 +4,7 @@ import { heroVideo, heroVideoMp4, posterVideoHero } from "../assets";
 import { HerroVideoBanner } from "../components/HerroVideoBanner/HerroVideoBanner";
 import { Destacados } from "../components/Destacados/Destacados";
 import { Confia } from "../components/Confia/Confia";
+import { Reviews } from "../components/Reviews/Reviews";
 import { PlatformLogos } from "../components/PlatformLogos/PlatformLogos";
 import { VideosEducativos } from "../components/VideosEducativos/VideosEducativos";
 import { Servicios } from "../components/Servicios/Servicios";
@@ -32,6 +33,7 @@ export const LLCLandings = () => {
         />
         <Destacados />
         <Confia />
+        <Reviews />
         <PlatformLogos />
         {/* Sección de videos - Ocultar hasta que los videos estén listos */}
         {/* <VideosEducativos /> */}

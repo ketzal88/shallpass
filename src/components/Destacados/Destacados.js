@@ -16,7 +16,7 @@ export const Destacados = () => {
     {
       id: "001",
       ico: destacadoIcon01,
-      text: `Armamos tu LLC 100%<br/><span>remoto, estes donde estés</span>`,
+      text: `Armamos tu LLC 100%remoto, <br/><span>estes donde estés</span>`,
       delay: 300,
     },
     {
@@ -28,7 +28,7 @@ export const Destacados = () => {
     {
       id: "003",
       ico: destacadoIcon03,
-      text: ` Sin formularios confusos <span>EIN <br/>ni demoras innecesarias.</span>`,
+      text: `Sin formularios confusos <span><br/>ni demoras innecesarias.</span>`,
       delay: 700,
     },
     {

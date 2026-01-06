@@ -3,6 +3,7 @@ import { Col, Container, Image, Row } from "react-bootstrap";
 import useScreenSize from "../../hooks/useScreenSize";
 import { celphone, confia01, confia02, confia03, confia04 } from "../../assets";
 import styles from "./Confia.module.scss";
+import { Reviews } from "../Reviews/Reviews";
 
 export const Confia = () => {
   const { isMobile } = useScreenSize();
@@ -13,14 +14,16 @@ export const Confia = () => {
         <Col></Col>
         <Col md={7} data-aos="zoom-out" data-aos-delay="500">
           <h1>
-            Más de 150 LLC legalmente registradas en USA. {!isMobile && <br />}
-            <span>
+            Más de 150 LLC legalmente registradas en USA.
+            {/* {!isMobile && <br />} */}
+            {/* <span>
               ¿Por qué no deberías confiar en nosotros? {isMobile && <br />}
-            </span>
+            </span> */}
           </h1>
         </Col>
         <Col></Col>
       </Row>
+      <Reviews />
       <Col
         style={{ position: "relative", border: "1px solid transparent" }}
         className="h-100 w-100"

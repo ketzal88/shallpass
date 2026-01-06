@@ -19,7 +19,7 @@ export const HerroVideoBanner = ({ video, videoMp4, poster }) => {
         <Col className={`${styles.heroText}`} md={{ span: 10, offset: 1 }}>
           <small>Internacionalizá tus negocios</small>
           <h1>
-            ARMÁ {isMobile && <br />}TU LLC <br />
+            TU LLC <br />
             EN <span>10 DÍAS</span>
           </h1>
           <h4>

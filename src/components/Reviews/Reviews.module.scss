@@ -1,0 +1,262 @@
+@import "../../scss/colors";
+@import "../../scss/layout";
+
+.reviews {
+  margin-top: 96px;
+  margin-bottom: 96px;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "DM Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 16px;
+}
+
+.ratingSummary {
+  color: white;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 24px;
+
+  .ratingNumber,
+  .ratingLabel {
+    color: $primaryColor;
+    font-weight: 700;
+  }
+
+  .reviewCount {
+    color: white;
+  }
+}
+
+.description {
+  color: white;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.cardsWrapper {
+  width: 100%;
+  margin-top: 48px;
+  
+  @media (max-width: $mobileBreak) {
+    touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+  }
+}
+
+.cardsRow {
+  gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  margin: 0;
+}
+
+.reviewCard {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  
+  @media (max-width: $mobileBreak) {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 0 8px;
+  }
+}
+
+.cardContent {
+  border: 1px solid rgba(255, 191, 1, 0.3);
+  border-radius: 16px;
+  padding: 24px;
+  background: rgba(17, 17, 17, 0.8);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: $primaryColor;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(255, 191, 1, 0.1);
+  }
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: $primaryColor;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.avatarImage {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+  flex-shrink: 0;
+  border: 2px solid $primaryColor;
+}
+
+.profileInfo {
+  flex: 1;
+}
+
+.name {
+  color: white;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 4px;
+}
+
+.location {
+  color: rgba(255, 255, 255, 0.7);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.reviewText {
+  color: white;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.starsContainer {
+  display: flex;
+  gap: 4px;
+  margin-top: auto;
+}
+
+.starFilled {
+  color: $primaryColor;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.starEmpty {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 20px;
+  line-height: 1;
+}
+
+.dotsContainer {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+
+  &:hover {
+    background: rgba(255, 191, 1, 0.5);
+  }
+
+  &.dotActive {
+    background: $primaryColor;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (max-width: $mobileBreak) {
+  .reviews {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    padding: 0 16px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .ratingSummary {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .cardsRow {
+    margin-top: 32px;
+    gap: 16px;
+  }
+
+  .cardsWrapper {
+    gap: 16px;
+  }
+
+  .cardContent {
+    padding: 20px;
+  }
+
+  .reviewText {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
