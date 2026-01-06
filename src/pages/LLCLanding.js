@@ -33,7 +33,7 @@ export const LLCLandings = () => {
         />
         <Destacados />
         <Confia />
-        <Reviews />
+        {/* <Reviews /> */}
         <PlatformLogos />
         {/* Sección de videos - Ocultar hasta que los videos estén listos */}
         {/* <VideosEducativos /> */}
