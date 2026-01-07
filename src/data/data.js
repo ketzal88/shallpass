@@ -65,7 +65,7 @@ const servicios = [
     bulet: [
       {
         acent: true,
-        bulletText: `Constitución de la LLC en el estado más conveniente según tu perfil <span style="white-space:nowrap">(New Mexico, Wyoming o Florida)</span>`,
+        bulletText: `Constitución de la LLC en el estado más conveniente según tu perfil (New Mexico, Wyoming o Florida)`,
       },
       {
         acent: true,
@@ -169,6 +169,50 @@ const servicios = [
       `- Presencia digital comprobable (página web, LinkedIn, correo corporativo, etc)`,
       `- Pasaporte vigente`,
       `- Para la apertura de Kraken la LLC debe tener actividad por al menos 30 días para demostrar ingresos.`,
+    ],
+  },
+  {
+    dark: false,
+    title: `Servicios adicionales<br/>y gestión continua`,
+    highlight: `Ideal para quienes ya tienen una LLC y necesitan soporte puntual o continuidad operativa`,
+    priceClaim: `Desde`,
+    currency: `U$D`,
+    price: 150,
+    note: `<b>Servicios disponibles según el perfil y la situación de cada empresa</b>`,
+    ctaText: `Quiero más información`,
+    ctaLink: `https://info.shallpassconsultora.com/servicios-adicionales`,
+    bulet: [
+      {
+        acent: true,
+        bulletText: `Apertura de cuentas bancarias empresariales en EE.UU.`,
+      },
+      {
+        acent: true,
+        bulletText: `Apertura y configuración de Stripe`,
+      },
+      {
+        acent: true,
+        bulletText: `Apertura de cuenta Business en Payoneer`,
+      },
+      {
+        acent: true,
+        bulletText: `Apertura de cuenta Business en Kraken`,
+      },
+      {
+        acent: true,
+        bulletText: `Presentación del Reporte BOI (Beneficial Ownership Information)`,
+      },
+      {
+        acent: true,
+        bulletText: `Renovación anual de la LLC`,
+      },
+      {
+        acent: true,
+        bulletText: `Presentación de impuestos y formularios fiscales aplicables`,
+      },
+    ],
+    footer: [
+      `Servicios disponibles según el perfil y la situación de cada empresa`,
     ],
   },
 ];

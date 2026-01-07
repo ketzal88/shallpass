@@ -9,7 +9,7 @@ import useScrollTo from "../../hooks/useScrollTo";
 export const Servicios = ({
   cont = servicios,
   ctaId = "llc",
-  colums = 3,
+  colums = 4,
   darkHighlight = false,
 }) => {
   const sanitizer = DOMPurify.sanitize;
@@ -42,7 +42,7 @@ export const Servicios = ({
       <Container fluid>
         <Container className={`${styles.main}`} id={"llc"}>
           <h2>Nuestros servicios</h2>
-          <Row md={colums} className={`${styles.serviciosRow} g-3`}>
+          <Row md={colums} className={`${styles.serviciosRow} g-4`}>
             {cont.map((data, id) => (
               <Col key={id} className={isMobile && "mb-5"}>
                 <Col

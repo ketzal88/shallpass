@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "./PasosLLC.module.scss";
 import { videoPaso1, videoPaso2, videoPaso3, videoPaso4 } from "../../assets";
 
 export const PasosLLC = () => {
   const [playingVideo, setPlayingVideo] = useState(null);
+  const videoRefs = useRef({});
 
   const pasos = [
     {
@@ -33,8 +34,20 @@ export const PasosLLC = () => {
     },
   ];
 
-  const handlePlay = (videoId) => {
+  const handlePlay = (videoId, videoElement) => {
+    // Pausar todos los otros videos
+    Object.keys(videoRefs.current).forEach((id) => {
+      if (id !== videoId.toString() && videoRefs.current[id]) {
+        videoRefs.current[id].pause();
+      }
+    });
     setPlayingVideo(videoId);
+  };
+
+  const handlePause = (videoId) => {
+    if (playingVideo === videoId) {
+      setPlayingVideo(null);
+    }
   };
 
   return (
@@ -63,6 +76,11 @@ export const PasosLLC = () => {
                   <div className={styles.stepNumber}>{paso.id}</div>
                   <div className={styles.videoContainer}>
                     <video
+                      ref={(el) => {
+                        if (el) {
+                          videoRefs.current[paso.id] = el;
+                        }
+                      }}
                       className={styles.video}
                       controls
                       preload="metadata"
@@ -70,7 +88,8 @@ export const PasosLLC = () => {
                       loop
                       src={paso.videoUrl}
                       type="video/mp4"
-                      onPlay={() => handlePlay(paso.id)}
+                      onPlay={(e) => handlePlay(paso.id, e.target)}
+                      onPause={() => handlePause(paso.id)}
                     />
                     {playingVideo !== paso.id && (
                       <div className={styles.placeholderOverlay}>

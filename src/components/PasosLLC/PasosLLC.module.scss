@@ -73,7 +73,12 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 0; // Asegura que el video esté debajo del overlay pero clickeable
+  z-index: 2; // Por encima del overlay cuando está visible
+  cursor: pointer;
+  
+  &::-webkit-media-controls {
+    pointer-events: auto;
+  }
 }
 
 .placeholderOverlay {
