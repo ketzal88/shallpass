@@ -6,10 +6,11 @@ import { Destacados } from "../components/Destacados/Destacados";
 import { Confia } from "../components/Confia/Confia";
 import { Reviews } from "../components/Reviews/Reviews";
 import { PlatformLogos } from "../components/PlatformLogos/PlatformLogos";
+import { PasosLLC } from "../components/PasosLLC/PasosLLC";
 import { VideosEducativos } from "../components/VideosEducativos/VideosEducativos";
 import { Servicios } from "../components/Servicios/Servicios";
 // import { Consultas } from "../components/Consultas/Consultas";
-import { Proceso } from "../components/Proceso/Proceso";
+import { FAQ } from "../components/FAQ/FAQ";
 import { FooterLanding } from "../components/Landings/FooterLanding/FooterLanding";
 import { Atencion } from "../components/Landings/Atencion/Atencion";
 import { HeaderCTA } from "../components/Landings/HeaderCTA/HeaderCTA";
@@ -35,13 +36,14 @@ export const LLCLandings = () => {
         <Confia />
         {/* <Reviews /> */}
         <PlatformLogos />
+        <PasosLLC />
         {/* Sección de videos - Ocultar hasta que los videos estén listos */}
         {/* <VideosEducativos /> */}
       </Col>
       <Servicios id={"llc"} />
       <Col className={`${styles.bgL}`}>
         {/* <Consultas /> */}
-        <Proceso />
+        <FAQ />
         {/* <FormSection id={'llc'} submitText={'Contactanos'} /> */}
         <Container>
           <FooterLanding />

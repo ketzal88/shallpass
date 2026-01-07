@@ -60,3 +60,7 @@ export { default as espanolHeroVideoMobileMp4 } from "./videos/landingEspanolaMo
 export { default as monotributoMobileMp4 } from "./videos/monostributo-mobile.mp4";
 export { default as monotributoDescktopMp4 } from "./videos/monostributo-desktop.mp4";
 export { default as videoCentralporqueElegirLLC } from "./videos/VIDEO-CENTRAL-LANDING-EDITADO.mp4";
+export { default as videoPaso1 } from "./videos/VIDEOS-LANDING-PASO-1.mp4";
+export { default as videoPaso2 } from "./videos/VIDEOS-LANDING-PASO-2.mp4";
+export { default as videoPaso3 } from "./videos/VIDEOS-LANDING-PASO-3.mp4";
+export { default as videoPaso4 } from "./videos/VIDEOS-LANDING-PASO-4.mp4";

@@ -6,17 +6,6 @@ import styles from "./Reviews.module.scss";
 const reviews = [
   {
     id: 1,
-    name: "Gabriel Uccello",
-    location: "Argentina",
-    text: "Gestionan toda la administración de mi SRL y me abrieron una LLC en 7 dias",
-    rating: 5,
-    source: "Google",
-    date: "Hace un mes",
-    avatar:
-      "https://lh3.googleusercontent.com/a-/ALV-UjVhchqmWoD24tXK-R0iiYI0XKVihd0FlG4SDDJ3JR-H3daJ30zjyA=w126-h126-p-rp-mo-ba5-br100",
-  },
-  {
-    id: 2,
     name: "Sebastian Senosiain",
     location: "Argentina",
     text: "Trabajar con Shall pass fue un cambio total en lo administrativo y en la organización del negocio. Veníamos bastante desordenados y él nos ayudó a poner estructura, claridad y procesos donde antes había caos. Nos acompañó en todo el proceso para abrir nuestra LLC, fue súper rápido, claro y sin vueltas. Siempre paciente, explicando todo de forma simple y estando encima de cada paso. Hoy tenemos la LLC y la parte administrativa funcionando como corresponde, con orden y tranquilidad. Realmente se siente el acompañamiento y el impacto en el día a día del negocio. Súper recomendable si buscás alguien confiable, ordenado y que te saque un peso de encima.",
@@ -27,7 +16,7 @@ const reviews = [
       "https://lh3.googleusercontent.com/a-/ALV-UjVwtmtx8Z7qkPrgvfozOsMXB8fb2skwZpgvx0Xxow3amkeyZNe0vg=w72-h72-p-rp-mo-br100",
   },
   {
-    id: 3,
+    id: 2,
     name: "Alfonsina Capponi",
     location: "Argentina",
     text: "La verdad que hacer mi SRL con ellos fue un alivio. Yo no entendía nada del proceso y me explicaron todo con una paciencia increíble. Me acompañaron paso a paso, respondieron cada duda y se ocuparon de los trámites sin que yo tenga que estar corriendo detrás de nadie. Hoy tengo mi SRL funcionando y además me ayudan con el mantenimiento mensual, que para mí era un tema. Súper recomendados si querés alguien que esté realmente encima de todo y te haga sentir acompañada",
@@ -38,7 +27,7 @@ const reviews = [
       "https://lh3.googleusercontent.com/a-/ALV-UjWz_T9vPpFfearZz0RM9FJ6QarMgicWYlEsTSegjIaF1uwhT4nK=w72-h72-p-rp-mo-br100",
   },
   {
-    id: 4,
+    id: 3,
     name: "Augusto Spagnolo",
     location: "Argentina",
     text: "Un genio Joel, la verdad. Me guió en cada paso con una paciencia y una claridad tremendas, explicándome todo en un idioma que pude entender sin sentirme perdido. Hoy tengo mi LLC creada y la cuenta bancaria funcionando sin vueltas. Súper agradecido por el acompañamiento y la confianza que me transmitió en todo el proceso.",
@@ -47,7 +36,7 @@ const reviews = [
     date: "Hace un mes",
   },
   {
-    id: 5,
+    id: 4,
     name: "Martin Andres",
     location: "Argentina",
     text: "Impresionante experiencia, muy conveniente, no tuve que hacer nada y tengo mi LLC con banco. muy recomendado!",
@@ -58,13 +47,24 @@ const reviews = [
       "https://lh3.googleusercontent.com/a-/ALV-UjWA6d5uvmS9LbBFdfqJF5-qV60nZXPgTlclMzuI9x2B1ukNdk2HUw=w72-h72-p-rp-mo-ba3-br100",
   },
   {
-    id: 6,
+    id: 5,
     name: "Damian Ancic",
     location: "Argentina",
     text: "Excelente atención con soluciones rápidas.",
     rating: 5,
     source: "Google",
     date: "Hace un mes",
+  },
+  {
+    id: 6,
+    name: "Gabriel Uccello",
+    location: "Argentina",
+    text: "Gestionan toda la administración de mi SRL y me abrieron una LLC en 7 dias",
+    rating: 5,
+    source: "Google",
+    date: "Hace un mes",
+    avatar:
+      "https://lh3.googleusercontent.com/a-/ALV-UjVhchqmWoD24tXK-R0iiYI0XKVihd0FlG4SDDJ3JR-H3daJ30zjyA=w126-h126-p-rp-mo-ba5-br100",
   },
 ];
 
