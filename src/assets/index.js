@@ -10,7 +10,6 @@ export { default as vectorCircle } from "./svg/vectorCircle.svg";
 export { default as logoShallPassBaloon } from "./svg/logoShallPassBaloon.svg";
 export { default as bulletListStandar } from "./svg/bulletLandingListStandar.svg";
 
-
 // iconos
 export { default as comercialIcon } from "./svg/administarcionIcon.svg";
 export { default as impositivaIcon } from "./svg/impsitivaIcon.svg";
@@ -33,7 +32,6 @@ export { default as cardIcon03 } from "./svg/account_balance_black_36dp 1.svg";
 export { default as cardIcon04 } from "./svg/sync_black_36dp 1.svg";
 export { default as cardIcon05 } from "./svg/family_restroom_black_36dp 1.svg";
 export { default as cardIcon06 } from "./svg/subtitles_black_36dp 1.svg";
-
 
 // logos sponsors
 export { default as beatflowLogo } from "./svg/beatflowLogo.svg";
@@ -61,3 +59,4 @@ export { default as espanolHeroVideoWebm } from "./videos/VideoLandingFlipEspano
 export { default as espanolHeroVideoMobileMp4 } from "./videos/landingEspanolaMobile.mp4";
 export { default as monotributoMobileMp4 } from "./videos/monostributo-mobile.mp4";
 export { default as monotributoDescktopMp4 } from "./videos/monostributo-desktop.mp4";
+export { default as videoCentralporqueElegirLLC } from "./videos/VIDEO-CENTRAL-LANDING-EDITADO.mp4";

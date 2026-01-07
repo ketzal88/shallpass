@@ -6,7 +6,7 @@ export const PlatformLogos = () => {
   // Logos de plataformas - ubicar en public/
   const platforms = [
     { name: "Stripe", logo: "/stripe-logo.png" },
-    { name: "Kraken", logo: "/kraken-logo.png" },
+    { name: "Kraken", logo: "/Kraken-Emblem.png" },
     { name: "Relay", logo: "/relay-logo.png" },
     { name: "Wise", logo: "/wise-2.svg" },
     {

@@ -1,11 +1,20 @@
 import React from "react";
-import { Col, Container, Image, Row } from "react-bootstrap";
+import { Col, Container, Image, Row, Video } from "react-bootstrap";
 import useScreenSize from "../../hooks/useScreenSize";
-import { celphone, confia01, confia02, confia03, confia04 } from "../../assets";
+import {
+  celphone,
+  confia01,
+  confia02,
+  confia03,
+  confia04,
+  videoCentralporqueElegirLLC,
+} from "../../assets";
 import styles from "./Confia.module.scss";
 import { Reviews } from "../Reviews/Reviews";
+import useIsIOS from "../../hooks/useIsIOS";
 
 export const Confia = () => {
+  const isIOS = useIsIOS();
   const { isMobile } = useScreenSize();
 
   return (
@@ -72,7 +81,27 @@ export const Confia = () => {
           {!isMobile && (
             <>
               <Col md={6} className={`${styles.imagenPhone} h-100`}>
-                <Image src={celphone} />
+                {isIOS === true ? (
+                  <video
+                    className={`${styles.videoStyle}`}
+                    playsInline
+                    controls
+                    loop
+                    // poster={poster}
+                    src={videoCentralporqueElegirLLC}
+                    type="video/mp4"
+                  />
+                ) : (
+                  <video
+                    className={`${styles.videoStyle}`}
+                    playsInline
+                    controls
+                    loop
+                    // poster={poster}
+                    src={videoCentralporqueElegirLLC}
+                    type="video/webm"
+                  />
+                )}
               </Col>
             </>
           )}
@@ -117,6 +146,31 @@ export const Confia = () => {
             </Col>
           </Col>
         </Row>
+        {isMobile && (
+          <Row className="justify-content-center mt-4">
+            <Col xs={12} className={`${styles.imagenPhone}`}>
+              {isIOS === true ? (
+                <video
+                  className={`${styles.videoStyle}`}
+                  playsInline
+                  controls
+                  loop
+                  src={videoCentralporqueElegirLLC}
+                  type="video/mp4"
+                />
+              ) : (
+                <video
+                  className={`${styles.videoStyle}`}
+                  playsInline
+                  controls
+                  loop
+                  src={videoCentralporqueElegirLLC}
+                  type="video/webm"
+                />
+              )}
+            </Col>
+          </Row>
+        )}
       </Col>
     </Container>
   );

@@ -56,6 +56,15 @@ $sectionHeigth: 1128px;
   }
 }
 
+.videoStyle {
+  height: 180%;
+  width: 380px;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
 .itemContainer {
   min-height: 50%;
   margin: 0px;
@@ -133,6 +142,25 @@ $sectionHeigth: 1128px;
         line-height: 40px;
       }
     }
+  }
+
+  .imagenPhone {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 40px 0;
+
+    &::before {
+      min-width: 300px;
+      min-height: 300px;
+    }
+  }
+
+  .videoStyle {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    margin: 0 auto;
   }
 
   .itemLeft {
