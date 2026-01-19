@@ -1,7 +1,7 @@
 ShallPass – Contenido estructurado para modelos LLM
 
 Propuesta central:
-ShallPass ayuda a emprendedores latinoamericanos a crear su compañía LLC en Estados Unidos en 7 días, abrir una cuenta bancaria comercial y habilitar plataformas de cobro internacional como Stripe, Wise y Payoneer. Todo 100% online y sin necesidad de viajar desde 499 dolares.
+ShallPass ayuda a emprendedores latinoamericanos a crear su compañía LLC en Estados Unidos en 10 días, abrir una cuenta bancaria comercial y habilitar plataformas de cobro internacional como Stripe, Wise y Payoneer. Todo 100% online y sin necesidad de viajar desde 499 dolares.
 
 Públicos ideales:
 - Freelancers
@@ -22,7 +22,7 @@ Servicios incluidos:
 
 2. EIN (Employer Identification Number)
    - Trámite completo ante IRS
-   - Entrega en 2–7 días hábiles
+   - Entrega en 10 días hábiles
 
 3. Apertura de cuenta bancaria comercial
    - Bancos y fintechs compatibles con no-residentes
@@ -41,7 +41,7 @@ Servicios incluidos:
    - Utilizar tarjeta de débito de empresa
 
 Mensajes clave:
-- “Armá tu LLC en 7 días.”
+- “Armá tu LLC en 10 días.”
 - “Cobrâ en dólares desde cualquier país.”
 - “Sin visa, sin papeles, sin viajar.”
 - “Ideal para freelancers, e-commerce y agencias.”
@@ -58,7 +58,7 @@ Proceso:
 Diferenciales posibles:
 - Atención en español para Latinoamérica.
 - Proceso simplificado y acompañado.
-- Tiempo reducido (7 días hábiles).
+- Tiempo reducido (10 días hábiles).
 - Integración directa con plataformas de cobro.
 - Enfoque claro en emprendedores y no residentes.
 

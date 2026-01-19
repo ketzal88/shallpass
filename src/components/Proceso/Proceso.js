@@ -15,21 +15,21 @@ export const Proceso = () => {
 
   const data = [
     {
-      title: `En 7 días`,
+      title: `En 10 días`,
       subTitle: `Registrás la compañia`,
       link: "#",
       img: proceso01,
       delay: 0,
     },
     {
-      title: `En 7 días`,
+      title: `En 10 días`,
       subTitle: `EIN - Número y Registro fiscal`,
       link: "#",
       img: proceso02,
       delay: 300,
     },
     {
-      title: `En 7 días`,
+      title: `En 10 días`,
       subTitle: `Abrís tu cuenta bancaria`,
       link: "#",
       img: proceso03,

@@ -59,7 +59,7 @@ const reviews = [
     id: 6,
     name: "Gabriel Uccello",
     location: "Argentina",
-    text: "Gestionan toda la administración de mi SRL y me abrieron una LLC en 7 dias",
+    text: "Gestionan toda la administración de mi SRL y me abrieron una LLC en 10 dias",
     rating: 5,
     source: "Google",
     date: "Hace un mes",
