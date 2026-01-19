@@ -33,7 +33,7 @@ export const LLCLandings = () => {
           poster={posterVideoHero}
         />
         <Destacados />
-        <Confia />
+        {/* <Confia /> */}
         {/* <Reviews /> */}
         <PlatformLogos />
         <PasosLLC />

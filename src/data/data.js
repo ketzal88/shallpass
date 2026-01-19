@@ -144,11 +144,11 @@ const servicios = [
       },
       {
         acent: true,
-        bulletText: `Apertura y configuración de Stripe <span style="white-space:nowrap">(Sujeta a validación de la plataforma)</span>`,
+        bulletText: `Apertura y configuración de Stripe (Sujeta a validación de la plataforma)</span>`,
       },
       {
         acent: true,
-        bulletText: `Apertura y configuración de Kraken Business <span style="white-space:nowrap">(Sujeta a requisitos de la plataforma)</span>`,
+        bulletText: `Apertura y configuración de Kraken Business (Sujeta a requisitos de la plataforma)</span>`,
       },
       {
         acent: true,
