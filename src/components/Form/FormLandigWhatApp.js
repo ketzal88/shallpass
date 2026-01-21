@@ -33,7 +33,8 @@ export const FormLandingWhatsApp = ({ id = "fromHeader", submitText }) => {
 
     const message = process.env.REACT_APP_ESPANOLA_MSG || "";
     const safeMessage = encodeURIComponent(message);
-    const safePhone = encodeURIComponent("+5491161030547");
+    const safePhone = encodeURIComponent("+5491134658988");
+
 
     window.open(
       `https://api.whatsapp.com/send?phone=${safePhone}&text=${safeMessage}`,

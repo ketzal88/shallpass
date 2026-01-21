@@ -19,7 +19,7 @@ const servicios = [
     price: 499,
     note: `<b>Pago único,</b> Incluye constitución y documentación básica.`,
     ctaText: `Quiero más información`,
-    ctaLink: `https://api.whatsapp.com/send?phone=%2B5491171307127&text=Hola%20quisiera%20tener%20informaci%C3%B3n%20sobre%20sus%20servicios`,
+    ctaLink: `https://api.whatsapp.com/send?phone=%2B5491134658988&text=Hola%20quisiera%20tener%20informaci%C3%B3n%20sobre%20sus%20servicios`,
     bulet: [
       {
         acent: true,
@@ -61,7 +61,7 @@ const servicios = [
     price: 799,
     note: `<b>Pago único,</b> Incluye cuenta bancaria y tarjeta física.`,
     ctaText: `Quiero más información`,
-    ctaLink: `https://api.whatsapp.com/send?phone=%2B5491171307127&text=Hola%20quisiera%20tener%20informaci%C3%B3n%20sobre%20sus%20servicios`,
+    ctaLink: `https://api.whatsapp.com/send?phone=%2B5491134658988&text=Hola%20quisiera%20tener%20informaci%C3%B3n%20sobre%20sus%20servicios`,
     bulet: [
       {
         acent: true,
@@ -112,7 +112,7 @@ const servicios = [
     price: 1399,
     note: `<b>Pago único,</b> LLC, estructura 360° y cripto.`,
     ctaText: `Agendar una llamada`,
-    ctaLink: `https://api.whatsapp.com/send?phone=%2B5491171307127&text=Hola%20quisiera%20tener%20informaci%C3%B3n%20sobre%20sus%20servicios`,
+    ctaLink: `https://api.whatsapp.com/send?phone=%2B5491134658988&text=Hola%20quisiera%20tener%20informaci%C3%B3n%20sobre%20sus%20servicios`,
     bulet: [
       {
         acent: true,
@@ -180,7 +180,7 @@ const servicios = [
     price: 150,
     note: `<b>Servicios disponibles según el perfil y la situación de cada empresa</b>`,
     ctaText: `Quiero más información`,
-    ctaLink: `https://api.whatsapp.com/send?phone=%2B5491171307127&text=Hola%20quisiera%20tener%20informaci%C3%B3n%20sobre%20sus%20servicios`,
+    ctaLink: `https://api.whatsapp.com/send?phone=%2B5491134658988&text=Hola%20quisiera%20tener%20informaci%C3%B3n%20sobre%20sus%20servicios`,
     bulet: [
       {
         acent: true,
