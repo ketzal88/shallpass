@@ -34,7 +34,6 @@ export const LLCLandings = () => {
         />
         <Destacados />
         {/* <Confia /> */}
-        {/* <Reviews /> */}
         <PlatformLogos />
         <PasosLLC />
         {/* Sección de videos - Ocultar hasta que los videos estén listos */}
@@ -44,6 +43,7 @@ export const LLCLandings = () => {
       <Col className={`${styles.bgL}`}>
         {/* <Consultas /> */}
         <FAQ />
+        <Reviews />
         {/* <FormSection id={'llc'} submitText={'Contactanos'} /> */}
         <Container>
           <FooterLanding />

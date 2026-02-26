@@ -7,7 +7,6 @@ export const PlatformLogos = () => {
   const platforms = [
     { name: "Stripe", logo: "/stripe-logo.png" },
     { name: "Kraken", logo: "/Kraken-Emblem.png" },
-    { name: "Relay", logo: "/relay-logo.png" },
     { name: "Wise", logo: "/wise-2.svg" },
     {
       name: "PayPal",
@@ -18,6 +17,7 @@ export const PlatformLogos = () => {
   const partners = [
     { name: "Mercury", logo: "/mercury-logo.png" },
     { name: "Payoneer", logo: "/Payoneer_logo.png" },
+    { name: "Relay", logo: "/relay-logo.png" },
   ];
 
   return (

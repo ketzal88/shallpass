@@ -63,6 +63,7 @@ export const Servicios = ({
                   )}
                   <Col>
                     <h3
+                      className={data.price === 150 ? styles.smallTitle : ""}
                       dangerouslySetInnerHTML={{
                         __html: sanitizer(data.title),
                       }}

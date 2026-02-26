@@ -59,7 +59,7 @@ const servicios = [
     priceClaim: `VALOR`,
     currency: `U$D`,
     price: 799,
-    note: `<b>Pago único,</b> Incluye cuenta bancaria y tarjeta física.`,
+    note: `<b>Pago único,</b> Incluye cuenta bancaria.`,
     ctaText: `Quiero más información`,
     ctaLink: `https://api.whatsapp.com/send?phone=%2B5491134658988&text=Hola%20quisiera%20tener%20informaci%C3%B3n%20sobre%20sus%20servicios`,
     bulet: [
@@ -136,7 +136,7 @@ const servicios = [
       },
       {
         acent: true,
-        bulletText: `Apertura de cuenta bancaria empresarial Mercury ó Relay`,
+        bulletText: `Apertura de cuenta bancaria empresarial Mercury o Relay`,
       },
       {
         acent: true,
@@ -144,11 +144,11 @@ const servicios = [
       },
       {
         acent: true,
-        bulletText: `Apertura y configuración de Stripe (Sujeta a validación de la plataforma)</span>`,
+        bulletText: `Apertura y configuración de Stripe (Sujeta a validación de la plataforma)`,
       },
       {
         acent: true,
-        bulletText: `Apertura y configuración de Kraken Business (Sujeta a requisitos de la plataforma)</span>`,
+        bulletText: `Apertura y configuración de Kraken Business (Sujeta a requisitos de la plataforma)`,
       },
       {
         acent: true,
@@ -174,7 +174,7 @@ const servicios = [
   {
     dark: false,
     title: `Servicios adicionales<br/>y gestión continua`,
-    highlight: `Ideal para quienes ya tienen una LLC y necesitan soporte puntual o continuidad operativa`,
+    highlight: `Ideal para quienes necesitan soporte puntual`,
     priceClaim: `Desde`,
     currency: `U$D`,
     price: 150,
